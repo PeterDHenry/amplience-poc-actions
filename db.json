@@ -1,0 +1,21 @@
+{
+  "content": {
+    "_meta": {
+      "name": "PH Hero Banner",
+      "schema": "https://schema-examples.com/ph-hero-banner",
+      "deliveryId": "7500503b-6303-4379-a14c-a3f9d7920f92"
+    },
+    "background": {
+      "_meta": {
+        "schema": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+      },
+      "id": "a11cb660-fd4a-498f-8222-022edfeb479b",
+      "name": "homepage-h-d",
+      "endpoint": "wigglecrcnonprd",
+      "defaultHost": "cdn.media.amplience.net"
+    }
+  },
+  "headline": "Discover different",
+  "calltoactiontext": "Find out more",
+  "calltoactionurl": "https://www.wiggle.co.uk/discover-different"
+}
