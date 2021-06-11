@@ -1,14 +1,30 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
 import  Hero  from '../Hero/Hero'
 
-<Meta title="CMS Content/Hero" component={Hero} />
 
-# Header
 
-The website header
+<Meta title="CMS Content/Hero" 
+      component={Hero} 
+      argTypes={{
+        color: {
+          options: ['black', 'white', 'red-500', 'green-500', 'yellow-500', 'blue-500'],
+          control: { type: 'select' }
+        },
+        contrastColor: {
+          options: ['black', 'white', 'red-500', 'green-500', 'yellow-500', 'blue-500'],
+          control: { type: 'select' }
+        }
+      }} 
+      args={{
+        color: 'white',
+        contrastColor: 'black',
+      }}/>
+
+export const Template = (args) => <Hero {...args} />
 
 <Canvas>
   <Story name="Default">
-    <Hero />
+    {Template.bind({})}
   </Story>
 </Canvas>
+

@@ -1,7 +1,7 @@
 import React from 'react';
 import { SimpleImg } from 'react-simple-img';
 
-function SpeakerImage( props ) {
+function LazyLoadImage( props ) {
   const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`;
   return (
     <SimpleImg
@@ -14,9 +14,9 @@ function SpeakerImage( props ) {
   );
 }
 
-SpeakerImage.defaultProps = {
+LazyLoadImage.defaultProps = {
   id: "homepage-h-d"
 }
 
 
-export default SpeakerImage;
+export default LazyLoadImage;
