@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import HeroImage from '../components/Heros/Heros'
 
 export const Home = (): JSX.Element => (
   <>
@@ -7,13 +8,7 @@ export const Home = (): JSX.Element => (
       <link rel="icon" href="/favicon.ico" />
       <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"></link>
     </Head>
-    <button
-        onClick={() => {
-          window.alert('With typescript and Jest')
-        }}
-      >
-        Test Button
-      </button>
+    <HeroImage />
   </>
 )
 
