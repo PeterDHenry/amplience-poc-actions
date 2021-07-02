@@ -19,7 +19,7 @@ const Heros = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://sandbox-dev.cdn.content.amplience.net/content/id/246fcf09-a2ba-48fa-ae82-7228505e00f5');//7500503b-6303-4379-a14c-a3f9d7920f92
+        const response = await axios.get('https://sandbox-dev.cdn.content.amplience.net/content/id/246fcf09-a2ba-48fa-ae82-7228505e00f5');//7500503b-6303-4379-a14c-a3f9d7920f92 https://javascript.plainenglish.io/useaxios-a-react-hook-for-using-axios-c798762d1a13
         setHero(response.data);
         setStatus(REQUEST_STATUS.SUCCESS);
       } catch (e) {
