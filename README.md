@@ -72,3 +72,9 @@ This project is setup with a **Circle CI** configuration for testing commits to 
 - **This triggers a test *and* release in CI**
 - Force push branch changes to master
 - **This triggers a test *and* release in CI**
+
+A develop branch was created from main.
+A release branch is created from develop.
+Feature branches are created from develop.
+When a feature is complete it is merged into the develop branch.
+When the release branch is done it is merged into develop.
