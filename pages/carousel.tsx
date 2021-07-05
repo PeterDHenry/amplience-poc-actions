@@ -4,9 +4,8 @@ import Carousel from '../components/Carousel/Carousel'
 export const Home = (): JSX.Element => (
   <>
     <Head>
-      <title>Create Next App</title>
+      <title>Carousel</title>
       <link rel="icon" href="/favicon.ico" />
-      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"></link>
     </Head>
     <Carousel />
   </>
