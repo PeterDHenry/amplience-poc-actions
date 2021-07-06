@@ -1,18 +1,23 @@
 import React from 'react';
 
-import HeroImage from '../LazyLoadImage/LazyLoadImage'
+import HeroImage from '../LazyLoadImage/HeroImage'
+
+//need to create border-${color} bg-${color}-hover text-${contrastColor}-hover classes
 
 const Hero = ( {cssClass, content, color, contrastColor} ) => (
-  <a className={`block group ${cssClass}`} href={content.calltoactionurl}>
+  <a className={`d-block position-relative ${cssClass}`} href={content.calltoactionurl}>
     <HeroImage id={content.background.name} />
-    <div className={`absolute bottom-40 left-20 uppercase text-${color} max-w-md`}>
-      <h3 className="text-7xl font-bold">
+    <div className={`position-absolute bottom-0 start-0 p-5 text-uppercase text-${color}`}>
+      <h2 className="">
         {content.headline}
-      </h3>
-      <h2 className="text-3xl font-bold">
-        {content.strapline}
       </h2>
-      <div className={`max-w-xs border-solid border-2 border-${color} p-1 group-hover:bg-${color} group-hover:text-${contrastColor}`}>
+      {content.strapline && (
+          <h3 className="">
+            {content.strapline}
+          </h3>
+        )
+      }
+      <div className={`btn border-${color} bg-${color}-hover text-${contrastColor}-hover`}>
         {content.calltoactiontext}
       </div>
     </div>

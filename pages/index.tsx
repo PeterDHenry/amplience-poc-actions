@@ -3,9 +3,8 @@ import Head from 'next/head'
 export const Home = (): JSX.Element => (
   <>
     <Head>
-      <title>Create Next App</title>
+      <title>Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop</title>
       <link rel="icon" href="/favicon.ico" />
-      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"></link>
     </Head>
     <button
         onClick={() => {
