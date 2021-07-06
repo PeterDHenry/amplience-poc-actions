@@ -10,13 +10,13 @@ const client = new ContentClient({
   hubName: "sandbox-dev"
 }); 
 
+const StyledCarouselItem= styled(Carousel.Item)`
+  -webkit-transition: -webkit-transform 0s ease-in-out;
+   -o-transition: -o-transform 0s ease-in-out;
+   transition: transform 0s ease-in-out;
+`
+
 const Carousels = () => {
-
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
 
   const REQUEST_STATUS = {
     LOADING: 'loading',
@@ -53,8 +53,6 @@ const Carousels = () => {
     fetchData();
   }, []);
 
-
-
   const success = status === REQUEST_STATUS.SUCCESS;
   const isLoading = status === REQUEST_STATUS.LOADING;
   const hasErrored = status === REQUEST_STATUS.ERROR;
@@ -72,13 +70,13 @@ const Carousels = () => {
       )}
       <Carousel controls nextLabel prevLabel slide controls indicators>
         {success && (carousels.map((carousel)=>(
-            <Carousel.Item>
+            <StyledCarouselItem>
               <Hero
                   key={carousel.content._meta.deliveryId}
                   {...carousel}
-                  cssClass="carousel"
+                  cssClass="carousel item"
               />
-            </Carousel.Item>
+            </StyledCarouselItem>
           )))
         }   
       </Carousel>

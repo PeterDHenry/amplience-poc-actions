@@ -7,7 +7,7 @@ Based on [NextJS Typescript Boilerplate](https://github.com/whoisryosuke/next-st
 - [**Typescript**](https://www.typescriptlang.org/) for type safety
 - [**ESLint**](https://eslint.org/) for linting
 - [**Prettier**](https://prettier.io/) for formatting
-- [**Tailwind**](https://tailwindcss.com/docs/installation#using-tailwind-via-cdn) utility-first CSS framework (currently via CDN)
+- [**React Bootstrap**](https://react-bootstrap.github.io/) React-Bootstrap replaces the Bootstrap JS, each component built from scratch as a true React component, without unneeded dependencies like jQuery
 - [**husky**](https://github.com/typicode/husky) for linting, typechecking and formatting with commit hooks
 - [**Jest**](https://jestjs.io/) and [**react-testing-library**](https://testing-library.com/docs/react-testing-library/intro) for testing
 - [**Styled Components**](https://styled-components.com/) for CSS-in-JS styling and theming
