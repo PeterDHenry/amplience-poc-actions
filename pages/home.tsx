@@ -7,7 +7,7 @@ export const Home = ({ homeSlot }): JSX.Element => (
       <title>Carousel</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
-    <Carousel  homeSlot={ homeSlot } />
+    <Carousel homeSlot={ homeSlot } />
   </>
 )
 

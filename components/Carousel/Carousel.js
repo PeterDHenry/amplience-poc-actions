@@ -13,10 +13,9 @@ const client = new ContentClient({
 const StyledCarouselItem= styled(Carousel.Item)`
   -webkit-transition: -webkit-transform 0s ease-in-out;
    -o-transition: -o-transform 0s ease-in-out;
-   transition: transform 0s ease-in-out;
-`
+   transition: transform 0s ease-in-out;`
 
-const Carousels = () => {
+export default function Carousels ({ homeSlot }) {
 
   const REQUEST_STATUS = {
     LOADING: 'loading',
@@ -27,24 +26,18 @@ const Carousels = () => {
   const [status, setStatus] = useState(REQUEST_STATUS.LOADING);
   const [error, setError] = useState({});
   const [carousels, setCarousels] = useState([]);
-  const [slot, setSlot] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
+      let success = false
       try {
-        await axios.get('https://sandbox-dev.cdn.content.amplience.net/content/id/2ea7590a-5546-494f-95e9-82910f25276c')
-        .then((response) => {
-            setSlot(response.data.content);
-            return response.data.content;
-        })
-        .then(async (slot) => {
-            for (const slotContent of slot.slotContent) {
-                await axios.get(`https://sandbox-dev.cdn.content.amplience.net/content/id/${slotContent.id}`).then((response) => {
-                    setCarousels(hero => [...hero, response.data]);
-                })
-           }
-           setStatus(REQUEST_STATUS.SUCCESS);
-        })
+        for (const slotContent of homeSlot.content.slotContent) {
+          await axios.get(`https://sandbox-dev.cdn.content.amplience.net/content/id/${slotContent.id}`).then((response) => {
+            setCarousels(hero => [...hero, response.data]);
+            success = true
+          })
+        }
+        if ( success ) { setStatus(REQUEST_STATUS.SUCCESS) }
       } catch (e) {
         setStatus(REQUEST_STATUS.ERROR);
         setError(e);
@@ -68,13 +61,12 @@ const Carousels = () => {
           <b>ERROR: {error.message}</b>
         </div>
       )}
-      <Carousel controls nextLabel prevLabel slide controls indicators>
+      <Carousel controls nextLabel="" prevLabel="" slide controls indicators>
         {success && (carousels.map((carousel)=>(
-            <StyledCarouselItem>
+            <StyledCarouselItem  key={carousel.content._meta.deliveryId}>
               <Hero
-                  key={carousel.content._meta.deliveryId}
-                  {...carousel}
-                  cssClass="carousel item"
+                {...carousel}
+                cssClass="carousel item"
               />
             </StyledCarouselItem>
           )))
@@ -84,4 +76,3 @@ const Carousels = () => {
   )
 };
 
-export default Carousels;
