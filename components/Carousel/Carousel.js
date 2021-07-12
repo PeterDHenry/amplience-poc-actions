@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components'
 import axios from 'axios';
-import { ContentClient } from 'dc-delivery-sdk-js';
 import Carousel from 'react-bootstrap/Carousel'
 
 import Hero from '../Hero/Hero';
-
-const client = new ContentClient({
-  hubName: "sandbox-dev"
-}); 
 
 const StyledCarouselItem= styled(Carousel.Item)`
   -webkit-transition: -webkit-transform 0s ease-in-out;
@@ -31,7 +26,7 @@ export default function Carousels ({ homeSlot }) {
     const fetchData = async () => {
       let success = false
       try {
-        for (const slotContent of homeSlot.content.slotContent) {
+        for (const slotContent of homeSlot.content.heroBannerList) {
           await axios.get(`https://sandbox-dev.cdn.content.amplience.net/content/id/${slotContent.id}`).then((response) => {
             setCarousels(hero => [...hero, response.data]);
             success = true

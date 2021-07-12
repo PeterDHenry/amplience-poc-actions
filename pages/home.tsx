@@ -1,5 +1,6 @@
 import Head from 'next/head'
-import Carousel from '../components/Carousel/Carousel'
+
+import Carousel from '../components/Carousel/CarouselAll'
 
 export const Home = ({ homeSlot }): JSX.Element => (
   <>
@@ -15,7 +16,7 @@ export default Home
 
 export const getServerSideProps = async (context) => {
   debugger
-  const res = await fetch('https://sandbox-dev.cdn.content.amplience.net/content/id/2ea7590a-5546-494f-95e9-82910f25276c')
+  const res = await fetch('https://sandbox-dev.cdn.content.amplience.net/content/id/39879bad-8f1f-4967-9647-f48c722955fa?depth=all&format=inlined')
   const homeSlot = await res.json()
 
   return {
