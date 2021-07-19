@@ -1,87 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components'
-import axios from 'axios';
-import { ContentClient } from 'dc-delivery-sdk-js';
 import Carousel from 'react-bootstrap/Carousel'
 
 import Hero from '../Hero/Hero';
 
-const client = new ContentClient({
-  hubName: "sandbox-dev"
-}); 
-
 const StyledCarouselItem= styled(Carousel.Item)`
-  -webkit-transition: -webkit-transform 0s ease-in-out;
-   -o-transition: -o-transform 0s ease-in-out;
-   transition: transform 0s ease-in-out;
-`
+-webkit-transition: -webkit-transform 0s ease-in-out;
+-o-transition: -o-transform 0s ease-in-out;
+transition: transform 0s ease-in-out;`
 
-const Carousels = () => {
-
-  const REQUEST_STATUS = {
-    LOADING: 'loading',
-    SUCCESS: 'success',
-    ERROR: 'error',
-  };
-
-  const [status, setStatus] = useState(REQUEST_STATUS.LOADING);
-  const [error, setError] = useState({});
-  const [carousels, setCarousels] = useState([]);
-  const [slot, setSlot] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        await axios.get('https://sandbox-dev.cdn.content.amplience.net/content/id/2ea7590a-5546-494f-95e9-82910f25276c')
-        .then((response) => {
-            setSlot(response.data.content);
-            return response.data.content;
-        })
-        .then(async (slot) => {
-            for (const slotContent of slot.slotContent) {
-                await axios.get(`https://sandbox-dev.cdn.content.amplience.net/content/id/${slotContent.id}`).then((response) => {
-                    setCarousels(hero => [...hero, response.data]);
-                })
-           }
-           setStatus(REQUEST_STATUS.SUCCESS);
-        })
-      } catch (e) {
-        setStatus(REQUEST_STATUS.ERROR);
-        setError(e);
-      }
-    };
-    fetchData();
-  }, []);
-
-  const success = status === REQUEST_STATUS.SUCCESS;
-  const isLoading = status === REQUEST_STATUS.LOADING;
-  const hasErrored = status === REQUEST_STATUS.ERROR;
-
-  return (
-      
+export default function Carousels ({ heroBannerList }) {
+  
+  return ( 
     <div>
-      {isLoading && <div>Loading...</div>}
-      {hasErrored && (
-        <div>
-          Loading error... Oops something went wrong...
-          <br />
-          <b>ERROR: {error.message}</b>
-        </div>
-      )}
-      <Carousel controls nextLabel prevLabel slide controls indicators>
-        {success && (carousels.map((carousel)=>(
-            <StyledCarouselItem>
-              <Hero
-                  key={carousel.content._meta.deliveryId}
-                  {...carousel}
+      <Carousel controls nextLabel="" prevLabel="" slide controls indicators>
+        {(heroBannerList.map((carousel)=>(
+          <StyledCarouselItem  key={carousel._meta.deliveryId}>
+            <Hero {...carousel}
                   cssClass="carousel item"
-              />
-            </StyledCarouselItem>
-          )))
-        }   
+            />
+          </StyledCarouselItem>
+        )))}   
       </Carousel>
     </div>
-  )
-};
-
-export default Carousels;
+    )
+  };
+  
+  

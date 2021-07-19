@@ -6,6 +6,10 @@ const Panel = styled.div`
   max-width: 360px;
 `
 
+const PanelLink = styled.a`
+  text-decoration: none;
+`
+
 const PanelText = styled.div`
   width: 100%;
   min-height: 100px;
@@ -15,10 +19,12 @@ const PanelText = styled.div`
   font-family: "Roboto Condensed";
   padding-top: 10px;
   h2 {
-    font-size: 32px;
+    font-size: 37px;
+    min-height: 88px;
   }
   h3 {
-    font-size: 26px;
+    font-size: 25px;
+    min-height: 60px;
   }
   button {
     margin-top: 10px;
@@ -28,34 +34,32 @@ const PanelText = styled.div`
   }
 `
 
-const PushPanel = ( {color, fontWeight, content} ) => (
-
+const PushPanel = ( {mainImg, calltoactiontext, linkURL, color, fontWeight, headerText, subText } ) => (
+ 
   <Panel>
-  <a href={content.calltoactionurl}>
-    <PushPanelImage id={content.background.name} />
-    <PanelText>
-      <h2 style={{color: color, fontWeight: fontWeight}}>
-        {content.headline.toUpperCase()}
-      </h2>
-      <h3 style={{color: color}}>
-        {content.strapline.toUpperCase()}
-      </h3>
-      <button style={{color: color}}>{content.calltoactiontext.toUpperCase()}</button>
-    </PanelText>
-    </a>
+    <PanelLink href={linkURL}>
+      <PushPanelImage id={mainImg.name} />
+      <PanelText>
+        <h2 style={{color: color, fontWeight: fontWeight}}>
+          {headerText.toUpperCase()}
+        </h2>
+        <h3 style={{color: color}}>
+          {subText.toUpperCase()}
+        </h3>
+        <button style={{color: color}}>{calltoactiontext.toUpperCase()}</button>
+      </PanelText>
+    </PanelLink>
   </Panel>
 );
 
 PushPanel.defaultProps = {
-  content: {
-    background: {
-      name: "pushpanel-1"
-    },
-    headline: "Latest Triathlon Kit",
-    strapline: "Prepare for your next event",
-    calltoactiontext: "Shop now",
-    calltoactionurl: "https://www.wiggle.co.uk/triathlon-2021?range=ne"
+  mainImg: {
+    name: "homepageb3d2"
   },
+  headerText: "Test header text",
+  subText: "Test Sub text",
+  calltoactiontext: "Test CTA",
+  linkURL: "https://www.wiggle.co.uk/triathlon-2021?range=ne",
   color: "black"
 }
 

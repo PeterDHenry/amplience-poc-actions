@@ -1,9 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
+
+
+const PanelImg = styled.img`
+  width: 100%;
+  height: auto;
+`
 
 function PushPanelImage( props ) {
   const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`;
   return (
-    <img src="https://www.wigglestatic.com/images/offers/commercial/2021/week26b/homepageb3d2.jpg"
+    <PanelImg src={imageUrl}
     />
   );
 }

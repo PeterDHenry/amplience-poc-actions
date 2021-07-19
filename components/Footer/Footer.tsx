@@ -1,8 +1,14 @@
 import React from 'react'
+import styled from 'styled-components';
+
+
+const Foot = styled.footer`
+  background-color: #e7e7e7;
+`
 
 export default function Footer() {
   return( 
-    <footer className="bg-light text-center p-5" data-page-area="Footer">
+    <Foot className="text-center p-5" data-page-area="Footer">
       <p className="text-secondary">
         <a data-ga-label="Terms &amp; conditions" href="/h/option/terms_conditions?isInLightBox=True&amp;isCheckout=True" className="">
           Terms &amp; conditions
@@ -13,7 +19,6 @@ export default function Footer() {
         <br />
         Company No: 2667809 | VAT No: GB 884 2571 94
       </small>
-
-    </footer>
+    </Foot>
   )
 }

@@ -20,8 +20,8 @@ export default function Header() {
     <nav className="container-fluid bg-dark">
       <div className="container text-center">
         <div className="col-xs-12">
-          <a href="/" className="js-show-leave-message" data-ga-action="Logo" itemProp="url">
-            <Logo className="bem-checkout__logo" src="//www.wigglestatic.com/images/ui/wiggle-logo/desktop-wiggle_master_rgb_logo.svg" itemProp="logo" />
+          <a href="/" data-ga-action="Logo" itemProp="url">
+            <Logo src="//www.wigglestatic.com/images/ui/wiggle-logo/desktop-wiggle_master_rgb_logo.svg" itemProp="logo" />
           </a>
         </div>
       </div>
