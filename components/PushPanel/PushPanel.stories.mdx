@@ -1,33 +1,32 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
-import PushPanel from '../PushPanel/PushPanel';
+import PushPanel from '../PushPanel/PushPanel'
 
-<Meta title="CMS Content/PushPanel" 
-      component={PushPanel} 
-      argTypes={{
-        color: {
-          options: ['black', 'white', 'red', 'green', 'yellow', 'cyan'],
-          control: { type: 'select' }
-        },
-        fontWeight: {
-          options: ['light', 'normal', 'bold'],
-          control: { type: 'select' }
-        },
-        mobileStack: {
-          options: [true, false],
-          control: { type: 'select'}
-        }
-      }} 
-      args={{
-        color: 'black',
-        fontWeight: 'light',
-        mobileStack: true
-      }}/>
+<Meta
+  title="CMS Content/PushPanel"
+  component={PushPanel}
+  argTypes={{
+    color: {
+      options: ['black', 'white', 'red', 'green', 'yellow', 'cyan'],
+      control: { type: 'select' },
+    },
+    fontWeight: {
+      options: ['light', 'normal', 'bold'],
+      control: { type: 'select' },
+    },
+    mobileStack: {
+      options: [true, false],
+      control: { type: 'select' },
+    },
+  }}
+  args={{
+    color: 'black',
+    fontWeight: 'light',
+    mobileStack: true,
+  }}
+/>
 
 export const Template = (args) => <PushPanel {...args} />
 
 <Canvas>
-  <Story name="Default">
-    {Template.bind({})}
-  </Story>
+  <Story name="Default">{Template.bind({})}</Story>
 </Canvas>
-
