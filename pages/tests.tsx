@@ -7,12 +7,12 @@ export const Home = (): JSX.Element => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <button
-        onClick={() => {
-          window.alert('With typescript and Jest')
-        }}
-      >
-        Test Button
-      </button>
+      onClick={() => {
+        window.alert('With typescript and Jest')
+      }}
+    >
+      Test Button
+    </button>
   </>
 )
 

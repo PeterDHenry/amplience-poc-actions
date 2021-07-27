@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import PushPanelImage from '../LazyLoadImage/PushPanelImage';
+import React from 'react'
+import styled from 'styled-components'
+import PushPanelImage from '../LazyLoadImage/PushPanelImage'
 
 const Panel = styled.div`
   max-width: 360px;
@@ -15,8 +15,8 @@ const PanelText = styled.div`
   min-height: 100px;
   padding: 10px;
   font-weight: 300;
-  background: #FFF;
-  font-family: "Roboto Condensed";
+  background: #fff;
+  font-family: 'Roboto Condensed';
   padding-top: 10px;
   h2 {
     font-size: 37px;
@@ -34,33 +34,40 @@ const PanelText = styled.div`
   }
 `
 
-const PushPanel = ( {mainImg, calltoactiontext, linkURL, color, fontWeight, headerText, subText } ) => (
- 
+const PushPanel = ({
+  mainImg,
+  calltoactiontext,
+  linkURL,
+  color,
+  fontWeight,
+  headerText,
+  subText,
+}) => (
   <Panel>
     <PanelLink href={linkURL}>
       <PushPanelImage id={mainImg.name} />
       <PanelText>
-        <h2 style={{color: color, fontWeight: fontWeight}}>
+        <h2 style={{ color: color, fontWeight: fontWeight }}>
           {headerText.toUpperCase()}
         </h2>
-        <h3 style={{color: color}}>
-          {subText.toUpperCase()}
-        </h3>
-        <button style={{color: color}}>{calltoactiontext.toUpperCase()}</button>
+        <h3 style={{ color: color }}>{subText.toUpperCase()}</h3>
+        <button style={{ color: color }}>
+          {calltoactiontext.toUpperCase()}
+        </button>
       </PanelText>
     </PanelLink>
   </Panel>
-);
+)
 
 PushPanel.defaultProps = {
   mainImg: {
-    name: "homepageb3d2"
+    name: 'homepageb3d2',
   },
-  headerText: "Test header text",
-  subText: "Test Sub text",
-  calltoactiontext: "Test CTA",
-  linkURL: "https://www.wiggle.co.uk/triathlon-2021?range=ne",
-  color: "black"
+  headerText: 'Test header text',
+  subText: 'Test Sub text',
+  calltoactiontext: 'Test CTA',
+  linkURL: 'https://www.wiggle.co.uk/triathlon-2021?range=ne',
+  color: 'black',
 }
 
-export default PushPanel;
+export default PushPanel

@@ -1,8 +1,8 @@
-import React from 'react';
-import { SimpleImg } from 'react-simple-img';
+import React from 'react'
+import { SimpleImg } from 'react-simple-img'
 
-function LazyLoadImage( props ) {
-  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`;
+function LazyLoadImage(props) {
+  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`
   return (
     <SimpleImg
       src={imageUrl}
@@ -11,12 +11,11 @@ function LazyLoadImage( props ) {
       height={650}
       applyAspectRatio={true}
     />
-  );
+  )
 }
 
 LazyLoadImage.defaultProps = {
-  id: "homepage-h-d"
+  id: 'homepage-h-d',
 }
 
-
-export default LazyLoadImage;
+export default LazyLoadImage

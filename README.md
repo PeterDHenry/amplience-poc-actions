@@ -1,4 +1,4 @@
-#  Amplience CMS NextJS, Typescript and Storybook UI component library
+# Amplience CMS NextJS, Typescript and Storybook UI component library
 
 All linting, formatting, type checking etc has been set up to be lenient and unopinionated as possible until these can be agreed in the team.
 
@@ -16,7 +16,6 @@ Based on [NextJS Typescript Boilerplate](https://github.com/whoisryosuke/next-st
 - [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0/) for easy commits that follow conventional standard.
 - [**Semantic Release**](https://github.com/semantic-release/semantic-release) for automated app versioning
 
-
 ## How to use
 
 Yarn is the chosen package manager for this project install dependencies using: `yarn`
@@ -31,6 +30,7 @@ Now you have 2 main options:
 **Storybook** is used for developing components in isolation, providing integration testing and creating documentation for components for designers and devs. It comes setup with MDX docs, as well Storybook **a11y** addon for testing accessibility.
 
 ## MDX Template
+
 **MDX** is used for documentng Stories a file format that combines Markdown with JSX https://storybook.js.org/docs/react/writing-docs/mdx
 
 # Testing
@@ -56,22 +56,22 @@ Git commits are "linted" (or checked) to ensure they follow conventional commit 
 1. Stage some files using `git add` (or VSCode UI)
 1. `yarn commit`
 
-This runs the Commitzen CLI and walks you through writing a conventional commit (e.g. `feat(button): new focus ref`). It's much easier than remembering every type of commit (feat, build, bug, etc) and the right syntax. 
+This runs the Commitzen CLI and walks you through writing a conventional commit (e.g. `feat(button): new focus ref`). It's much easier than remembering every type of commit (feat, build, bug, etc) and the right syntax.
 
 # CI / CD
 
 This project is setup with a **Circle CI** configuration for testing commits to any branch, and releasing only commits to `master` and `beta` branches.
 
-*Sample release flow:*
+_Sample release flow:_
 
 - Clone your repo (a fork of this one most likely)
 - Create a new feature/bug/etc branch
 - Make commits and push them to Github
 - **This triggers a test in CI**
 - Open a PR and merge the branch to `beta` branch for testing
-- **This triggers a test *and* release in CI**
+- **This triggers a test _and_ release in CI**
 - Force push branch changes to master
-- **This triggers a test *and* release in CI**
+- **This triggers a test _and_ release in CI**
 
 A develop branch was created from main.
 A release branch is created from develop.
