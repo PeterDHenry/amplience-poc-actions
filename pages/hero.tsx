@@ -14,7 +14,6 @@ export const HeroPage = ({ heros }): JSX.Element => (
 export default HeroPage
 
 export const getServerSideProps = async (context) => {
-  debugger
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/246fcf09-a2ba-48fa-ae82-7228505e00f5'
   )

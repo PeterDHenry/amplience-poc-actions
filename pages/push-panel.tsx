@@ -14,7 +14,6 @@ export const PushPanelPage = ({ pushPanel }): JSX.Element => (
 export default PushPanelPage
 
 export const getServerSideProps = async (context) => {
-  debugger
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/ae2a4035-49a7-462d-9fe1-e1e51219e00a'
   )

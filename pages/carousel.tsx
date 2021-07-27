@@ -14,7 +14,6 @@ export const Home = ({ heroBannerList }): JSX.Element => (
 export default Home
 
 export const getServerSideProps = async (context) => {
-  debugger
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/39879bad-8f1f-4967-9647-f48c722955fa'
   )

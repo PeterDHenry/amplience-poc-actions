@@ -2,7 +2,6 @@ import React from 'react'
 import PushPanel from './PushPanel'
 
 export default function CarouselsAll({ pushPanelList }) {
-  debugger
   return (
     <div className="container py-5">
       <div className="row">
