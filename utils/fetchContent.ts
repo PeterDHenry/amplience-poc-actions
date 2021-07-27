@@ -6,7 +6,9 @@ export function fetchContent<T = any>(
   context?: NextPageContext
 ): Promise<T> {
   return fetch(
-    `https://${context.query.contentApi || process.env.contentApi}/content/key/${key}?depth=all&format=inlined`
+    `https://${
+      context.query.contentApi || process.env.contentApi
+    }/content/key/${key}?depth=all&format=inlined`
   )
     .then((resp) => resp.json())
     .then((body) => body.content)
@@ -17,7 +19,9 @@ export function fetchContentById<T = any>(
   context?: NextPageContext
 ): Promise<T> {
   return fetch(
-    `https://${context.query.contentApi || process.env.contentApi}/content/id/${id}?depth=all&format=inlined`
+    `https://${
+      context.query.contentApi || process.env.contentApi
+    }/content/id/${id}?depth=all&format=inlined`
   )
     .then((resp) => resp.json())
     .then((body) => body.content)
