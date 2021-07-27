@@ -15,7 +15,16 @@ interface HeroProps {
   strapline: string
 }
 
-const Hero = ({ background, calltoactionurl, calltoactiontext, color, contrastColor, cssClass, headline, strapline,}: HeroProps) =>  (
+const Hero = ({
+  background,
+  calltoactionurl,
+  calltoactiontext,
+  color,
+  contrastColor,
+  cssClass,
+  headline,
+  strapline,
+}: HeroProps) => (
   <a className={`d-block position-relative ${cssClass}`} href={calltoactionurl}>
     <HeroImage id={background.name} />
     <div
