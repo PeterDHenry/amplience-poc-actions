@@ -5,8 +5,9 @@ export function fetchContent<T = any>(
   key: string,
   context?: NextPageContext
 ): Promise<T> {
+    debugger
   return fetch(
-    `https://sandbox-dev.cdn.content.amplience.net/content/key/${key}?depth=all&format=inlined`
+    `https://${context.query.contentApi || process.env.contentApi}/content/key/${key}?depth=all&format=inlined`
   )
     .then((resp) => resp.json())
     .then((body) => body.content)
@@ -17,7 +18,7 @@ export function fetchContentById<T = any>(
   context?: NextPageContext
 ): Promise<T> {
   return fetch(
-    `https://sandbox-dev.cdn.content.amplience.net/content/id/${id}?depth=all&format=inlined`
+    `https://${context.query.contentApi || process.env.contentApi}/content/id/${id}?depth=all&format=inlined`
   )
     .then((resp) => resp.json())
     .then((body) => body.content)
