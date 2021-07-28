@@ -7,7 +7,7 @@ export function fetchContent<T = any>(
 ): Promise<T> {
   return fetch(
     `https://${
-      context.query.contentApi || process.env.contentApi
+      context?.query.contentApi || process.env.contentApi
     }/content/key/${key}?depth=all&format=inlined`
   )
     .then((resp) => resp.json())
@@ -20,7 +20,7 @@ export function fetchContentById<T = any>(
 ): Promise<T> {
   return fetch(
     `https://${
-      context.query.contentApi || process.env.contentApi
+      context?.query.contentApi || process.env.contentApi
     }/content/id/${id}?depth=all&format=inlined`
   )
     .then((resp) => resp.json())
