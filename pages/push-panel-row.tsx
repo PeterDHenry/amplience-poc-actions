@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import PushPanelRow from '../components/PushPanel/PushPanelRow'
+import PushPanelRow, {PushPanelListProps } from '../components/PushPanel/PushPanelRow'
 
-export const PushPanelRowPage = ({ pushPanelList }): JSX.Element => (
+export const PushPanelRowPage = ({ pushPanelList }: PushPanelListProps): JSX.Element => (
   <>
     <Head>
       <title>Carousel</title>

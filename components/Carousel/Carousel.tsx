@@ -2,7 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import Carousel from 'react-bootstrap/Carousel'
 
-import Hero from '../Hero/Hero'
+import  Hero, {HeroProps}  from '../Hero/Hero'
+
+
+export interface CarouselListProps {
+  heroBannerList: HeroProps[];
+}
+
 
 const StyledCarouselItem = styled(Carousel.Item)`
   -webkit-transition: -webkit-transform 0s ease-in-out;
@@ -10,13 +16,13 @@ const StyledCarouselItem = styled(Carousel.Item)`
   transition: transform 0s ease-in-out;
 `
 
-export default function Carousels({ heroBannerList }) {
+export default function Carousels({ heroBannerList }: CarouselListProps) {
   return (
     <div>
-      <Carousel controls nextLabel="" prevLabel="" slide controls indicators>
-        {heroBannerList.map((carousel) => (
-          <StyledCarouselItem key={carousel._meta.deliveryId}>
-            <Hero {...carousel} cssClass="carousel item" />
+      <Carousel controls nextLabel="" prevLabel="" slide indicators>
+        {heroBannerList.map((hero: HeroProps) => (
+          <StyledCarouselItem key={hero._meta.deliveryId}>
+            <Hero {...hero} cssClass="carousel item" />
           </StyledCarouselItem>
         ))}
       </Carousel>

@@ -1,7 +1,12 @@
 import React from 'react'
 import { SimpleImg } from 'react-simple-img'
 
-function LazyLoadImage(props) {
+
+interface LazyLoadImageProps {
+  id: string
+}
+
+function LazyLoadImage(props: LazyLoadImageProps) {
   const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`
   return (
     <SimpleImg

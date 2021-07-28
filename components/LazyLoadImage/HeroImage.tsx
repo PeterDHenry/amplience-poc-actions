@@ -1,7 +1,11 @@
 import React from 'react'
 import { SimpleImg } from 'react-simple-img'
 
-function HeroImage(props) {
+interface HeroImageProps {
+  id: string
+}
+
+function HeroImage(props: HeroImageProps) {
   const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`
   return (
     <SimpleImg
