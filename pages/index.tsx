@@ -7,7 +7,7 @@ import { fetchContent } from '../utils/fetchContent'
 export const Home = ({ heroBannerList, pushPanelList }): JSX.Element => (
   <>
     <Head>
-      <title>Home</title>
+      <title>Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Carousel heroBannerList={heroBannerList} />
@@ -15,9 +15,7 @@ export const Home = ({ heroBannerList, pushPanelList }): JSX.Element => (
   </>
 )
 
-export default Home
-
-export const getServerSideProps = async (context) => {
+const getServerSideProps = async (context) => {
   const slot = fetchContent('homepage-content-slot', context)
   // const slot = fetchContentById(
   //   '5c433abb-4ec7-4050-a1eb-723ef166d5e8',
@@ -35,3 +33,5 @@ export const getServerSideProps = async (context) => {
     },
   }
 }
+
+export default Home
