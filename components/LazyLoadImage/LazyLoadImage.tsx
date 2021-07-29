@@ -1,7 +1,6 @@
 import React from 'react'
 import { SimpleImg } from 'react-simple-img'
 
-
 interface LazyLoadImageProps {
   id: string
 }

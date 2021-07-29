@@ -2,13 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import Carousel from 'react-bootstrap/Carousel'
 
-import  Hero, {HeroProps}  from '../Hero/Hero'
-
+import Hero, { HeroProps } from '../Hero/Hero'
 
 export interface CarouselListProps {
-  heroBannerList: HeroProps[];
+  heroBannerList: HeroProps[]
 }
-
 
 const StyledCarouselItem = styled(Carousel.Item)`
   -webkit-transition: -webkit-transform 0s ease-in-out;

@@ -57,5 +57,3 @@ Hero.defaultProps = {
   color: 'white',
   contrastColor: 'black',
 }
-
- 

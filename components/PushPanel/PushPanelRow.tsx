@@ -2,7 +2,7 @@ import React from 'react'
 import PushPanel, { PushPanelProps } from './PushPanel'
 
 export interface PushPanelListProps {
-  pushPanelList: PushPanelProps[];
+  pushPanelList: PushPanelProps[]
 }
 
 export default function PushPanelRow({ pushPanelList }: PushPanelListProps) {
