@@ -1,28 +1,42 @@
 import Head from 'next/head'
-import PushPanel from '../components/PushPanel/PushPanel'
+import { NextPage } from 'next'
+import PushPanel, { PushPanelProps } from '../components/PushPanel/PushPanel'
 
-export const PushPanelPage = ({ pushPanel }): JSX.Element => (
-  <>
-    <Head>
-      <title>Carousel</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <PushPanel pushPanel={pushPanel} />
-  </>
-)
+interface PushPanelListWrapper {
+  pushPanel: PushPanelProps
+}
 
-export default PushPanelPage
-
-export const getServerSideProps = async (context) => {
-  debugger
-  const res = await fetch(
-    'https://sandbox-dev.cdn.content.amplience.net/content/id/ae2a4035-49a7-462d-9fe1-e1e51219e00a'
+const PushPanelPage: NextPage<PushPanelListWrapper> = ({
+  pushPanel,
+}: PushPanelListWrapper) => {
+  return (
+    <>
+      <Head>
+        <title>
+          Push panel - Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop
+        </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="container py-5">
+        <div className="row">
+          <PushPanel {...pushPanel} />
+        </div>
+      </div>
+    </>
   )
-  const pushPanel = await res.json()
+}
 
+const getServerSideProps = async () => {
+  const res = await fetch(
+    'https://sandbox-dev.cdn.content.amplience.net/content/id/ae2a4035-49a7-462d-9fe1-e1e51219e00a?depth=all&format=inlined'
+  )
+  const content = await res.json()
+  const pushPanel = content.content
   return {
     props: {
       pushPanel,
     },
   }
 }
+
+export default PushPanelPage

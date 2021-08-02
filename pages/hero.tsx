@@ -1,28 +1,36 @@
 import Head from 'next/head'
-import Hero from '../components/Hero/Hero'
+import { NextPage } from 'next'
+import Hero, { HeroProps } from '../components/Hero/Hero'
 
-export const HeroPage = ({ heros }): JSX.Element => (
-  <>
-    <Head>
-      <title>Heros</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Hero />
-  </>
-)
+interface HeroPropsWrapper {
+  hero: HeroProps
+}
 
-export default HeroPage
-
-export const getServerSideProps = async (context) => {
-  debugger
-  const res = await fetch(
-    'https://sandbox-dev.cdn.content.amplience.net/content/id/246fcf09-a2ba-48fa-ae82-7228505e00f5'
+const HeroPage: NextPage<HeroPropsWrapper> = ({ hero }: HeroPropsWrapper) => {
+  return (
+    <>
+      <Head>
+        <title>
+          Heros - Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop
+        </title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Hero {...hero} cssClass="carousel item" />
+    </>
   )
-  const heros = await res.json()
+}
 
+const getServerSideProps = async () => {
+  const res = await fetch(
+    'https://sandbox-dev.cdn.content.amplience.net/content/id/18a7eee8-6c7a-4a92-8a76-29eb936679a8?depth=all&format=inlined'
+  )
+  const content = await res.json()
+  const hero = content.content
   return {
     props: {
-      heros,
+      hero,
     },
   }
 }
+
+export default HeroPage

@@ -34,6 +34,21 @@ const PanelText = styled.div`
   }
 `
 
+export interface PushPanelProps {
+  _meta: {
+    name: string
+    schema: string
+    deliveryId: string
+  }
+  mainImg: { name: string }
+  calltoactiontext: string
+  linkURL: string
+  color: string
+  fontWeight: number
+  headerText: string
+  subText: string
+}
+
 const PushPanel = ({
   mainImg,
   calltoactiontext,
@@ -42,7 +57,7 @@ const PushPanel = ({
   fontWeight,
   headerText,
   subText,
-}) => (
+}: PushPanelProps) => (
   <Panel>
     <PanelLink href={linkURL}>
       <PushPanelImage id={mainImg.name} />

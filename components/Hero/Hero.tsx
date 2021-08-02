@@ -4,7 +4,23 @@ import HeroImage from '../LazyLoadImage/HeroImage'
 
 //TODO need to create border-${color} bg-${color}-hover text-${contrastColor}-hover classes
 
-const Hero = ({
+export interface HeroProps {
+  _meta: {
+    name: string
+    schema: string
+    deliveryId: string
+  }
+  background: { name: string }
+  calltoactionurl: string
+  calltoactiontext: string
+  color: string
+  contrastColor: string
+  cssClass: string
+  headline: string
+  strapline: string
+}
+
+export const Hero = ({
   background,
   calltoactionurl,
   calltoactiontext,
@@ -13,7 +29,7 @@ const Hero = ({
   cssClass,
   headline,
   strapline,
-}) => (
+}: HeroProps) => (
   <a className={`d-block position-relative ${cssClass}`} href={calltoactionurl}>
     <HeroImage id={background.name} />
     <div
@@ -29,6 +45,7 @@ const Hero = ({
     </div>
   </a>
 )
+export default Hero
 
 Hero.defaultProps = {
   cssClass: '',
@@ -40,5 +57,3 @@ Hero.defaultProps = {
   color: 'white',
   contrastColor: 'black',
 }
-
-export default Hero
