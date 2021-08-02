@@ -26,7 +26,7 @@ const PushPanelPage: NextPage<PushPanelListWrapper> = ({
   )
 }
 
-const getServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/ae2a4035-49a7-462d-9fe1-e1e51219e00a?depth=all&format=inlined'
   )
