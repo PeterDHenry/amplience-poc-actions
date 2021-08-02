@@ -18,10 +18,7 @@
     "node_modules",
     ".next",
     "out",
-    "pages/_app.tsx",
-    "pages/index.tsx",
     "test",
-    "utils"
   ],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }
