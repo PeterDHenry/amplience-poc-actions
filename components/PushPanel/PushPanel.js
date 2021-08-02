@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PushPanelImage from '../LazyLoadImage/PushPanelImage'
 
 const Panel = styled.div`
-  max-width: 360px;
+  width: 100%;
 `
 
 const PanelLink = styled.a`
@@ -13,7 +13,6 @@ const PanelLink = styled.a`
 const PanelText = styled.div`
   width: 100%;
   min-height: 100px;
-  padding: 10px;
   font-weight: 300;
   background: #fff;
   font-family: 'Roboto Condensed';
