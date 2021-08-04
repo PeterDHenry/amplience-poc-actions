@@ -1,8 +1,11 @@
 import React from 'react'
 import PushPanel, { PushPanelProps } from './PushPanel'
 
+export interface PushPanelListProps {
+  pushPanelList: PushPanelProps[]
+}
 
-export default function CarouselsAll( pushPanelList: [] ) {
+export default function PushPanelRow({ pushPanelList }: PushPanelListProps) {
   return (
     <div className="container py-5">
       <div className="row">

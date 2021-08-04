@@ -2,28 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 import PushPanelImage from '../LazyLoadImage/PushPanelImage'
 
-
-export interface PushPanelProps {
-  _meta : {
-    name: string;
-    schema: string;
-    deliveryId: string;
-  }
-  mainImg: {
-    _meta: object;
-    id: string;
-    name: string;
-    endpoint: string;
-    defaultHost: string;
-  };
-  calltoactiontext: string;
-  linkURL: string;
-  color: any;
-  fontWeight: any;
-  headerText: string;
-  subText: string;
-}
-
 const Panel = styled.div`
   width: 100%;
 `
@@ -55,7 +33,30 @@ const PanelText = styled.div`
   }
 `
 
-const PushPanel = ({ mainImg, calltoactiontext, linkURL, color, fontWeight, headerText, subText }: PushPanelProps): JSX.Element => (
+export interface PushPanelProps {
+  _meta: {
+    name: string
+    schema: string
+    deliveryId: string
+  }
+  mainImg: { name: string }
+  calltoactiontext: string
+  linkURL: string
+  color: string
+  fontWeight: number
+  headerText: string
+  subText: string
+}
+
+const PushPanel = ({
+  mainImg,
+  calltoactiontext,
+  linkURL,
+  color,
+  fontWeight,
+  headerText,
+  subText,
+}: PushPanelProps) => (
   <Panel>
     <PanelLink href={linkURL}>
       <PushPanelImage id={mainImg.name} />
