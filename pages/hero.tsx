@@ -20,7 +20,7 @@ const HeroPage: NextPage<HeroPropsWrapper> = ({ hero }: HeroPropsWrapper) => {
   )
 }
 
-const getServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/18a7eee8-6c7a-4a92-8a76-29eb936679a8?depth=all&format=inlined'
   )

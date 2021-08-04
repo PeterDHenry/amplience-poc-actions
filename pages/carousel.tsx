@@ -18,7 +18,7 @@ const CarouselPage: NextPage<CarouselListProps> = ({
   )
 }
 
-const getServerSideProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/39879bad-8f1f-4967-9647-f48c722955fa?depth=all&format=inlined'
   )
