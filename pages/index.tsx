@@ -4,20 +4,23 @@ import Head from 'next/head'
 import { fetchContent } from '../utils/fetchContent'
 import { NextPageContext } from 'next'
 
-
-import  { HeroProps } from '../components/Hero/Hero'
+import { HeroProps } from '../components/Hero/Hero'
 import Carousel from '../components/Carousel/Carousel'
 import PushPanelRow from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
-import  { PushPanelProps } from '../components/PushPanel/types'
+import { PushPanelProps } from '../components/PushPanel/types'
 
 export interface IndexProps {
-  heroBannerList: HeroProps[],
-  pushPanelList: PushPanelProps[],
+  heroBannerList: HeroProps[]
+  pushPanelList: PushPanelProps[]
   twoPushPanel: PushPanelProps[]
 }
 
-export const Home = ({ heroBannerList, pushPanelList, twoPushPanel }: IndexProps): JSX.Element => (
+export const Home = ({
+  heroBannerList,
+  pushPanelList,
+  twoPushPanel,
+}: IndexProps): JSX.Element => (
   <>
     <Head>
       <title>Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop</title>
@@ -26,7 +29,6 @@ export const Home = ({ heroBannerList, pushPanelList, twoPushPanel }: IndexProps
     <Carousel heroBannerList={heroBannerList} />
     <PushPanelRow pushPanelList={pushPanelList} />
     <TwoPushPanel pushPanelList={twoPushPanel} />
-
   </>
 )
 

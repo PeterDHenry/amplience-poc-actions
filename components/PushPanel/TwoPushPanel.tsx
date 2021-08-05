@@ -2,7 +2,6 @@ import React from 'react'
 import PushPanel from './PushPanel'
 import { PushPanelProps, PushPanelListProps } from './types'
 
-
 export default function PushPanelRow({ pushPanelList }: PushPanelListProps) {
   return (
     <div className="container py-5">

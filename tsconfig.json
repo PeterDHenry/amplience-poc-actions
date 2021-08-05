@@ -14,12 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve"
   },
-  "exclude": [
-    "node_modules",
-    ".next",
-    "out",
-    "test",
-  ],
+  "exclude": ["node_modules", ".next", "out", "test"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
 }
 //"exclude": ["node_modules", ".next", "out"],

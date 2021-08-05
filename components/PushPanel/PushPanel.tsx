@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {PushPanelProps} from './types'
+import { PushPanelProps } from './types'
 import PushPanelImage from '../LazyLoadImage/PushPanelImage'
 
 const Panel = styled.div`

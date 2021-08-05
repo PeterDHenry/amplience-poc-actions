@@ -1,20 +1,21 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
 import PushPanelRow from '../components/PushPanel/TwoPushPanel'
-import {PushPanelListProps} from '../components/PushPanel/types'
+import { PushPanelListProps } from '../components/PushPanel/types'
 
 const TwoPushPanelPage: NextPage<PushPanelListProps> = ({
   pushPanelList,
 }: PushPanelListProps) => {
   return (
-  <>
-    <Head>
-      <title>Push Panel List</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <PushPanelRow pushPanelList={pushPanelList} />
-  </>
-)}
+    <>
+      <Head>
+        <title>Push Panel List</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <PushPanelRow pushPanelList={pushPanelList} />
+    </>
+  )
+}
 
 export const getServerSideProps = async () => {
   const res = await fetch(
@@ -22,7 +23,7 @@ export const getServerSideProps = async () => {
   )
   const content = await res.json()
   const pushPanelList = content.content.pushPanelList
-  console.log(content);
+  console.log(content)
   return {
     props: {
       pushPanelList,
@@ -31,4 +32,3 @@ export const getServerSideProps = async () => {
 }
 
 export default TwoPushPanelPage
-
