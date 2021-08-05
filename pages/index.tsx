@@ -40,7 +40,7 @@ export const getServerSideProps = async (context: NextPageContext) => {
 
   const heroBannerList = homeSlot.slotContent[0].heroBannerList
   const pushPanelList = homeSlot.slotContent[1].pushPanelList
-  const twoPushPanel = homeSlot.content.slotContent[3].pushPanelList
+  const twoPushPanel = homeSlot.slotContent[3].pushPanelList
 
   return {
     props: {
