@@ -32,7 +32,7 @@ const H2 = styled.h2`
  text-transform: uppercase;
  font-size: 56px;
  font-weight: bold;
- margin-bottom: 30px
+ margin-bottom: 30px;
 `
 
 const H3 = styled.h3`

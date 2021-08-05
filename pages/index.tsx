@@ -14,7 +14,7 @@ import FullWidthBanner, { FullWidthBannerProps } from '../components/FullWidthBa
 export interface IndexProps {
   heroBannerList: HeroProps[],
   pushPanelList: PushPanelProps[],
-  fullWidthBanner: FullWidthBannerProps[]
+  fullWidthBanner: FullWidthBannerProps
 }
 
 export const Home = ({ heroBannerList, pushPanelList, fullWidthBanner }: IndexProps): JSX.Element => (
@@ -25,9 +25,7 @@ export const Home = ({ heroBannerList, pushPanelList, fullWidthBanner }: IndexPr
     </Head>
     <Carousel heroBannerList={heroBannerList} />
     <PushPanelAll pushPanelList={pushPanelList} />
-    {fullWidthBanner.map((banner: FullWidthBannerProps) => (
-        <FullWidthBanner {...banner} />
-      ))}
+    <FullWidthBanner {...fullWidthBanner} />
   </>
 )
 
