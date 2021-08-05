@@ -2,13 +2,11 @@ import Head from 'next/head'
 import { NextPage } from 'next'
 import PushPanelRow, {PushPanelListProps} from '../components/PushPanel/TwoPushPanel'
 
-interface TwoPushPanelWrapper {
-  pushPanelList: PushPanelListProps
-}
 
-const TwoPushPanelPage: NextPage<TwoPushPanelWrapper> = ({
+
+const TwoPushPanelPage: NextPage<PushPanelListProps> = ({
   pushPanelList,
-}: TwoPushPanelWrapper) => {
+}: PushPanelListProps) => {
   return (
   <>
     <Head>
@@ -19,7 +17,7 @@ const TwoPushPanelPage: NextPage<TwoPushPanelWrapper> = ({
   </>
 )}
 
-export const getServerSideProps = async (context) => {
+export const getServerSideProps = async () => {
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/6f3b9b57-7840-473e-a55b-129e2a73d760?depth=all&format=inlined'
   )
