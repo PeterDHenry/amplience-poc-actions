@@ -68,13 +68,13 @@ export interface FullWidthBannerProps {
 }
 
 
-export default function FullWidthBanner( {
+export default function FullWidthBanner({
   image,
   linkValue,
   header,
   subHeader,
   cta
-}: FullWidthBannerProps ) {
+}: FullWidthBannerProps) {
   return (
     <div className="container pb-5">
       <div className="row">
