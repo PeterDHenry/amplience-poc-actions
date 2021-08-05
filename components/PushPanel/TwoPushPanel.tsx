@@ -1,9 +1,7 @@
 import React from 'react'
-import PushPanel, { PushPanelProps } from './PushPanel'
+import PushPanel from './PushPanel'
+import { PushPanelProps, PushPanelListProps } from './types'
 
-export interface PushPanelListProps {
-  pushPanelList: PushPanelProps[]
-}
 
 export default function PushPanelRow({ pushPanelList }: PushPanelListProps) {
   return (
