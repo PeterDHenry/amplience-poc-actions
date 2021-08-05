@@ -7,7 +7,7 @@ import { NextPageContext } from 'next'
 
 import  { HeroProps } from '../components/Hero/Hero'
 import Carousel from '../components/Carousel/Carousel'
-import PushPanelRow from '../components/PushPanel/PushPanelRow'
+import PushPanelRow from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
 import  { PushPanelProps } from '../components/PushPanel/PushPanel'
 

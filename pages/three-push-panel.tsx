@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import PushPanelRow, {PushPanelListProps} from '../components/PushPanel/PushPanelRow'
+import ThreePushPanel, {PushPanelListProps} from '../components/PushPanel/ThreePushPanel'
 
 const PushPanelRowPage: NextPage<PushPanelListProps> = ({
   pushPanelList,
@@ -14,7 +14,7 @@ const PushPanelRowPage: NextPage<PushPanelListProps> = ({
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PushPanelRow pushPanelList={pushPanelList} />
+      <ThreePushPanel pushPanelList={pushPanelList} />
     </>
   )
 }
