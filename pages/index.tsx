@@ -9,7 +9,7 @@ import  { HeroProps } from '../components/Hero/Hero'
 import Carousel from '../components/Carousel/Carousel'
 import PushPanelRow from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
-import  { PushPanelProps } from '../components/PushPanel/PushPanel'
+import  { PushPanelProps } from '../components/PushPanel/types'
 
 export interface IndexProps {
   heroBannerList: HeroProps[],
