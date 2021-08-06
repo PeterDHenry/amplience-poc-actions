@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/hero-banner-schema.json",
+  "schemaId": "https://wiggle.com/hero-banner",
+  "validationLevel": "CONTENT_TYPE"
+}

@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/full-width-banner-schema.json",
+  "schemaId": "https://wiggle.com/full-width-banner",
+  "validationLevel": "CONTENT_TYPE"
+}

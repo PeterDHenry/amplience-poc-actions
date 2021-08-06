@@ -1,0 +1,57 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://wiggle.com/full-width-banner",
+
+	"title": "Full width banner",
+	"description": "Full width banner to be used in the homepage",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"component": {
+			"type": "string",
+			"const": "FullWidthBanner"
+		},
+		"linkValue": {
+			"title": "enter url",
+			"description": "link value",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"image": {
+			"title": "Image",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+			]
+		},
+		"header": {
+			"title": "Header text",
+			"description": "Image header text",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"subHeader": {
+			"title": "Sub-header text",
+			"description": "Image sub-headet",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 100
+		},
+		"cta": {
+			"title": "CTA text",
+			"description": "image CTA text",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 50
+		}
+		
+	},
+	"propertyOrder": []
+}

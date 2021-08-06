@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/three-push-panel-list-schema.json",
+  "schemaId": "https://wiggle.com/three-push-panel-list",
+  "validationLevel": "CONTENT_TYPE"
+}
