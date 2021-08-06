@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://wiggle.com/hero-banner",
+    "title": "Tutorial banner",
+    "description": "The banner used in documentation guides",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/tutorials/banner.html",
+    "allOf": [
+        {
+            "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+        }
+    ],
+    "propertyOrder": [
+        "headline",
+        "strapline",
+        "background",
+        "calltoactiontext",
+        "calltoactionurl"
+    ],
+    "type": "object",
+    "properties": {
+		"component": {
+			"type": "string",
+			"const": "HeroBanner"
+		},
+        "background": {
+            "allOf": [
+                {
+                    "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link"
+                }
+            ],
+            "title": "Background image",
+            "description": "The background image for the banner",
+            "type": "object"
+        },
+        "headline": {
+            "title": "Headline",
+            "description": "The main title of this banner",
+            "type": "string",
+            "format": "text",
+            "minLength": 5,
+            "maxLength": 256
+        },
+        "strapline": {
+            "title": "Strapline",
+            "description": "The subtitle for this banner",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "calltoactiontext": {
+            "title": "Call to action text",
+            "description": "The text you want displayed with the call to action",
+            "type": "string",
+            "format": "text",
+            "maxLength": 256
+        },
+        "calltoactionurl": {
+            "title": "Call to action URL",
+            "description": "The URL for the call to action",
+            "type": "string",
+            "format": "uri",
+            "maxLength": 256
+        }
+    }
+}

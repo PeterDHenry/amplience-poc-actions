@@ -1,0 +1,48 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://wiggle.com/three-push-panel-list",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"component": {
+			"type": "string",
+			"const": "ThreePushPanel"
+		},
+		"pushPanelList": {
+			"title": "Push Panel List",
+			"type": "array",
+			"minItems": 3,
+			"maxItems": 3,
+			"items": {
+				"allOf": [
+					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://wiggle.com/push-panel"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		"stackMobileLayout": {
+			"title": "Mobile Stack Layout",
+			"description": "Tick this box for push panels to stack on mobile",
+			"type": "boolean"
+		}
+		
+	},
+	"propertyOrder": []
+}

@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/homepage-content-slot-schema.json",
+  "schemaId": "https://wiggle.com/homepage-content-slot",
+  "validationLevel": "SLOT"
+}

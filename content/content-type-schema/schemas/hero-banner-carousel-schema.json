@@ -1,0 +1,52 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://wiggle.com/hero-banner-carousel",
+
+	"title": "Hero banner carousel",
+	"description": "Select multiple hero banners to be created into a carousel",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"component": {
+			"type": "string",
+			"const": "HeroBannerList"
+		},
+		"heroBannerList": {
+			"title": "Hero banner list",
+			"type": "array",
+			"minItems": 2,
+			"maxItems": 10,
+			"items": {
+				"allOf": [
+					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
+					{
+						"properties": {
+							"contentType": {
+								"enum": [
+									"https://wiggle.com/hero-banner"
+								]
+							}
+						}
+					}
+				]
+			}
+		},
+		"csssClass": {
+			"title": "CSS Class",
+			"description": "Please select from the below classes",
+			"type": "string",
+			"enum": [
+				"Option One",
+				"Option Two",
+				"Option Three"
+			]
+		}
+	},
+	"propertyOrder": []
+}
