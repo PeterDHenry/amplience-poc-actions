@@ -1,19 +1,15 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import PushPanelRow, {
-  PushPanelListProps,
-} from '../components/PushPanel/PushPanelRow'
+import PushPanelRow from '../components/PushPanel/TwoPushPanel'
+import { PushPanelListProps } from '../components/PushPanel/types'
 
-const PushPanelRowPage: NextPage<PushPanelListProps> = ({
+const TwoPushPanelPage: NextPage<PushPanelListProps> = ({
   pushPanelList,
 }: PushPanelListProps) => {
   return (
     <>
       <Head>
-        <title>
-          Push panel row - Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike
-          Shop
-        </title>
+        <title>Push Panel List</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PushPanelRow pushPanelList={pushPanelList} />
@@ -23,11 +19,11 @@ const PushPanelRowPage: NextPage<PushPanelListProps> = ({
 
 export const getServerSideProps = async () => {
   const res = await fetch(
-    'https://sandbox-dev.cdn.content.amplience.net/content/id/9407ca10-287a-4acd-bf51-471b77f87dca?depth=all&format=inlined'
+    'https://sandbox-dev.cdn.content.amplience.net/content/id/6f3b9b57-7840-473e-a55b-129e2a73d760?depth=all&format=inlined'
   )
   const content = await res.json()
   const pushPanelList = content.content.pushPanelList
-
+  console.log(content)
   return {
     props: {
       pushPanelList,
@@ -35,4 +31,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default PushPanelRowPage
+export default TwoPushPanelPage

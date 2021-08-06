@@ -4,25 +4,31 @@ import Head from 'next/head'
 import { fetchContent } from '../utils/fetchContent'
 import { NextPageContext } from 'next'
 
-
-import  { HeroProps } from '../components/Hero/Hero'
+import { HeroProps } from '../components/Hero/Hero'
 import Carousel from '../components/Carousel/Carousel'
-import PushPanelAll from '../components/PushPanel/PushPanelRow'
-import  { PushPanelProps } from '../components/PushPanel/PushPanel'
+import PushPanelRow from '../components/PushPanel/ThreePushPanel'
+import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
+import { PushPanelProps } from '../components/PushPanel/types'
 
 export interface IndexProps {
-  heroBannerList: HeroProps[],
+  heroBannerList: HeroProps[]
   pushPanelList: PushPanelProps[]
+  twoPushPanel: PushPanelProps[]
 }
 
-export const Home = ({ heroBannerList, pushPanelList }: IndexProps): JSX.Element => (
+export const Home = ({
+  heroBannerList,
+  pushPanelList,
+  twoPushPanel,
+}: IndexProps): JSX.Element => (
   <>
     <Head>
       <title>Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <Carousel heroBannerList={heroBannerList} />
-    <PushPanelAll pushPanelList={pushPanelList} />
+    <PushPanelRow pushPanelList={pushPanelList} />
+    <TwoPushPanel pushPanelList={twoPushPanel} />
   </>
 )
 
@@ -36,11 +42,13 @@ export const getServerSideProps = async (context: NextPageContext) => {
 
   const heroBannerList = homeSlot.slotContent[0].heroBannerList
   const pushPanelList = homeSlot.slotContent[1].pushPanelList
+  const twoPushPanel = homeSlot.slotContent[3].pushPanelList
 
   return {
     props: {
       heroBannerList,
       pushPanelList,
+      twoPushPanel,
     },
   }
 }
