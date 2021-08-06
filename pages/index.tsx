@@ -6,7 +6,9 @@ import { NextPageContext } from 'next'
 
 import { HeroProps } from '../components/Hero/Hero'
 import Carousel from '../components/Carousel/Carousel'
-import FullWidthBanner, { FullWidthBannerProps } from '../components/FullWidthBanner/FullWidthBanner'
+import FullWidthBanner, {
+  FullWidthBannerProps,
+} from '../components/FullWidthBanner/FullWidthBanner'
 import PushPanelRow from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
 import { PushPanelProps } from '../components/PushPanel/types'
@@ -22,7 +24,7 @@ export const Home = ({
   heroBannerList,
   pushPanelList,
   twoPushPanel,
-  fullWidthBanner
+  fullWidthBanner,
 }: IndexProps): JSX.Element => (
   <>
     <Head>

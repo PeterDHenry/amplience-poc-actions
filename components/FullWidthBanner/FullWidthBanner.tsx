@@ -8,15 +8,14 @@ const ComponentContainer = styled.div`
 `
 
 const Link = styled.a`
- text-decoration: none;
- color: #FFD067;
- &:hover {
-  color: #FFD067;
- }
+  text-decoration: none;
+  color: #ffd067;
+  &:hover {
+    color: #ffd067;
+  }
 `
 const Img = styled.img`
   max-width: 100%;
-
 `
 
 const ContentContainer = styled.div`
@@ -24,34 +23,34 @@ const ContentContainer = styled.div`
   position: absolute;
   bottom: 10%;
   left: 50%;
-  transform: translate( -50%, -10% );
+  transform: translate(-50%, -10%);
   text-align: center;
 `
 
 const H2 = styled.h2`
- text-transform: uppercase;
- font-size: 56px;
- font-weight: bold;
- margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 30px;
 `
 
 const H3 = styled.h3`
-text-transform: capitalize;
-font-size: 38px;
-margin-bottom: 35px;
+  text-transform: capitalize;
+  font-size: 38px;
+  margin-bottom: 35px;
 `
 
 const Button = styled.button`
- padding: 5px 15px;
- text-transform: uppercase;
- color: #FFD067;
- border: 2px solid #FFD067;
- background: transparent;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  color: #ffd067;
+  border: 2px solid #ffd067;
+  background: transparent;
 
- &:hover {
-   background: #FFD067;
-   color: #222;
- }
+  &:hover {
+    background: #ffd067;
+    color: #222;
+  }
 `
 
 export interface FullWidthBannerProps {
@@ -67,28 +66,27 @@ export interface FullWidthBannerProps {
   cta: string
 }
 
-
 export default function FullWidthBanner({
   image,
   linkValue,
   header,
   subHeader,
-  cta
+  cta,
 }: FullWidthBannerProps) {
-  const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${image.name}`;
+  const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${image.name}`
   return (
     <div className="container pt-5">
       <div className="row">
         <ComponentContainer className="col-xs-12 col-sm-12">
           {
-              <Link href={ linkValue }>
-                  <Img src={ imgUrl } alt="" />
-                  <ContentContainer>
-                    <H2> { header } </H2>
-                    <H3> { subHeader } </H3>
-                    <Button> { cta } </Button>
-                  </ContentContainer>
-              </Link>
+            <Link href={linkValue}>
+              <Img src={imgUrl} alt="" />
+              <ContentContainer>
+                <H2> {header} </H2>
+                <H3> {subHeader} </H3>
+                <Button> {cta} </Button>
+              </ContentContainer>
+            </Link>
           }
         </ComponentContainer>
       </div>
@@ -99,7 +97,7 @@ export default function FullWidthBanner({
 FullWidthBanner.defaultProps = {
   image: { name: 'homepageh1d' },
   linkValue: 'https://www.wiggle.co.uk/run-new-season-2021',
-  header: 'Run new season',
-  subHeader: 'Discover a differen adventure this summer',
-  cta: 'Shop now'
+  header: 'Default header',
+  subHeader: 'Default subheader',
+  cta: 'Default cta',
 }
