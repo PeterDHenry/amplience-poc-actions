@@ -51,9 +51,9 @@ Hero.defaultProps = {
   cssClass: '',
   background: { name: 'homepage-h-d' },
   calltoactionurl: 'https://www.wiggle.co.uk/discover-different',
-  headline: 'Test headline',
+  headline: 'Default headline',
   strapline: '',
-  calltoactiontext: 'Test call to action',
+  calltoactiontext: 'Default call to action',
   color: 'white',
   contrastColor: 'black',
 }
