@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import { PushPanelProps } from './types'
 import PushPanelImage from '../LazyLoadImage/PushPanelImage'
 
 const Panel = styled.div`
-  max-width: 360px;
+  width: 100%;
 `
 
 const PanelLink = styled.a`
@@ -13,7 +14,6 @@ const PanelLink = styled.a`
 const PanelText = styled.div`
   width: 100%;
   min-height: 100px;
-  padding: 10px;
   font-weight: 300;
   background: #fff;
   font-family: 'Roboto Condensed';
@@ -33,22 +33,6 @@ const PanelText = styled.div`
     font-size: 20px;
   }
 `
-
-export interface PushPanelProps {
-  _meta: {
-    name: string
-    schema: string
-    deliveryId: string
-  }
-  mainImg: { name: string }
-  calltoactiontext: string
-  linkURL: string
-  color: string
-  fontWeight: number
-  headerText: string
-  subText: string
-}
-
 const PushPanel = ({
   mainImg,
   calltoactiontext,

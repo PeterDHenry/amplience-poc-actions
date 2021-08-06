@@ -76,7 +76,7 @@ export default function FullWidthBanner({
   cta
 }: FullWidthBannerProps) {
   return (
-    <div className="container pb-5">
+    <div className="container pt-5">
       <div className="row">
         <ComponentContainer className="col-xs-12 col-sm-12">
           {
