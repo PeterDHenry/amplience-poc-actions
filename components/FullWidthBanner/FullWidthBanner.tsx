@@ -75,13 +75,14 @@ export default function FullWidthBanner({
   subHeader,
   cta
 }: FullWidthBannerProps) {
+  const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${image.name}`;
   return (
     <div className="container pt-5">
       <div className="row">
         <ComponentContainer className="col-xs-12 col-sm-12">
           {
               <Link href={ linkValue }>
-                  <Img src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageh1d" alt="" />
+                  <Img src={ imgUrl } alt="" />
                   <ContentContainer>
                     <H2> { header } </H2>
                     <H3> { subHeader } </H3>
@@ -93,4 +94,12 @@ export default function FullWidthBanner({
       </div>
     </div>
   )
+}
+
+FullWidthBanner.defaultProps = {
+  image: { name: 'homepageh1d' },
+  linkValue: 'https://www.wiggle.co.uk/run-new-season-2021',
+  header: 'Run new season',
+  subHeader: 'Discover a differen adventure this summer',
+  cta: 'Shop now'
 }
