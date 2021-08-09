@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/push-panel-schema.json",
+  "schemaId": "https://wiggle.com/push-panel",
+  "validationLevel": "CONTENT_TYPE"
+}

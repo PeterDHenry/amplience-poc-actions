@@ -1,0 +1,18 @@
+{
+  "contentTypeUri": "https://wiggle.com/hero-banner-carousel",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Hero banner carousel",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/potter/potter-carousel.png"
+      }
+    ],
+    "visualizations": [],
+    "cards": []
+  },
+  "repositories": [
+    "content"
+  ]
+}

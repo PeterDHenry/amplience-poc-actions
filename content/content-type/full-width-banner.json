@@ -1,0 +1,18 @@
+{
+  "contentTypeUri": "https://wiggle.com/full-width-banner",
+  "status": "ACTIVE",
+  "settings": {
+    "label": "Full width banner",
+    "icons": [
+      {
+        "size": 256,
+        "url": "https://bigcontent.io/cms/icons/potter/potter-banner.png"
+      }
+    ],
+    "visualizations": [],
+    "cards": []
+  },
+  "repositories": [
+    "content"
+  ]
+}

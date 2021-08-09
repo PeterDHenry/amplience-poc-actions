@@ -1,0 +1,51 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://wiggle.com/push-panel",
+
+	"title": "Push Panel",
+	"description": "This is the first push panel example created. This is to be used in push panel list",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"component": {
+			"type": "string",
+			"const": "PushPanel"
+		},
+		"mainImg": {
+			"title": "Image",
+			"allOf": [
+				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
+			]
+		},
+		"headerText": {
+			"title": "Header Text",
+			"description": "This will be the main header for this panel i.e. Deals",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 30
+		},
+		"subText": {
+			"title": "Sub Text",
+			"description": "This is the sub text under the main text i.e. Swimming Goggles",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 50
+		},
+		"linkURL": {
+			"title": "Link",
+			"description": "Enter a URL for this content",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 125
+		}
+
+	},
+	"propertyOrder": ["mainImg", "linkURL", "headerText", "subText"],
+	"required": ["mainImg", "headerText", "linkURL"]
+}
