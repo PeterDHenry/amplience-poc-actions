@@ -9,6 +9,7 @@ describe('Carousel component', () => {
 })
 
 // delivery ID different as used fr key in loop
+// deliveryId: String(Math.floor(Math.random() * 20)) snapshot will fail
 const carouselListProps: CarouselListProps = {
   heroBannerList: [
     {
