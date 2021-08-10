@@ -9,6 +9,7 @@ const ComponentContainer = styled.div`
 
 const Link = styled.a`
   text-decoration: none;
+  text-shadow: 1px 1px #fff;
   color: #222;
   &:hover {
     color: #222;

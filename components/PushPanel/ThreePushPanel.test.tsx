@@ -4,7 +4,10 @@ import { PushPanelListProps } from './types'
 
 describe('ThreePushPanel component', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<ThreePushPanel {...pushPanelListProps} />, {})
+    const { asFragment } = render(
+      <ThreePushPanel {...pushPanelListProps} />,
+      {}
+    )
     expect(asFragment()).toMatchSnapshot()
   })
 })
