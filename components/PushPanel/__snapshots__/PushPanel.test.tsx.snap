@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PushPanel component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="PushPanel__Panel-sc-1magf3k-0 syAtk"
+  >
+    <a
+      class="PushPanel__PanelLink-sc-1magf3k-1 kihXiD"
+      href="https://www.wiggle.co.uk/triathlon-2021?range=ne"
+    >
+      <img
+        class="PushPanelImage__PanelImg-sc-14ujkc5-0 cSdmbC"
+        src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+      />
+      <div
+        class="PushPanel__PanelText-sc-1magf3k-2 gJoHNp"
+      >
+        <h2
+          style="color: black; font-weight: 100;"
+        >
+          DEFAULT HEADER TEXT
+        </h2>
+        <h3
+          style="color: black;"
+        >
+          DEFAULT SUB TEXT
+        </h3>
+        <button
+          style="color: black;"
+        >
+          DEFAULT CTA
+        </button>
+      </div>
+    </a>
+  </div>
+</DocumentFragment>
+`;

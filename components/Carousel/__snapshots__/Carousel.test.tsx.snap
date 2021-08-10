@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Carousel component matches snapshot 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="Carousel__StyledCarouselWithIndicators-sc-1y7w2xj-1 leyfsC carousel slide"
+    >
+      <ol
+        class="carousel-indicators"
+      >
+        <li
+          class="active"
+        />
+        <li />
+        <li />
+      </ol>
+      <div
+        class="carousel-inner"
+      >
+        <div
+          class="Carousel__StyledCarouselItem-sc-1y7w2xj-0 bLjBQd active carousel-item"
+        >
+          <a
+            class="d-block position-relative carousel item"
+            href="https://www.wiggle.co.uk/discover-different"
+          >
+            <div
+              style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
+            >
+              <noscript />
+              <img
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
+              />
+              <div
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: white; transition: 0.1s opacity;"
+              />
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="position-relative"
+              >
+                <div
+                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase text-white"
+                >
+                  <h2
+                    class=""
+                  >
+                    Default headline
+                  </h2>
+                  <div
+                    class="btn border-white bg-white-hover text-white"
+                  >
+                    Default call to action
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="Carousel__StyledCarouselItem-sc-1y7w2xj-0 bLjBQd carousel-item"
+        >
+          <a
+            class="d-block position-relative carousel item"
+            href="https://www.wiggle.co.uk/discover-different"
+          >
+            <div
+              style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
+            >
+              <noscript />
+              <img
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
+              />
+              <div
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: white; transition: 0.1s opacity;"
+              />
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="position-relative"
+              >
+                <div
+                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase text-white"
+                >
+                  <h2
+                    class=""
+                  >
+                    Default headline
+                  </h2>
+                  <div
+                    class="btn border-white bg-white-hover text-white"
+                  >
+                    Default call to action
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="Carousel__StyledCarouselItem-sc-1y7w2xj-0 bLjBQd carousel-item"
+        >
+          <a
+            class="d-block position-relative carousel item"
+            href="https://www.wiggle.co.uk/discover-different"
+          >
+            <div
+              style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
+            >
+              <noscript />
+              <img
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
+                src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
+              />
+              <div
+                style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background: white; transition: 0.1s opacity;"
+              />
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="position-relative"
+              >
+                <div
+                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase text-white"
+                >
+                  <h2
+                    class=""
+                  >
+                    Default headline
+                  </h2>
+                  <div
+                    class="btn border-white bg-white-hover text-white"
+                  >
+                    Default call to action
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#"
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          class="carousel-control-prev-icon"
+        />
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#"
+        role="button"
+      >
+        <span
+          aria-hidden="true"
+          class="carousel-control-next-icon"
+        />
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
