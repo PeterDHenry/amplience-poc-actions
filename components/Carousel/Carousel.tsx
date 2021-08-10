@@ -14,16 +14,35 @@ const StyledCarouselItem = styled(Carousel.Item)`
   transition: transform 0s ease-in-out;
 `
 
+const StyledCarouselWithIndicators = styled(Carousel)`
+  .carousel-indicators li {
+    background-color: #fff;
+    height: 10px;
+    width: 30px;
+    margin-left: 3px;
+  }
+
+  .carousel-indicators .active {
+    background-color: #ff920b;
+  }
+`
+
 export default function Carousels({ heroBannerList }: CarouselListProps) {
   return (
     <div>
-      <Carousel controls nextLabel="" prevLabel="" slide indicators>
+      <StyledCarouselWithIndicators
+        controls
+        nextLabel=""
+        prevLabel=""
+        slide
+        indicators
+      >
         {heroBannerList.map((hero: HeroProps) => (
           <StyledCarouselItem key={hero._meta.deliveryId}>
             <Hero {...hero} cssClass="carousel item" />
           </StyledCarouselItem>
         ))}
-      </Carousel>
+      </StyledCarouselWithIndicators>
     </div>
   )
 }
