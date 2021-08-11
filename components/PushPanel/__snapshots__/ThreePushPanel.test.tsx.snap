@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThreePushPanel component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="container py-5"
+  >
+    <div
+      class="row"
+    >
+      <div
+        class="col-xs-6 col-sm-4 w-pr-4 w-pl-2 w-pl-sm-4"
+      >
+        <div
+          class="PushPanel__Panel-sc-1magf3k-0 syAtk"
+        >
+          <a
+            class="PushPanel__PanelLink-sc-1magf3k-1 kihXiD"
+            href="https://www.wiggle.co.uk/triathlon-2021?range=ne"
+          >
+            <img
+              class="PushPanelImage__PanelImg-sc-14ujkc5-0 cSdmbC"
+              src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+            />
+            <div
+              class="PushPanel__PanelText-sc-1magf3k-2 gJoHNp"
+            >
+              <h2
+                style="color: black; font-weight: 100;"
+              >
+                TEST HEADER TEXT
+              </h2>
+              <h3
+                style="color: black;"
+              >
+                DEFAULT SUB TEXT
+              </h3>
+              <button
+                style="color: black;"
+              >
+                DEFAULT CTA
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="col-xs-6 col-sm-4 w-pr-4 w-pl-2 w-pl-sm-4"
+      >
+        <div
+          class="PushPanel__Panel-sc-1magf3k-0 syAtk"
+        >
+          <a
+            class="PushPanel__PanelLink-sc-1magf3k-1 kihXiD"
+            href="https://www.wiggle.co.uk/triathlon-2021?range=ne"
+          >
+            <img
+              class="PushPanelImage__PanelImg-sc-14ujkc5-0 cSdmbC"
+              src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+            />
+            <div
+              class="PushPanel__PanelText-sc-1magf3k-2 gJoHNp"
+            >
+              <h2
+                style="color: black; font-weight: 100;"
+              >
+                TEST HEADER TEXT
+              </h2>
+              <h3
+                style="color: black;"
+              >
+                DEFAULT SUB TEXT
+              </h3>
+              <button
+                style="color: black;"
+              >
+                DEFAULT CTA
+              </button>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

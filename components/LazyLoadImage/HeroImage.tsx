@@ -5,12 +5,12 @@ interface HeroImageProps {
   id: string
 }
 
-function HeroImage(props: HeroImageProps) {
-  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`
+function HeroImage({ id }: HeroImageProps) {
+  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${id}`
   return (
     <SimpleImg
       src={imageUrl}
-      animationDuration={1}
+      animationDuration={0.1}
       width={1920}
       height={650}
       applyAspectRatio={true}
