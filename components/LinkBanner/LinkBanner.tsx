@@ -66,7 +66,7 @@ const LinkBanner = ({
       <p>{mainText.toUpperCase()}</p>
     </BannerText>
     <BannerCTA className="cta-btn" colour={fontColour} backgroundColour={backgroundColour}>
-      <p>{ctaText}</p>
+      <p>{ctaText.toUpperCase()}</p>
     </BannerCTA>
   </Banner>
 

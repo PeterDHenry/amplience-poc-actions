@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
 import LinkBanner from '../components/LinkBanner/LinkBanner'
-import {LinkBannerProps} from '../components/LinkBanner/types'
+import { LinkBannerProps } from '../components/LinkBanner/types'
 
 interface LinkBannerWrapper {
   linkBanner: LinkBannerProps
@@ -33,7 +33,6 @@ export const getServerSideProps = async () => {
   )
   
   const content = await res.json()
-  console.log(content);
   const linkBanner = content.content
   return {
     props: {
