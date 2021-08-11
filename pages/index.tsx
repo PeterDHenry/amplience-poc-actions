@@ -13,11 +13,15 @@ import PushPanelRow from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
 import { PushPanelProps } from '../components/PushPanel/types'
 
+import LinkBanner from '../components/LinkBanner/LinkBanner'
+import { LinkBannerProps } from '../components/LinkBanner/types'
+
 export interface IndexProps {
   heroBannerList: HeroProps[]
   pushPanelList: PushPanelProps[]
   twoPushPanel: PushPanelProps[]
   fullWidthBanner: FullWidthBannerProps
+  linkBanner: LinkBannerProps
 }
 
 export const Home = ({
@@ -25,6 +29,7 @@ export const Home = ({
   pushPanelList,
   twoPushPanel,
   fullWidthBanner,
+  linkBanner,
 }: IndexProps): JSX.Element => (
   <>
     <Head>
@@ -33,6 +38,7 @@ export const Home = ({
     </Head>
     <Carousel heroBannerList={heroBannerList} />
     <FullWidthBanner {...fullWidthBanner} />
+    <LinkBanner {...linkBanner}/>
     <PushPanelRow pushPanelList={pushPanelList} />
     <TwoPushPanel pushPanelList={twoPushPanel} />
   </>
@@ -50,6 +56,7 @@ export const getServerSideProps = async (context: NextPageContext) => {
   const pushPanelList = homeSlot.slotContent[1].pushPanelList
   const fullWidthBanner = homeSlot.slotContent[2]
   const twoPushPanel = homeSlot.slotContent[3].pushPanelList
+  const linkBanner = homeSlot.slotContent[4]
 
   return {
     props: {
@@ -57,6 +64,7 @@ export const getServerSideProps = async (context: NextPageContext) => {
       pushPanelList,
       fullWidthBanner,
       twoPushPanel,
+      linkBanner
     },
   }
 }
