@@ -17,7 +17,7 @@ interface Props {
 export default function Header() {
   //return <StyledHeader>{title ? title : 'Test'}</StyledHeader>
   return (
-    <nav className="container-fluid bg-dark">
+    <header className="container-fluid bg-dark">
       <div className="container text-center">
         <div className="col-xs-12">
           <a href="/" data-ga-action="Logo" itemProp="url">
@@ -28,6 +28,6 @@ export default function Header() {
           </a>
         </div>
       </div>
-    </nav>
+    </header>
   )
 }

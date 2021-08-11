@@ -62,9 +62,9 @@ PushPanel.defaultProps = {
   mainImg: {
     name: 'homepageb3d2',
   },
-  headerText: 'Test header text',
-  subText: 'Test Sub text',
-  calltoactiontext: 'Test CTA',
+  headerText: 'Default header text',
+  subText: 'Default Sub text',
+  calltoactiontext: 'Default CTA',
   linkURL: 'https://www.wiggle.co.uk/triathlon-2021?range=ne',
   color: 'black',
 }

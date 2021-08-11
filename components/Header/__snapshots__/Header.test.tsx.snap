@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="container-fluid bg-dark"
+  >
+    <div
+      class="container text-center"
+    >
+      <div
+        class="col-xs-12"
+      >
+        <a
+          data-ga-action="Logo"
+          href="/"
+          itemprop="url"
+        >
+          <img
+            class="Header__Logo-sc-11c03b2-0 eGqLYQ"
+            itemprop="logo"
+            src="//www.wigglestatic.com/images/ui/wiggle-logo/desktop-wiggle_master_rgb_logo.svg"
+          />
+        </a>
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;

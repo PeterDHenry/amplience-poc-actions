@@ -1,19 +1,29 @@
 import React from 'react'
 import { SimpleImg } from 'react-simple-img'
 
-interface LazyLoadImageProps {
-  id: string
+export interface LazyLoadImageProps {
+  animationDuration: number
+  applyAspectRatio: boolean
+  height: number
+  id?: string
+  width: number
 }
 
-function LazyLoadImage(props: LazyLoadImageProps) {
-  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${props.id}`
+function LazyLoadImage({
+  animationDuration,
+  applyAspectRatio,
+  height,
+  id,
+  width,
+}: LazyLoadImageProps) {
+  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${id}`
   return (
     <SimpleImg
       src={imageUrl}
-      animationDuration={1}
-      width={1920}
-      height={650}
-      applyAspectRatio={true}
+      animationDuration={animationDuration}
+      width={width}
+      height={height}
+      applyAspectRatio={applyAspectRatio}
     />
   )
 }

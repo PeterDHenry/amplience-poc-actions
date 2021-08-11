@@ -9,9 +9,10 @@ const ComponentContainer = styled.div`
 
 const Link = styled.a`
   text-decoration: none;
-  color: #ffd067;
+  text-shadow: 1px 1px #fff;
+  color: #222;
   &:hover {
-    color: #ffd067;
+    color: #222;
   }
 `
 const Img = styled.img`
@@ -43,13 +44,13 @@ const H3 = styled.h3`
 const Button = styled.button`
   padding: 5px 15px;
   text-transform: uppercase;
-  color: #ffd067;
-  border: 2px solid #ffd067;
-  background: transparent;
+  color: #222;
+  border: 2px solid #222;
+  background: #fff;
 
   &:hover {
-    background: #ffd067;
-    color: #222;
+    background: #222;
+    color: #ffd067;
   }
 `
 
