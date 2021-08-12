@@ -1,48 +1,62 @@
 import Head from 'next/head'
+import { NextPageContext } from 'next'
 
 //import { fetchContentById } from '../utils/fetchContent'
 import { fetchContent } from '../utils/fetchContent'
-import { NextPageContext } from 'next'
 
-import { HeroProps } from '../components/Hero/Hero'
 import Carousel from '../components/Carousel/Carousel'
-import FullWidthBanner, {
-  FullWidthBannerProps,
-} from '../components/FullWidthBanner/FullWidthBanner'
-import PushPanelRow from '../components/PushPanel/ThreePushPanel'
+import ThreePushPanel from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
-import { PushPanelProps } from '../components/PushPanel/types'
-
 import LinkBanner from '../components/LinkBanner/LinkBanner'
-import { LinkBannerProps } from '../components/LinkBanner/types'
+import FullWidthBanner from '../components/FullWidthBanner/FullWidthBanner'
+//import { PushPanelProps } from '../components/PushPanel/types'
+//import  { FullWidthBannerProps } from '../components/FullWidthBanner/FullWidthBanner'
+//import { HeroProps } from '../components/Hero/Hero'
 
 export interface IndexProps {
-  heroBannerList: HeroProps[]
-  pushPanelList: PushPanelProps[]
-  twoPushPanel: PushPanelProps[]
-  fullWidthBanner: FullWidthBannerProps
-  linkBanner: LinkBannerProps
+  homeSlot: {slotContent: any[]}
 }
 
-export const Home = ({
-  heroBannerList,
-  pushPanelList,
-  twoPushPanel,
-  fullWidthBanner,
-  linkBanner,
-}: IndexProps): JSX.Element => (
-  <>
-    <Head>
+export const Home = ({homeSlot}: IndexProps): JSX.Element => {
+  let defaultSlotContent = {
+    components: [
+      {
+          description: 'No Page Slot with content for delivery key "slots/homepage-hero"',
+          component: 'EditorialBlock',
+          title: 'Error loading content'
+      }]
+    }
+
+  return(
+    <>
+      <Head>
       <title>Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop</title>
       <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Carousel heroBannerList={heroBannerList} />
-    <FullWidthBanner {...fullWidthBanner} />
-    <LinkBanner {...linkBanner}/>
-    <PushPanelRow pushPanelList={pushPanelList} />
-    <TwoPushPanel pushPanelList={twoPushPanel} />
-  </>
-)
+      </Head>
+      
+      {homeSlot.slotContent.map(component => {
+        switch (component._meta.name) {
+          case 'Full width banner':
+            return <FullWidthBanner {...component} />;
+            break;
+          case 'Homepage hero banner carousel':
+            return  <Carousel heroBannerList={component.heroBannerList} />
+            break;
+          case 'Homepage Push Panel List':
+            return  <ThreePushPanel pushPanelList={component.pushPanelList} />
+            break;
+          case 'Two Push Panel List':
+            return  <TwoPushPanel pushPanelList={component.pushPanelList} />
+            break;
+          case 'Wiggle+ Banner':
+            return  <LinkBanner {...component}/>
+          break;
+        }
+      })
+    }
+    </>
+  )
+}
 
 export const getServerSideProps = async (context: NextPageContext) => {
   const slot = fetchContent('homepage-content-slot', context)
@@ -51,20 +65,10 @@ export const getServerSideProps = async (context: NextPageContext) => {
   //   context
   // )
   const homeSlot = await slot
-
-  const heroBannerList = homeSlot.slotContent[0].heroBannerList
-  const pushPanelList = homeSlot.slotContent[1].pushPanelList
-  const fullWidthBanner = homeSlot.slotContent[2]
-  const twoPushPanel = homeSlot.slotContent[3].pushPanelList
-  const linkBanner = homeSlot.slotContent[4]
-
+  
   return {
     props: {
-      heroBannerList,
-      pushPanelList,
-      fullWidthBanner,
-      twoPushPanel,
-      linkBanner
+      homeSlot
     },
   }
 }
