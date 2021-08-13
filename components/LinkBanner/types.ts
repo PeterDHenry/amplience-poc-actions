@@ -3,6 +3,6 @@ export interface LinkBannerProps {
   ctaText: string
   link: string
   backgroundColour: string
-  fontColour: number
+  fontColour: string
   showOnMobile: boolean
 }
