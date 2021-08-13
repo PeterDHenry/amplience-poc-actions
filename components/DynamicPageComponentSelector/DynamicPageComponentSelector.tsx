@@ -14,54 +14,34 @@ export interface DynamicPageComponentSelectorProps {
 export default function DynamicPageComponentSelector({
   slot,
 }: DynamicPageComponentSelectorProps) {
-  return (
-    <>
-      {slot.slotContent.map((component) => {
-        switch (component._meta.name) {
-          case 'Full width banner':
-            return (
-              <FullWidthBanner
-                {...component}
-                key={component._meta.deliveryId}
-              />
-            )
-            break
-          case 'Homepage hero banner carousel':
-            return (
-              <Carousel
-                heroBannerList={component.heroBannerList}
-                key={component._meta.deliveryId}
-              />
-            )
-            break
-          case 'Homepage Push Panel List':
-            return (
-              <ThreePushPanel
-                pushPanelList={component.pushPanelList}
-                key={component._meta.deliveryId}
-              />
-            )
-            break
-          case 'Two Push Panel List':
-            return (
-              <TwoPushPanel
-                pushPanelList={component.pushPanelList}
-                key={component._meta.deliveryId}
-              />
-            )
-            break
-          case 'Wiggle+ Banner':
-            return (
-              <LinkBanner {...component} key={component._meta.deliveryId} />
-            )
-            break
-          case 'SEO Text':
-              return (
-                <SeoText {...component} key={component._meta.deliveryId} />
-              )
-              break
-        }
-      })}
-    </>
-  )
+    return (
+        <>
+        {slot.slotContent.map((component) => {
+            let ComponentType: any = null;
+            switch (component._meta.name) {
+            case 'Full width banner':
+                ComponentType = FullWidthBanner
+                break
+            case 'Homepage hero banner carousel':
+                ComponentType = Carousel
+                break
+            case 'Homepage Push Panel List':
+                ComponentType = ThreePushPanel
+                break
+            case 'Two Push Panel List':
+                ComponentType = TwoPushPanel
+                break
+            case 'Wiggle+ Banner':
+                ComponentType = LinkBanner
+                break
+            case 'SEO Text':
+                ComponentType = SeoText
+                break
+            }
+            if (ComponentType != null){
+                return <ComponentType {...component} key={component._meta.deliveryId} />
+            }
+        })}
+        </>
+    )
 }
