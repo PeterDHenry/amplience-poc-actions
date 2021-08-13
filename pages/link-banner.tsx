@@ -31,7 +31,7 @@ export const getServerSideProps = async () => {
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/e06ec4c6-74d0-447f-b588-e3ba1a88a615?depth=all&format=inlined'
   )
-  
+
   const content = await res.json()
   const linkBanner = content.content
   return {
