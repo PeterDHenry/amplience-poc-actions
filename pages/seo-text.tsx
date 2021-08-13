@@ -7,7 +7,7 @@ interface SeoTextWrapper {
   seoText: SeoTextProps
 }
 
-const seoTextPage: NextPage<SeoTextWrapper> = ({
+const SeoTextPage: NextPage<SeoTextWrapper> = ({
   seoText,
 }: SeoTextWrapper) => {
   return (
@@ -41,4 +41,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default seoTextPage
+export default SeoTextPage

@@ -6,7 +6,7 @@ const MainTextWrapper = styled.div`
   max-width: 1170px;
   width: 100%;
   padding: 5px;
-  margin: 0 auto;
+  margin: 20px auto;
   text-align: center;
   font-family: 'roboto condensed';
 `

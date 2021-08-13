@@ -9,6 +9,7 @@ import ThreePushPanel from '../components/PushPanel/ThreePushPanel'
 import TwoPushPanel from '../components/PushPanel/TwoPushPanel'
 import LinkBanner from '../components/LinkBanner/LinkBanner'
 import FullWidthBanner from '../components/FullWidthBanner/FullWidthBanner'
+import SeoText from '../components/Seo-Text/SeoText'
 //import { PushPanelProps } from '../components/PushPanel/types'
 //import  { FullWidthBannerProps } from '../components/FullWidthBanner/FullWidthBanner'
 //import { HeroProps } from '../components/Hero/Hero'
@@ -42,7 +43,11 @@ export const Home = ({homeSlot}: IndexProps): JSX.Element => {
             break;
           case 'Wiggle+ Banner':
             return  <LinkBanner {...component}/>
-          break;
+            break;
+          case 'SEO Text':
+            console.log(component);
+            return <SeoText {...component}/>
+            break;
         }
       })
     }
@@ -57,7 +62,7 @@ export const getServerSideProps = async (context: NextPageContext) => {
   //   context
   // )
   const homeSlot = await slot
-  
+
   return {
     props: {
       homeSlot
