@@ -5,6 +5,7 @@ import ThreePushPanel from '../PushPanel/ThreePushPanel'
 import TwoPushPanel from '../PushPanel/TwoPushPanel'
 import LinkBanner from '../LinkBanner/LinkBanner'
 import FullWidthBanner from '../FullWidthBanner/FullWidthBanner'
+import SeoText from '../Seo-Text/SeoText'
 
 export interface DynamicPageComponentSelectorProps {
   slot: { slotContent: any[] }
@@ -54,6 +55,11 @@ export default function DynamicPageComponentSelector({
               <LinkBanner {...component} key={component._meta.deliveryId} />
             )
             break
+          case 'SEO Text':
+              return (
+                <SeoText {...component} key={component._meta.deliveryId} />
+              )
+              break
         }
       })}
     </>
