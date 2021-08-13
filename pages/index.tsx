@@ -18,20 +18,12 @@ export interface IndexProps {
 }
 
 export const Home = ({homeSlot}: IndexProps): JSX.Element => {
-  let defaultSlotContent = {
-    components: [
-      {
-          description: 'No Page Slot with content for delivery key "slots/homepage-hero"',
-          component: 'EditorialBlock',
-          title: 'Error loading content'
-      }]
-    }
 
   return(
     <>
       <Head>
       <title>Wiggle | Cycle | Run | Swim | Tri-Sports &amp; Bike Shop</title>
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.ico" /> 
       </Head>
       
       {homeSlot.slotContent.map(component => {
