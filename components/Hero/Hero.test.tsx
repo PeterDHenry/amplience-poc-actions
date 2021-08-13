@@ -18,7 +18,7 @@ const heroProps: HeroProps = {
   background: { name: 'homepage-h-d' },
   calltoactionurl: 'https://www.wiggle.co.uk/discover-different',
   headline: 'Default headline',
-  strapline: '',
+  strapline: 'Default Strapline',
   calltoactiontext: 'Default call to action',
   color: 'white',
   contrastColor: 'dark',
