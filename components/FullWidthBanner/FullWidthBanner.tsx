@@ -63,7 +63,7 @@ export interface FullWidthBannerProps {
   image: { name: string }
   linkValue: string
   header: string
-  subHeader: number
+  subHeader: string
   cta: string
 }
 
