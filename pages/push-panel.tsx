@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import PushPanel, { PushPanelProps } from '../components/PushPanel/PushPanel'
+import PushPanel from '../components/PushPanel/PushPanel'
+import { PushPanelProps } from '../components/PushPanel/types'
 
 interface PushPanelListWrapper {
   pushPanel: PushPanelProps
