@@ -23,7 +23,6 @@ export const getServerSideProps = async () => {
   )
   const content = await res.json()
   const pushPanelList = content.content.pushPanelList
-  console.log(content)
   return {
     props: {
       pushPanelList,

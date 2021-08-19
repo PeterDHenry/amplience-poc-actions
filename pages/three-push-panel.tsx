@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import ThreePushPanel, {
-  PushPanelListProps,
-} from '../components/PushPanel/ThreePushPanel'
+import ThreePushPanel from '../components/PushPanel/ThreePushPanel'
+import { PushPanelListProps } from '../components/PushPanel/types'
 
 const PushPanelRowPage: NextPage<PushPanelListProps> = ({
   pushPanelList,

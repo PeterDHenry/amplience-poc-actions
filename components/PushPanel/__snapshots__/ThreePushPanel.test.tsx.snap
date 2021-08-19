@@ -23,22 +23,22 @@ exports[`ThreePushPanel component matches snapshot 1`] = `
               src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
             />
             <div
-              class="PushPanel__PanelText-sc-1magf3k-2 kqA-dfw"
+              class="PushPanel__PanelText-sc-1magf3k-2 kcCbWr"
             >
               <h2
                 style="color: black; font-weight: 100;"
               >
-                TEST HEADER TEXT
+                Test header text
               </h2>
               <h3
                 style="color: black;"
               >
-                DEFAULT SUB TEXT
+                Default Sub text
               </h3>
               <button
                 style="color: black;"
               >
-                DEFAULT CTA
+                Default CTA
               </button>
             </div>
           </a>
@@ -59,22 +59,22 @@ exports[`ThreePushPanel component matches snapshot 1`] = `
               src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
             />
             <div
-              class="PushPanel__PanelText-sc-1magf3k-2 kqA-dfw"
+              class="PushPanel__PanelText-sc-1magf3k-2 kcCbWr"
             >
               <h2
                 style="color: black; font-weight: 100;"
               >
-                TEST HEADER TEXT
+                Test header text
               </h2>
               <h3
                 style="color: black;"
               >
-                DEFAULT SUB TEXT
+                Default Sub text
               </h3>
               <button
                 style="color: black;"
               >
-                DEFAULT CTA
+                Default CTA
               </button>
             </div>
           </a>

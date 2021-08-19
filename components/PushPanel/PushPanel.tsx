@@ -21,16 +21,19 @@ const PanelText = styled.div`
   h2 {
     font-size: 37px;
     min-height: 88px;
+    text-transform: uppercase;
   }
   h3 {
     font-size: 25px;
     min-height: 60px;
+    text-transform: uppercase;
   }
   button {
     margin-top: 10px;
     border: 1.5px solid #000;
     padding: 4px 16px;
     font-size: 20px;
+    text-transform: uppercase;
   }
 `
 const PushPanel = ({
@@ -46,13 +49,9 @@ const PushPanel = ({
     <PanelLink href={linkURL}>
       <PushPanelImage id={mainImg.name} />
       <PanelText>
-        <h2 style={{ color: color, fontWeight: fontWeight }}>
-          {headerText.toUpperCase()}
-        </h2>
-        <h3 style={{ color: color }}>{subText.toUpperCase()}</h3>
-        <button style={{ color: color }}>
-          {calltoactiontext.toUpperCase()}
-        </button>
+        <h2 style={{ color: color, fontWeight: fontWeight }}>{headerText}</h2>
+        {subText && <h3 style={{ color: color }}>{subText}</h3>}
+        <button style={{ color: color }}>{calltoactiontext}</button>
       </PanelText>
     </PanelLink>
   </Panel>
@@ -63,7 +62,7 @@ PushPanel.defaultProps = {
     name: 'homepageb3d2',
   },
   headerText: 'Default header text',
-  subText: 'Default Sub text',
+  subText: '',
   calltoactiontext: 'Default CTA',
   linkURL: 'https://www.wiggle.co.uk/triathlon-2021?range=ne',
   color: 'black',
