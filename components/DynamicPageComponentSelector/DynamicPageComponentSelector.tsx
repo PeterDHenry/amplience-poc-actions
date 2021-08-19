@@ -14,34 +14,36 @@ export interface DynamicPageComponentSelectorProps {
 export default function DynamicPageComponentSelector({
   slot,
 }: DynamicPageComponentSelectorProps) {
-    return (
-        <>
-        {slot.slotContent.map((component) => {
-            let ComponentType: any = null;
-            switch (component._meta.name) {
-            case 'Full width banner':
-                ComponentType = FullWidthBanner
-                break
-            case 'Homepage hero banner carousel':
-                ComponentType = Carousel
-                break
-            case 'Homepage Push Panel List':
-                ComponentType = ThreePushPanel
-                break
-            case 'Two Push Panel List':
-                ComponentType = TwoPushPanel
-                break
-            case 'Wiggle+ Banner':
-                ComponentType = LinkBanner
-                break
-            case 'SEO Text':
-                ComponentType = SeoText
-                break
-            }
-            if (ComponentType != null){
-                return <ComponentType {...component} key={component._meta.deliveryId} />
-            }
-        })}
-        </>
-    )
+  return (
+    <>
+      {slot.slotContent.map((component) => {
+        let ComponentType: any = null
+        switch (component._meta.schema) {
+          case 'https://wiggle.com/full-width-banner':
+            ComponentType = FullWidthBanner
+            break
+          case 'https://wiggle.com/hero-banner-carousel':
+            ComponentType = Carousel
+            break
+          case 'https://wiggle.com/three-push-panel-list':
+            ComponentType = ThreePushPanel
+            break
+          case 'https://wiggle.com/link-banner':
+            ComponentType = LinkBanner
+            break
+          case 'https://wiggle.com/two-push-panel-list':
+            ComponentType = TwoPushPanel
+            break
+          case 'https://wiggle.com/seo-text':
+            ComponentType = SeoText
+            break
+        }
+        if (ComponentType != null) {
+          return (
+            <ComponentType {...component} key={component._meta.deliveryId} />
+          )
+        }
+      })}
+    </>
+  )
 }

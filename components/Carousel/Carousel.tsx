@@ -17,9 +17,9 @@ const StyledCarouselItem = styled(Carousel.Item)`
 const StyledCarouselWithIndicators = styled(Carousel)`
   .carousel-indicators li {
     background-color: #fff;
-    height: 10px;
-    width: 30px;
-    margin-left: 3px;
+    height: 15px;
+    width: 40px;
+    margin-left: 10px;
   }
 
   .carousel-indicators .active {
