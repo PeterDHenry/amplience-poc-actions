@@ -3,12 +3,15 @@ import FullWidthBanner, { FullWidthBannerProps } from './FullWidthBanner'
 
 describe('Full width banner component', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<FullWidthBanner {...fullWidthBannerProps} />, {})
+    const { asFragment } = render(
+      <FullWidthBanner {...fullWidthBannerProps} />,
+      {}
+    )
     expect(asFragment()).toMatchSnapshot()
   })
 
   it('Should render FullWidthBanner component', () => {
-    const { container } = render(<FullWidthBanner {...fullWidthBannerProps}/>)
+    const { container } = render(<FullWidthBanner {...fullWidthBannerProps} />)
     expect(container.getElementsByTagName('div')).toBeTruthy()
   })
 })

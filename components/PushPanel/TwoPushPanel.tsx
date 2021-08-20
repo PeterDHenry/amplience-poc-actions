@@ -3,8 +3,6 @@ import PushPanel from './PushPanel'
 import { PushPanelProps, PushPanelListProps } from './types'
 
 export default function PushPanelRow({ pushPanelList }: PushPanelListProps) {
-
-  console.log(pushPanelList);
   return (
     <div className="container py-5">
       <div className="row">

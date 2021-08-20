@@ -7,9 +7,7 @@ interface SeoTextWrapper {
   seoText: SeoTextProps
 }
 
-const SeoTextPage: NextPage<SeoTextWrapper> = ({
-  seoText,
-}: SeoTextWrapper) => {
+const SeoTextPage: NextPage<SeoTextWrapper> = ({ seoText }: SeoTextWrapper) => {
   return (
     <>
       <Head>
@@ -20,7 +18,7 @@ const SeoTextPage: NextPage<SeoTextWrapper> = ({
       </Head>
       <div className="container-fluid py-5">
         <div className="row">
-          <SeoText {...seoText}/>
+          <SeoText {...seoText} />
         </div>
       </div>
     </>
@@ -31,7 +29,7 @@ export const getServerSideProps = async () => {
   const res = await fetch(
     'https://sandbox-dev.cdn.content.amplience.net/content/id/318ab450-e711-4ea6-9729-ae34a1ed1e24?depth=all&format=inlined'
   )
-  
+
   const content = await res.json()
   const seoText = content.content
   return {

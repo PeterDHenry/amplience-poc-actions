@@ -27,14 +27,13 @@ const MainTextArea = styled.div`
   width: 100%;
 `
 
-const SeoText = ({
-  mainText,
-  heading1,
-  heading2
-}: SeoTextProps) => (
+const SeoText = ({ mainText, heading1, heading2 }: SeoTextProps) => (
   <MainTextWrapper>
     <Heading>
-      <h2>{heading1.toUpperCase()}<span>{heading2.toUpperCase()}</span></h2>
+      <h2>
+        {heading1.toUpperCase()}
+        <span>{heading2.toUpperCase()}</span>
+      </h2>
     </Heading>
     <MainTextArea>
       <p>{mainText}</p>
@@ -45,7 +44,7 @@ const SeoText = ({
 SeoText.defaultProps = {
   mainText: 'Default Text',
   heading1: 'Default Heading One',
-  heading2: 'Default Heading Two'
+  heading2: 'Default Heading Two',
 }
 
 export default SeoText

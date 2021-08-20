@@ -23,7 +23,7 @@ export const Hero = ({
   calltoactionurl,
   calltoactiontext,
   color,
-  contrastColor,
+  //contrastColor,
   cssClass,
   headline,
   strapline,

@@ -21,8 +21,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "yarn run type-check",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-push": "yarn run type-check"
     }
   },
   "lint-staged": {

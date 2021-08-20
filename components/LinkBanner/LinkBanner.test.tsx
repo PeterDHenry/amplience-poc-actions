@@ -15,5 +15,5 @@ const linkBannerProps: LinkBannerProps = {
   backgroundColour: '#F7F7F7',
   fontColour: '#000',
   link: 'https://www.wiggle.co.uk/sc/wiggle-plus',
-  showOnMobile: true
+  showOnMobile: true,
 }
