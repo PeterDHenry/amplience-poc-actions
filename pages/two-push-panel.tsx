@@ -5,6 +5,7 @@ import { PushPanelListProps } from '../components/PushPanel/types'
 
 const TwoPushPanelPage: NextPage<PushPanelListProps> = ({
   pushPanelList,
+  stackMobileLayout,
 }: PushPanelListProps) => {
   return (
     <>
@@ -12,7 +13,10 @@ const TwoPushPanelPage: NextPage<PushPanelListProps> = ({
         <title>Push Panel List</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <PushPanelRow pushPanelList={pushPanelList} />
+      <PushPanelRow
+        pushPanelList={pushPanelList}
+        stackMobileLayout={stackMobileLayout}
+      />
     </>
   )
 }
@@ -23,9 +27,11 @@ export const getServerSideProps = async () => {
   )
   const content = await res.json()
   const pushPanelList = content.content.pushPanelList
+  const stackMobileLayout = content.content.stackMobileLayout
   return {
     props: {
       pushPanelList,
+      stackMobileLayout,
     },
   }
 }

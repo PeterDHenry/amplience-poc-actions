@@ -9,6 +9,15 @@ const Panel = styled.div`
 
 const PanelLink = styled.a`
   text-decoration: none;
+
+  .stack-true & {
+    position: relative;
+    font-weight: 900;
+
+    &:hover button {
+      opacity: 1;
+    }
+  }
 `
 
 const PanelText = styled.div`
@@ -18,6 +27,7 @@ const PanelText = styled.div`
   background: #fff;
   font-family: 'Roboto Condensed';
   padding-top: 10px;
+
   h2 {
     font-size: 37px;
     min-height: 88px;
@@ -34,6 +44,28 @@ const PanelText = styled.div`
     padding: 4px 16px;
     font-size: 20px;
     text-transform: uppercase;
+  }
+
+  .stack-true & {
+    h2 {
+      font-weight: 900;
+      text-transform: capitalize;
+      font-size: 50px;
+    }
+
+    button {
+      position: absolute;
+      top: -50%;
+      z-index: 10000000;
+      left: 40%;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 20px;
+      border-color: white;
+      border: 5px solid;
+      color: white !important;
+      font-weight: 900;
+    }
   }
 `
 const PushPanel = ({
