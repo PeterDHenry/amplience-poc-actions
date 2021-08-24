@@ -20,12 +20,14 @@ const carouselListProps: CarouselListProps = {
       },
       cssClass: '',
       background: { name: 'homepage-h-d' },
-      calltoactionurl: 'https://www.wiggle.co.uk/discover-different',
-      headline: 'Default headline',
-      strapline: '',
-      calltoactiontext: 'Default call to action',
       color: 'white',
       contrastColor: 'dark',
+      textAndCTA: {
+        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
+        headline: 'Default headline',
+        strapline: 'Default Strapline',
+        callToActionText: 'Default call to action',
+      },
     },
     {
       _meta: {
@@ -35,12 +37,14 @@ const carouselListProps: CarouselListProps = {
       },
       cssClass: '',
       background: { name: 'homepage-h-d' },
-      calltoactionurl: 'https://www.wiggle.co.uk/discover-different',
-      headline: 'Default headline',
-      strapline: '',
-      calltoactiontext: 'Default call to action',
       color: 'white',
       contrastColor: 'dark',
+      textAndCTA: {
+        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
+        headline: 'Default headline',
+        strapline: 'Default Strapline',
+        callToActionText: 'Default call to action',
+      },
     },
     {
       _meta: {
@@ -50,12 +54,14 @@ const carouselListProps: CarouselListProps = {
       },
       cssClass: '',
       background: { name: 'homepage-h-d' },
-      calltoactionurl: 'https://www.wiggle.co.uk/discover-different',
-      headline: 'Default headline',
-      strapline: '',
-      calltoactiontext: 'Default call to action',
       color: 'white',
       contrastColor: 'dark',
+      textAndCTA: {
+        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
+        headline: 'Default headline',
+        strapline: 'Default Strapline',
+        callToActionText: 'Default call to action',
+      },
     },
   ],
 }
