@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/link-banner-schema.json",
+  "schemaId": "https://wiggle.com/link-banner",
+  "validationLevel": "CONTENT_TYPE"
+}

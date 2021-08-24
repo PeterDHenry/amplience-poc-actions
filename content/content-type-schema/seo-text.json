@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/seo-text-schema.json",
+  "schemaId": "https://wiggle.com/seo-text",
+  "validationLevel": "CONTENT_TYPE"
+}
