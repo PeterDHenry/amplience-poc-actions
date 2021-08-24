@@ -49,6 +49,11 @@ export const Hero = ({
 export default Hero
 
 Hero.defaultProps = {
+  _meta: {
+    name: 'string',
+    schema: 'string',
+    deliveryId: '1543512973',
+  },
   cssClass: '',
   background: { name: 'homepage-h-d' },
   color: 'white',
