@@ -1,0 +1,5 @@
+{
+  "body": "./schemas/text-content-and-cta-partial-schema.json",
+  "schemaId": "https://wiggle.com/text-content-and-cta",
+  "validationLevel": "PARTIAL"
+}

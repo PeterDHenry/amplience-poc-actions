@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://wiggle.com/text-content-and-cta",
+    "$comment": "Docs: https://amplience.com/docs/development/schema-examples/partials/simple-partial.html",
+    "definitions": {
+        "cta": {
+            "title": "Text content and CTA links",
+            "description": "Use this to enter the text for the content, CTAs and the link",
+            "type": "object",
+            "properties": {
+                "headline": {
+                    "title": "Headline",
+                    "description": "The main title of this content",
+                    "type": "string",
+                    "format": "text",
+                    "minLength": 5,
+                    "maxLength": 256
+                },
+                "strapline": {
+                    "title": "Strapline",
+                    "description": "The subtitle for this content",
+                    "type": "string",
+                    "format": "text",
+                    "maxLength": 256
+                },
+                "callToActionText": {
+                    "title": "Call to action text",
+                    "description": "The text you want displayed with the call to action",
+                    "type": "string",
+                    "format": "text",
+                    "maxLength": 256
+                },
+                "callToActionURL": {
+                    "title": "Call to action URL",
+                    "description": "The URL for the call to action",
+                    "type": "string",
+                    "format": "uri",
+                    "maxLength": 256
+                }
+            },
+            "propertyOrder": []
+        }
+    }
+}

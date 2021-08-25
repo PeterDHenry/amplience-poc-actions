@@ -1,0 +1,45 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://wiggle.com/seo-text",
+
+	"title": "SEO Text",
+	"description": "SEO Text on homepage",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"heading1": {
+			"title": "Heading 1",
+			"description": "Text for Heading 1",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 60
+		},
+		"heading2": {
+			"title": "Heading 2",
+			"description": "Text for Heading 2",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 60
+		},
+		"mainText": {
+			"title": "Main Text",
+			"description": "",
+			"type": "string",
+    		"ui:extension": {
+       			"url": "https://rich-text.extensions.content.amplience.net",
+				"params": {
+            		"language": "markdown"
+        		}	
+    		},
+			"format": "markdown"
+		}
+		
+	},
+	"propertyOrder": []
+}

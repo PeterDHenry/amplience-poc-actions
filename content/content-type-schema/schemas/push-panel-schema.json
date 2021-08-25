@@ -43,9 +43,16 @@
 			"type": "string",
 			"minLength": 0,
 			"maxLength": 125
+		},
+		"calltoactiontext": {
+			"title": "Call-to-action Text",
+			"description": "This is the Call to Action button text i.e. SHOP NOW",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 25
 		}
 
 	},
-	"propertyOrder": ["mainImg", "linkURL", "headerText", "subText"],
-	"required": ["mainImg", "headerText", "linkURL"]
+	"propertyOrder": ["mainImg", "linkURL", "headerText", "subText", "calltoactiontext"],
+	"required": ["mainImg", "headerText", "linkURL", "calltoactiontext"]
 }

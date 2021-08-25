@@ -16,7 +16,7 @@
             "description": "description",
             "type": "array",
             "minItems": 0,
-            "maxItems": 5,
+            "maxItems": 10,
             "items": {
                 "allOf": [
                     {
@@ -29,7 +29,9 @@
                                     "https://wiggle.com/hero-banner-carousel",
                                     "https://wiggle.com/three-push-panel-list",
                                     "https://wiggle.com/full-width-banner",
-                                    "https://wiggle.com/two-push-panel-list"
+                                    "https://wiggle.com/two-push-panel-list",
+                                    "https://wiggle.com/link-banner",
+                                    "https://wiggle.com/seo-text"
                                 ]
                             }
                         }

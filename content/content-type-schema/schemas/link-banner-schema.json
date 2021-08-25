@@ -1,0 +1,57 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://wiggle.com/link-banner",
+
+	"title": "Title",
+	"description": "Description",
+
+	"allOf": [
+		{
+			"$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content"
+		}
+	],
+	
+	"type": "object",
+	"properties": {
+		"mainText": {
+			"title": "Main Text",
+			"description": "Main text for banner",
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 150
+		},
+		"ctaText": {
+			"title": "CTA Text",
+			"description": "Text for any Call-To-Action",
+			"type": "string",
+			"minLength": 0,
+			"maxLength": 40
+		},
+		"showOnMobile": {
+			"title": "Mobile Optimised",
+			"description": "Yes, I want this to show on mobile devices",
+			"type": "boolean"
+		},
+		"link": {
+			"title": "Link",
+			"description": "Link for banner",
+			"type": "string",
+			"minLength": 1,
+			"maxLength": 150
+		},
+		"backgroundColour": {
+			"title": "Background",
+			"description": "Background colour of banner",
+			"format": "color",
+			"type": "string"
+		},
+		"fontColour": {
+			"title": "Font Colour",
+			"description": "Colour of the font",
+			"format": "color",
+			"type": "string"
+		}
+		
+	},
+	"propertyOrder": ["mainText", "ctaText", "link", "backgroundColour", "fontColour", "showOnMobile"]
+}

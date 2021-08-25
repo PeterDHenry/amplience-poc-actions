@@ -52,6 +52,11 @@ exports[`Carousel component matches snapshot 1`] = `
                   >
                     Default headline
                   </h2>
+                  <h3
+                    class=""
+                  >
+                    Default Strapline
+                  </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
@@ -96,6 +101,11 @@ exports[`Carousel component matches snapshot 1`] = `
                   >
                     Default headline
                   </h2>
+                  <h3
+                    class=""
+                  >
+                    Default Strapline
+                  </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
@@ -140,6 +150,11 @@ exports[`Carousel component matches snapshot 1`] = `
                   >
                     Default headline
                   </h2>
+                  <h3
+                    class=""
+                  >
+                    Default Strapline
+                  </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >

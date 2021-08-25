@@ -10,25 +10,24 @@ export interface HeroProps {
   }
   cssClass?: string
   background: { name: string }
-  calltoactionurl: string
-  calltoactiontext: string
   color: string
   contrastColor: string
-  headline: string
-  strapline: string
+  textAndCTA: {
+    callToActionURL: string
+    callToActionText: string
+    headline: string
+    strapline: string
+  }
 }
 
 export const Hero = ({
-  background,
-  calltoactionurl,
-  calltoactiontext,
-  color,
   //contrastColor,
+  background,
+  color,
   cssClass,
-  headline,
-  strapline,
+  textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: HeroProps) => (
-  <a className={`d-block position-relative ${cssClass}`} href={calltoactionurl}>
+  <a className={`d-block position-relative ${cssClass}`} href={callToActionURL}>
     <HeroImage id={background.name} />
     <div className="container">
       <div className="position-relative">
@@ -40,7 +39,7 @@ export const Hero = ({
           <div
             className={`btn border-${color} bg-${color}-hover text-${color}`}
           >
-            {calltoactiontext}
+            {callToActionText}
           </div>
         </div>
       </div>
@@ -50,12 +49,19 @@ export const Hero = ({
 export default Hero
 
 Hero.defaultProps = {
+  _meta: {
+    name: 'string',
+    schema: 'string',
+    deliveryId: '1543512973',
+  },
   cssClass: '',
   background: { name: 'homepage-h-d' },
-  calltoactionurl: 'https://www.wiggle.co.uk/discover-different',
-  headline: 'Default headline',
-  strapline: '',
-  calltoactiontext: 'Default call to action',
   color: 'white',
   contrastColor: 'dark',
+  textAndCTA: {
+    callToActionURL: 'https://www.wiggle.co.uk/discover-different',
+    headline: 'Default headline',
+    strapline: '',
+    callToActionText: 'Default call to action',
+  },
 }

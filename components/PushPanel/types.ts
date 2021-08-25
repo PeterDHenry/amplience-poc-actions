@@ -15,4 +15,5 @@ export interface PushPanelProps {
 
 export interface PushPanelListProps {
   pushPanelList: PushPanelProps[]
+  stackMobileLayout?: boolean
 }
