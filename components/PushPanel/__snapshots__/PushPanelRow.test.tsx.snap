@@ -9,14 +9,14 @@ exports[`ThreePushPanel component matches snapshot 1`] = `
       class="row"
     >
       <div
-        class="col-xs-6 col-sm-4 w-pr-4 w-pl-2 w-pl-sm-4"
+        class="col-xs-12 col-sm-6 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
         >
           <a
             class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
-            href="https://www.wiggle.co.uk/triathlon-2021?range=ne"
+            href="https://www.wiggle.co.uk/discover-different"
           >
             <img
               class="PushPanelImage__PanelImg-sc-14ujkc5-0 dpUuSb"
@@ -28,31 +28,31 @@ exports[`ThreePushPanel component matches snapshot 1`] = `
               <h2
                 style="color: black; font-weight: 100;"
               >
-                Test header text
+                Default headline
               </h2>
               <h3
                 style="color: black;"
               >
-                Default Sub text
+                Default Strapline
               </h3>
               <button
                 style="color: black;"
               >
-                Default CTA
+                Default call to action
               </button>
             </div>
           </a>
         </div>
       </div>
       <div
-        class="col-xs-6 col-sm-4 w-pr-4 w-pl-2 w-pl-sm-4"
+        class="col-xs-12 col-sm-6 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
         >
           <a
             class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
-            href="https://www.wiggle.co.uk/triathlon-2021?range=ne"
+            href="https://www.wiggle.co.uk/discover-different"
           >
             <img
               class="PushPanelImage__PanelImg-sc-14ujkc5-0 dpUuSb"
@@ -64,17 +64,17 @@ exports[`ThreePushPanel component matches snapshot 1`] = `
               <h2
                 style="color: black; font-weight: 100;"
               >
-                Test header text
+                Default headline
               </h2>
               <h3
                 style="color: black;"
               >
-                Default Sub text
+                Default Strapline
               </h3>
               <button
                 style="color: black;"
               >
-                Default CTA
+                Default call to action
               </button>
             </div>
           </a>
@@ -84,3 +84,5 @@ exports[`ThreePushPanel component matches snapshot 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`ThreePushPanel component three doesn't matches snapshot 1`] = `false`;

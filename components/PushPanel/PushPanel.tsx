@@ -70,20 +70,17 @@ const PanelText = styled.div`
 `
 const PushPanel = ({
   mainImg,
-  calltoactiontext,
-  linkURL,
   color,
   fontWeight,
-  headerText,
-  subText,
+  textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: PushPanelProps) => (
   <Panel>
-    <PanelLink href={linkURL}>
+    <PanelLink href={callToActionURL}>
       <PushPanelImage id={mainImg.name} />
       <PanelText>
-        <h2 style={{ color: color, fontWeight: fontWeight }}>{headerText}</h2>
-        {subText && <h3 style={{ color: color }}>{subText}</h3>}
-        <button style={{ color: color }}>{calltoactiontext}</button>
+        <h2 style={{ color: color, fontWeight: fontWeight }}>{headline}</h2>
+        {strapline && <h3 style={{ color: color }}>{strapline}</h3>}
+        <button style={{ color: color }}>{callToActionText}</button>
       </PanelText>
     </PanelLink>
   </Panel>
