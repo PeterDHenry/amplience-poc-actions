@@ -33,7 +33,65 @@
 			"type": "string",
     		"ui:extension": {
        			"url": "https://rich-text.extensions.content.amplience.net",
-				"params": {
+						"params": {					
+							
+							"codeView": {
+								"readOnly": true
+							},
+							"tools": {
+								"blacklist": ["code", "code_block"],
+								"styles": ".bold-text",
+								"inline_styles": {
+								"classNames": [
+									{ "className": "bold-text", "label": "Bold Text" },
+									{ "className": "large-text", "label": "Large Text" },
+									{ "className": "tiny-text", "label": "Tiny Text" }
+								]
+							}
+							},
+							"toolbar": {
+								"layout": [
+										{ "type": "button", "toolName": "undo" },
+										{ "type": "button", "toolName": "redo" },
+										{
+											"type": "dropdown",
+											"label": "Headings",
+											"toolNames": [
+													"heading_3",
+													"heading_4",
+													"heading_5",
+													"heading_6"
+											]
+									},
+									{
+											"type": "group",
+											"children": [
+													{ "type": "button", "toolName": "strong" },
+													{ "type": "button", "toolName": "em" }
+											]
+									},
+									{
+										"type": "dropdown",
+										"label": "Classes",
+										"toolNames": [
+											"inline_styles_className_bold-text",
+											"inline_styles_className_large-text",
+											"inline_styles_className_tiny-text"
+										]
+									},
+									{
+										"type": "group",
+										"children": [
+												{ "type": "button", "toolName": "align_left" },
+												{ "type": "button", "toolName": "align_center" },
+												{ "type": "button", "toolName": "align_right" },
+												{ "type": "button", "toolName": "align_justify" }
+										]
+									},
+									{ "type": "button", "toolName": "bullet_list" },
+									{ "type": "button", "toolName": "ordered_list" }
+								]
+						},
             		"language": "markdown"
         		}	
     		},
@@ -42,4 +100,4 @@
 		
 	},
 	"propertyOrder": []
-}
+}   

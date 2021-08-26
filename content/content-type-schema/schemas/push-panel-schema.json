@@ -23,36 +23,14 @@
 				{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/image-link" }
 			]
 		},
-		"headerText": {
-			"title": "Header Text",
-			"description": "This will be the main header for this panel i.e. Deals",
-			"type": "string",
-			"minLength": 0,
-			"maxLength": 30
-		},
-		"subText": {
-			"title": "Sub Text",
-			"description": "This is the sub text under the main text i.e. Swimming Goggles",
-			"type": "string",
-			"minLength": 0,
-			"maxLength": 50
-		},
-		"linkURL": {
-			"title": "Link",
-			"description": "Enter a URL for this content",
-			"type": "string",
-			"minLength": 0,
-			"maxLength": 125
-		},
-		"calltoactiontext": {
-			"title": "Call-to-action Text",
-			"description": "This is the Call to Action button text i.e. SHOP NOW",
-			"type": "string",
-			"minLength": 0,
-			"maxLength": 25
+		"textAndCTA": {
+			"type": "object",
+			"allOf": [
+				{
+					"$ref": "https://wiggle.com/text-content-and-cta#/definitions/cta"
+				}
+			]
 		}
 
-	},
-	"propertyOrder": ["mainImg", "linkURL", "headerText", "subText", "calltoactiontext"],
-	"required": ["mainImg", "headerText", "linkURL", "calltoactiontext"]
+	}
 }

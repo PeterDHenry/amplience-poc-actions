@@ -5,12 +5,14 @@ export interface PushPanelProps {
     deliveryId: string
   }
   mainImg: { name: string }
-  calltoactiontext: string
-  linkURL: string
   color: string
   fontWeight: number
-  headerText: string
-  subText: string
+  textAndCTA: {
+    callToActionURL: string
+    callToActionText: string
+    headline: string
+    strapline: string
+  }
 }
 
 export interface PushPanelListProps {

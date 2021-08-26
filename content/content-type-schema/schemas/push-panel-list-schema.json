@@ -1,6 +1,6 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
-	"$id": "https://wiggle.com/three-push-panel-list",
+	"$id": "https://wiggle.com/push-panel-list",
 
 	"title": "Title",
 	"description": "Description",
@@ -13,15 +13,11 @@
 	
 	"type": "object",
 	"properties": {
-		"component": {
-			"type": "string",
-			"const": "ThreePushPanel"
-		},
 		"pushPanelList": {
 			"title": "Push Panel List",
 			"type": "array",
-			"minItems": 3,
-			"maxItems": 3,
+			"minItems": 2,
+			"maxItems": 4,
 			"items": {
 				"allOf": [
 					{ "$ref": "http://bigcontent.io/cms/schema/v1/core#/definitions/content-link" },
@@ -45,4 +41,5 @@
 		
 	},
 	"propertyOrder": []
+
 }

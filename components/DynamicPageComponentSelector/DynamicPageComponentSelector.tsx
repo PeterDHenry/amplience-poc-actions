@@ -1,8 +1,7 @@
 import React from 'react'
 
 import Carousel from '../Carousel/Carousel'
-import ThreePushPanel from '../PushPanel/ThreePushPanel'
-import TwoPushPanel from '../PushPanel/TwoPushPanel'
+import PushPanelRow from '../PushPanel/PushPanelRow'
 import LinkBanner from '../LinkBanner/LinkBanner'
 import FullWidthBanner from '../FullWidthBanner/FullWidthBanner'
 import SeoText from '../Seo-Text/SeoText'
@@ -25,14 +24,11 @@ export default function DynamicPageComponentSelector({
           case 'https://wiggle.com/hero-banner-carousel':
             ComponentType = Carousel
             break
-          case 'https://wiggle.com/three-push-panel-list':
-            ComponentType = ThreePushPanel
+          case 'https://wiggle.com/push-panel-list':
+            ComponentType = PushPanelRow
             break
           case 'https://wiggle.com/link-banner':
             ComponentType = LinkBanner
-            break
-          case 'https://wiggle.com/two-push-panel-list':
-            ComponentType = TwoPushPanel
             break
           case 'https://wiggle.com/seo-text':
             ComponentType = SeoText

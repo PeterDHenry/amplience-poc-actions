@@ -18,10 +18,12 @@ const pushPanelProps: PushPanelProps = {
   mainImg: {
     name: 'homepageb3d2',
   },
-  headerText: 'Default header text',
-  subText: 'Default Sub text',
-  calltoactiontext: 'Default CTA',
-  linkURL: 'https://www.wiggle.co.uk/triathlon-2021?range=ne',
+  textAndCTA: {
+    callToActionURL: 'https://www.wiggle.co.uk/discover-different',
+    headline: 'Default headline',
+    strapline: 'Default Strapline',
+    callToActionText: 'Default call to action',
+  },
   color: 'black',
   fontWeight: 100,
 }

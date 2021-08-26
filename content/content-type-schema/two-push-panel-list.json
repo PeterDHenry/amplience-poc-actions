@@ -1,5 +1,0 @@
-{
-  "body": "./schemas/two-push-panel-list-schema.json",
-  "schemaId": "https://wiggle.com/two-push-panel-list",
-  "validationLevel": "CONTENT_TYPE"
-}
