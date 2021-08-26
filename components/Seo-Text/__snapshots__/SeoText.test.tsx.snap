@@ -18,9 +18,7 @@ exports[`SEO Text component matches snapshot 1`] = `
     <div
       class="SeoText__MainTextArea-sc-us8wk8-2 iyhule"
     >
-      <p>
-        Default Text
-      </p>
+      Default Text
     </div>
   </div>
 </DocumentFragment>
