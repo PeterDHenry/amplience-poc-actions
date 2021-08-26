@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 import { SeoTextProps } from './types'
 
 const MainTextWrapper = styled.div`
@@ -27,19 +28,20 @@ const MainTextArea = styled.div`
   width: 100%;
 `
 
-const SeoText = ({ mainText, heading1, heading2 }: SeoTextProps) => (
-  <MainTextWrapper>
-    <Heading>
-      <h2>
-        {heading1.toUpperCase()}
-        <span>{heading2.toUpperCase()}</span>
-      </h2>
-    </Heading>
-    <MainTextArea>
-      <p>{mainText}</p>
-    </MainTextArea>
-  </MainTextWrapper>
-)
+const SeoText = ({ mainText, heading1, heading2 }: SeoTextProps) => {
+  const html = parse(mainText)
+  return (
+    <MainTextWrapper>
+      <Heading>
+        <h2>
+          {heading1.toUpperCase()}
+          <span>{heading2.toUpperCase()}</span>
+        </h2>
+      </Heading>
+      <MainTextArea>{html}</MainTextArea>
+    </MainTextWrapper>
+  )
+}
 
 SeoText.defaultProps = {
   mainText: 'Default Text',
