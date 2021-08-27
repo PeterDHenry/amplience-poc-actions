@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import parse from 'html-react-parser'
 import { SeoTextProps } from './types'
 
 const MainTextWrapper = styled.div`
@@ -15,13 +16,14 @@ const MainTextArea = styled.div`
   width: 100%;
 `
 
-const SeoText = ({ mainText }: SeoTextProps) => (
-  <MainTextWrapper>
-    <MainTextArea>
-      <p>{mainText}</p>
-    </MainTextArea>
-  </MainTextWrapper>
-)
+const SeoText = ({ mainText }: SeoTextProps) => {
+  const html = parse(mainText)
+  return (
+    <MainTextWrapper>
+      <MainTextArea>{html}</MainTextArea>
+    </MainTextWrapper>
+  )
+}
 
 SeoText.defaultProps = {
   mainText: 'Default Text',
