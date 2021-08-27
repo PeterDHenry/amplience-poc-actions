@@ -14,6 +14,9 @@ const MainTextWrapper = styled.div`
 
 const MainTextArea = styled.div`
   width: 100%;
+  .bold-text {
+    font-weight: 900;
+  }
 `
 
 const SeoText = ({ mainText }: SeoTextProps) => {
