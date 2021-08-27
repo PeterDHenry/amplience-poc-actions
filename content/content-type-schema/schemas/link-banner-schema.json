@@ -13,45 +13,15 @@
 	
 	"type": "object",
 	"properties": {
-		"mainText": {
-			"title": "Main Text",
-			"description": "Main text for banner",
-			"type": "string",
-			"minLength": 1,
-			"maxLength": 150
-		},
-		"ctaText": {
-			"title": "CTA Text",
-			"description": "Text for any Call-To-Action",
-			"type": "string",
-			"minLength": 0,
-			"maxLength": 40
-		},
-		"showOnMobile": {
-			"title": "Mobile Optimised",
-			"description": "Yes, I want this to show on mobile devices",
-			"type": "boolean"
-		},
-		"link": {
-			"title": "Link",
-			"description": "Link for banner",
-			"type": "string",
-			"minLength": 1,
-			"maxLength": 150
-		},
-		"backgroundColour": {
-			"title": "Background",
-			"description": "Background colour of banner",
-			"format": "color",
-			"type": "string"
-		},
-		"fontColour": {
-			"title": "Font Colour",
-			"description": "Colour of the font",
-			"format": "color",
-			"type": "string"
+		"textAndCTA": {
+			"type": "object",
+			"allOf": [
+				{
+					"$ref": "https://wiggle.com/text-content-and-cta#/definitions/cta"
+				}
+			]
 		}
 		
 	},
-	"propertyOrder": ["mainText", "ctaText", "link", "backgroundColour", "fontColour", "showOnMobile"]
+	"propertyOrder": [å]
 }
