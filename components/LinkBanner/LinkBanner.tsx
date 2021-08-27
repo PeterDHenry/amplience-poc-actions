@@ -51,34 +51,25 @@ const BannerCTA = styled.button<any>`
 `
 
 const LinkBanner = ({
-  mainText,
-  ctaText,
-  backgroundColour,
-  fontColour,
-  link,
-}: //showOnMobile
-LinkBannerProps) => (
-  <Banner href={link} background={backgroundColour} colour={fontColour}>
+  textAndCTA: { callToActionURL, callToActionText, headline },
+}: LinkBannerProps) => (
+  <Banner href={callToActionURL}>
     <BannerText>
-      <p>{mainText.toUpperCase()}</p>
+      <p>{headline.toUpperCase()}</p>
     </BannerText>
-    <BannerCTA
-      className="cta-btn"
-      colour={fontColour}
-      backgroundColour={backgroundColour}
-    >
-      <p>{ctaText.toUpperCase()}</p>
+    <BannerCTA className="cta-btn">
+      <p>{callToActionText.toUpperCase()}</p>
     </BannerCTA>
   </Banner>
 )
 
 LinkBanner.defaultProps = {
-  mainText: 'Default Text',
-  ctaText: 'Default CTA Text',
-  backgroundColour: '#F7F7F7',
-  fontColour: '#000',
-  link: 'https://www.wiggle.co.uk/sc/wiggle-plus',
-  showOnMobile: true,
+  textAndCTA: {
+    callToActionURL: 'Default URL',
+    callToActionText: 'Default CTA Text',
+    headline: 'Default Headline',
+    strapline: 'Default Strapline',
+  },
 }
 
 export default LinkBanner

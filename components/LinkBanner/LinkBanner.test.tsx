@@ -10,10 +10,10 @@ describe('Link Banner component', () => {
 })
 
 const linkBannerProps: LinkBannerProps = {
-  mainText: 'Default Text',
-  ctaText: 'Default CTA Text',
-  backgroundColour: '#F7F7F7',
-  fontColour: '#000',
-  link: 'https://www.wiggle.co.uk/sc/wiggle-plus',
-  showOnMobile: true,
+  textAndCTA: {
+    callToActionURL: 'Default URL',
+    callToActionText: 'Default CTA Text',
+    headline: 'Default Headline',
+    strapline: 'Default Strapline',
+  },
 }
