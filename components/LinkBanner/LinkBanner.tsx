@@ -5,8 +5,8 @@ import { LinkBannerProps } from './types'
 const Banner = styled.a<any>`
   padding: 10px 5px;
   margin: 10px 0;
-  background-color: ${(props) => props.background};
-  color: ${(props) => props.colour};
+  background-color: ${(props) => props.backgroundColour};
+  color: ${(props) => props.fontColour};
   text-decoration: none;
   font-family: 'Roboto Condensed';
   display: flex;
@@ -19,11 +19,12 @@ const Banner = styled.a<any>`
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
-    background: ${(props) => props.colour};
+    border: 2px solid #3c3c3b;
+    background: ${(props) => props.fontColour};
     color: #fff;
   }
   &:hover {
-    color: ${(props) => props.colour};
+    color: ${(props) => props.fontColour};
   }
   p {
     margin: 0;
@@ -38,7 +39,7 @@ const BannerText = styled.div<any>`
 `
 
 const BannerCTA = styled.button<any>`
-  border: 2px solid ${(props) => props.colour};
+  border: 2px solid ${(props) => props.fontColour};
   padding: 2px 16px;
   text-align: center;
   background: none;
@@ -51,34 +52,33 @@ const BannerCTA = styled.button<any>`
 `
 
 const LinkBanner = ({
-  mainText,
-  ctaText,
+  textAndCTA: { callToActionURL, callToActionText, headline },
   backgroundColour,
   fontColour,
-  link,
-}: //showOnMobile
-LinkBannerProps) => (
-  <Banner href={link} background={backgroundColour} colour={fontColour}>
+}: LinkBannerProps) => (
+  <Banner
+    href={callToActionURL}
+    backgroundColour={backgroundColour}
+    fontColour={fontColour}
+  >
     <BannerText>
-      <p>{mainText.toUpperCase()}</p>
+      <p>{headline.toUpperCase()}</p>
     </BannerText>
-    <BannerCTA
-      className="cta-btn"
-      colour={fontColour}
-      backgroundColour={backgroundColour}
-    >
-      <p>{ctaText.toUpperCase()}</p>
+    <BannerCTA className="cta-btn">
+      <p>{callToActionText.toUpperCase()}</p>
     </BannerCTA>
   </Banner>
 )
 
 LinkBanner.defaultProps = {
-  mainText: 'Default Text',
-  ctaText: 'Default CTA Text',
+  textAndCTA: {
+    callToActionURL: 'Default URL',
+    callToActionText: 'Default CTA Text',
+    headline: 'Default Headline',
+    strapline: 'Default Strapline',
+  },
   backgroundColour: '#F7F7F7',
-  fontColour: '#000',
-  link: 'https://www.wiggle.co.uk/sc/wiggle-plus',
-  showOnMobile: true,
+  fontColour: '3C3C3B',
 }
 
 export default LinkBanner

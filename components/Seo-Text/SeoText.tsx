@@ -12,32 +12,17 @@ const MainTextWrapper = styled.div`
   font-family: 'roboto condensed';
 `
 
-const Heading = styled.div`
+const MainTextArea = styled.div`
   width: 100%;
-  margin-bottom: 10px;
-  h2 {
-    font-size: 40px;
-    span {
-      font-weight: bold;
-      margin-left: 10px;
-    }
+  .bold-text {
+    font-weight: 900;
   }
 `
 
-const MainTextArea = styled.div`
-  width: 100%;
-`
-
-const SeoText = ({ mainText, heading1, heading2 }: SeoTextProps) => {
+const SeoText = ({ mainText }: SeoTextProps) => {
   const html = parse(mainText)
   return (
     <MainTextWrapper>
-      <Heading>
-        <h2>
-          {heading1.toUpperCase()}
-          <span>{heading2.toUpperCase()}</span>
-        </h2>
-      </Heading>
       <MainTextArea>{html}</MainTextArea>
     </MainTextWrapper>
   )
@@ -45,8 +30,6 @@ const SeoText = ({ mainText, heading1, heading2 }: SeoTextProps) => {
 
 SeoText.defaultProps = {
   mainText: 'Default Text',
-  heading1: 'Default Heading One',
-  heading2: 'Default Heading Two',
 }
 
 export default SeoText

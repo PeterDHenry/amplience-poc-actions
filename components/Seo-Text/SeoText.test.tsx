@@ -11,6 +11,4 @@ describe('SEO Text component', () => {
 
 const seoTextProps: SeoTextProps = {
   mainText: 'Default Text',
-  heading1: 'Default Heading One',
-  heading2: 'Default Heading Two',
 }

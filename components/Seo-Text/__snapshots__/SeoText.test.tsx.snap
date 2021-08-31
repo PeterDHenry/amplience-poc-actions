@@ -6,17 +6,7 @@ exports[`SEO Text component matches snapshot 1`] = `
     class="SeoText__MainTextWrapper-sc-us8wk8-0 ciwyVE"
   >
     <div
-      class="SeoText__Heading-sc-us8wk8-1 enJAUS"
-    >
-      <h2>
-        DEFAULT HEADING ONE
-        <span>
-          DEFAULT HEADING TWO
-        </span>
-      </h2>
-    </div>
-    <div
-      class="SeoText__MainTextArea-sc-us8wk8-2 iyhule"
+      class="SeoText__MainTextArea-sc-us8wk8-1 idWIsq"
     >
       Default Text
     </div>

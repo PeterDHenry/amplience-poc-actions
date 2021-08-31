@@ -3,18 +3,18 @@
 exports[`Link Banner component matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="LinkBanner__Banner-sc-1rg8ysw-0 kcxeBL"
-    href="https://www.wiggle.co.uk/sc/wiggle-plus"
+    class="LinkBanner__Banner-sc-1rg8ysw-0 febZyl"
+    href="Default URL"
   >
     <div
       class="LinkBanner__BannerText-sc-1rg8ysw-1 bQArJM"
     >
       <p>
-        DEFAULT TEXT
+        DEFAULT HEADLINE
       </p>
     </div>
     <button
-      class="LinkBanner__BannerCTA-sc-1rg8ysw-2 lpgjil cta-btn"
+      class="LinkBanner__BannerCTA-sc-1rg8ysw-2 hRGaUq cta-btn"
     >
       <p>
         DEFAULT CTA TEXT

@@ -1,8 +1,10 @@
 export interface LinkBannerProps {
-  mainText: string
-  ctaText: string
-  link: string
+  textAndCTA: {
+    callToActionURL: string
+    callToActionText: string
+    headline: string
+    strapline: string
+  }
   backgroundColour: string
   fontColour: string
-  showOnMobile: boolean
 }
