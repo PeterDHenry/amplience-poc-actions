@@ -5,4 +5,6 @@ export interface LinkBannerProps {
     headline: string
     strapline: string
   }
+  backgroundColour: string
+  fontColour: string
 }

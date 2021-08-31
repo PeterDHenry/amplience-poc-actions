@@ -20,6 +20,23 @@
 					"$ref": "https://wiggle.com/text-content-and-cta#/definitions/cta"
 				}
 			]
+		},
+		"backgroundColour": {
+			"title": "Background colour of banner",
+			"description": "",
+			"type": "string",
+			"enum": [
+				"#F7F7F7"
+			]
+		},
+		"fontColour": {
+			"title": "Font Colour of Banner",
+			"description": "",
+			"type": "string",
+			"enum": [
+				"#666",
+				"#3C3C3B"
+			]
 		}
 		
 	},
