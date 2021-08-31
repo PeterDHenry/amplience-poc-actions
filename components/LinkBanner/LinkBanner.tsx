@@ -77,6 +77,8 @@ LinkBanner.defaultProps = {
     headline: 'Default Headline',
     strapline: 'Default Strapline',
   },
+  backgroundColour: '#F7F7F7',
+  fontColour: '3C3C3B',
 }
 
 export default LinkBanner
