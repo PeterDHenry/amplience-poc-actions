@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Full width banner component matches snapshot 1`] = `
+exports[`Full width banner component Matches snapshot 1`] = `
 <DocumentFragment>
   <div
     class="container pt-5"

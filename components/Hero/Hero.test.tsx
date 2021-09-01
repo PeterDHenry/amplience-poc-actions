@@ -1,10 +1,24 @@
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Hero, { HeroProps } from './Hero'
+import '@testing-library/jest-dom'
 
 describe('Hero component', () => {
   it('matches snapshot', () => {
     const { asFragment } = render(<Hero {...heroProps} />, {})
     expect(asFragment()).toMatchSnapshot()
+  })
+
+  test('Check if image link is provided and an end point url', () => {
+    render(<Hero {...heroProps} />, {})
+    const heroLink = screen.getByRole('link')
+    const heroLinkHref = heroLink.getAttribute('href')
+    const heroImg = document.querySelector('img')
+    const heroImgSrc = heroImg.getAttribute('src')
+
+    expect(heroLink).toHaveAttribute('href')
+    expect(heroLinkHref).toBeTruthy()
+    expect(heroImg).toHaveAttribute('src')
+    expect(heroImgSrc).toBeTruthy()
   })
 })
 
