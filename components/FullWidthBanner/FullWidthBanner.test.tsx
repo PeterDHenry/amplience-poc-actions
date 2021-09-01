@@ -1,22 +1,34 @@
-import { render } from '@testing-library/react'
-import FullWidthBanner, { FullWidthBannerProps } from './FullWidthBanner'
+import { render, screen } from '@testing-library/react'
+import FullWidthBanner, { BannerProps } from './FullWidthBanner'
+import '@testing-library/jest-dom'
+import { link } from 'fs'
 
 describe('Full width banner component', () => {
-  it('matches snapshot', () => {
-    const { asFragment } = render(
-      <FullWidthBanner {...fullWidthBannerProps} />,
-      {}
-    )
+  test('Matches snapshot', () => {
+    const { asFragment } = render(<FullWidthBanner {...BannerProps} />, {})
     expect(asFragment()).toMatchSnapshot()
   })
 
-  it('Should render FullWidthBanner component', () => {
-    const { container } = render(<FullWidthBanner {...fullWidthBannerProps} />)
+  test('Should render FullWidthBanner component', () => {
+    const { container } = render(<FullWidthBanner {...BannerProps} />)
     expect(container.getElementsByTagName('div')).toBeTruthy()
+  })
+
+  test('FullWidthBanner to have image with property "src" and end point link', () => {
+    const { container } = render(<FullWidthBanner {...BannerProps} />)
+    const imgEl = document.querySelector('img')
+    const imgSrc = imgEl.getAttribute('src')
+    const linkEl = document.querySelector('a')
+    const linkElHref = linkEl.getAttribute('href')
+
+    expect(imgEl).toHaveAttribute('src')
+    expect(imgSrc).toBeTruthy()
+    expect(linkEl).toHaveAttribute('href')
+    expect(linkElHref).toBeTruthy()
   })
 })
 
-const fullWidthBannerProps: FullWidthBannerProps = {
+/* const fullWidthBannerProps: FullWidthBannerProps = {
   _meta: {
     name: 'string',
     schema: 'string',
@@ -28,3 +40,4 @@ const fullWidthBannerProps: FullWidthBannerProps = {
   subHeader: 'Default subheader',
   cta: 'Default cta',
 }
+ */

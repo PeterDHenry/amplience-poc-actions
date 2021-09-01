@@ -95,10 +95,17 @@ export default function FullWidthBanner({
   )
 }
 
-FullWidthBanner.defaultProps = {
+const BannerProps = (FullWidthBanner.defaultProps = {
+  _meta: {
+    name: 'string',
+    schema: 'string',
+    deliveryId: '1543512973',
+  },
   image: { name: 'homepageh1d' },
   linkValue: 'https://www.wiggle.co.uk/run-new-season-2021',
   header: 'Default header',
   subHeader: 'Default subheader',
   cta: 'Default cta',
-}
+})
+
+export { BannerProps }
