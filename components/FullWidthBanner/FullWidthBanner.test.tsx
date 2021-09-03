@@ -1,7 +1,6 @@
-import { render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import FullWidthBanner, { BannerProps } from './FullWidthBanner'
 import '@testing-library/jest-dom'
-import { link } from 'fs'
 
 describe('Full width banner component', () => {
   test('Matches snapshot', () => {
@@ -15,7 +14,7 @@ describe('Full width banner component', () => {
   })
 
   test('FullWidthBanner to have image with property "src" and end point link', () => {
-    const { container } = render(<FullWidthBanner {...BannerProps} />)
+    render(<FullWidthBanner {...BannerProps} />)
     const imgEl = document.querySelector('img')
     const imgSrc = imgEl.getAttribute('src')
     const linkEl = document.querySelector('a')
