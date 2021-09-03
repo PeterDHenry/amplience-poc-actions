@@ -1,4 +1,4 @@
-import { fireEvent, render } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import Carousel, { CarouselListProps } from './Carousel'
 import '@testing-library/jest-dom'
 
@@ -16,7 +16,7 @@ describe('Carousel component', () => {
     expect(carouselItems).toBeGreaterThan(1)
   })
 
-  test('Check if Carousel controls are working', () => {
+  test('Check if Carousel controls are defined when more than 1 hero image', () => {
     render(<Carousel {...carouselListProps} />, {})
     const carouselItems =
       document.getElementsByClassName('carousel-item').length
@@ -28,18 +28,44 @@ describe('Carousel component', () => {
       expect(prevControl).toBeDefined()
       expect(nextControl).toBeDefined()
       expect(carouselIndicators).toBeInTheDocument()
-
-      for (let i = 0; i < carouselItems; i++) {
-        let carouselItem = document.getElementsByClassName('carousel-item')[i]
-        let itemClass = carouselItem.getAttribute('class')
-        console.log(itemClass)
-        //console.log(i, itemClass)
-        /*expect(itemClass).toBe(
-          'Carousel__StyledCarouselItem-sc-1y7w2xj-0 jYiBRo active carousel-item'
-        )*/
-        fireEvent.click(nextControl)
-      }
     }
+  })
+
+  test('Check if props are assigned correctly', () => {
+    const { container } = render(<Carousel {...carouselListProps} />, {})
+
+    const hero_1Img = container.querySelector('.carousel-item:nth-child(1) img')
+    const hero_1ImgSrc = hero_1Img?.getAttribute('data-src')
+
+    const hero_1Link = container.querySelector('.carousel-item:nth-child(1) a')
+    const hero_1LinkHref = hero_1Link?.getAttribute('href')
+
+    const hero_1H2 = container.querySelector(
+      '.carousel-item:nth-child(1) a .container h2'
+    )?.textContent
+
+    const hero_1H3 = container.querySelector(
+      '.carousel-item:nth-child(1) a .container h3'
+    )?.textContent
+    const hero_1Cta = container.querySelector(
+      '.carousel-item:nth-child(1) a .container .btn'
+    )?.textContent
+
+    expect(hero_1ImgSrc).toMatch(
+      carouselListProps.heroBannerList[0].background.name
+    )
+    expect(hero_1LinkHref).toMatch(
+      carouselListProps.heroBannerList[0].textAndCTA.callToActionURL
+    )
+    expect(hero_1H2).toMatch(
+      carouselListProps.heroBannerList[0].textAndCTA.headline
+    )
+    expect(hero_1H3).toMatch(
+      carouselListProps.heroBannerList[0].textAndCTA.strapline
+    )
+    expect(hero_1Cta).toMatch(
+      carouselListProps.heroBannerList[0].textAndCTA.callToActionText
+    )
   })
 })
 
