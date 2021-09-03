@@ -16,9 +16,9 @@ describe('Full width banner component', () => {
   test('FullWidthBanner to have image with property "src" and end point link', () => {
     render(<FullWidthBanner {...BannerProps} />)
     const imgEl = document.querySelector('img')
-    const imgSrc = imgEl.getAttribute('src')
+    const imgSrc = imgEl?.getAttribute('src')
     const linkEl = document.querySelector('a')
-    const linkElHref = linkEl.getAttribute('href')
+    const linkElHref = linkEl?.getAttribute('href')
 
     expect(imgEl).toHaveAttribute('src')
     expect(imgSrc).toBeTruthy()
