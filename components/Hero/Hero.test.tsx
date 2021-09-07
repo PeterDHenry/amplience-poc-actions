@@ -13,7 +13,7 @@ describe('Hero component', () => {
     const heroLink = screen.getByRole('link')
     const heroLinkHref = heroLink.getAttribute('href')
     const heroImg = document.querySelector('img')
-    const heroImgSrc = heroImg.getAttribute('src')
+    const heroImgSrc = heroImg?.getAttribute('src')
 
     expect(heroLink).toHaveAttribute('href')
     expect(heroLinkHref).toBeTruthy()

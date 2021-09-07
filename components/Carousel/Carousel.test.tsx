@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render } from '@testing-library/react'
 import Carousel, { CarouselListProps } from './Carousel'
 import '@testing-library/jest-dom'
 
@@ -34,36 +34,36 @@ describe('Carousel component', () => {
   test('Check if props are assigned correctly', () => {
     const { container } = render(<Carousel {...carouselListProps} />, {})
 
-    const hero_1Img = container.querySelector('.carousel-item:nth-child(1) img')
-    const hero_1ImgSrc = hero_1Img?.getAttribute('data-src')
+    const hero1Img = container.querySelector('.carousel-item:nth-child(1) img')
+    const hero1ImgSrc = hero1Img?.getAttribute('data-src')
 
-    const hero_1Link = container.querySelector('.carousel-item:nth-child(1) a')
-    const hero_1LinkHref = hero_1Link?.getAttribute('href')
+    const hero1Link = container.querySelector('.carousel-item:nth-child(1) a')
+    const hero1LinkHref = hero1Link?.getAttribute('href')
 
-    const hero_1H2 = container.querySelector(
+    const hero1H2 = container.querySelector(
       '.carousel-item:nth-child(1) a .container h2'
     )?.textContent
 
-    const hero_1H3 = container.querySelector(
+    const hero1H3 = container.querySelector(
       '.carousel-item:nth-child(1) a .container h3'
     )?.textContent
-    const hero_1Cta = container.querySelector(
+    const hero1Cta = container.querySelector(
       '.carousel-item:nth-child(1) a .container .btn'
     )?.textContent
 
-    expect(hero_1ImgSrc).toMatch(
+    expect(hero1ImgSrc).toMatch(
       carouselListProps.heroBannerList[0].background.name
     )
-    expect(hero_1LinkHref).toMatch(
+    expect(hero1LinkHref).toMatch(
       carouselListProps.heroBannerList[0].textAndCTA.callToActionURL
     )
-    expect(hero_1H2).toMatch(
+    expect(hero1H2).toMatch(
       carouselListProps.heroBannerList[0].textAndCTA.headline
     )
-    expect(hero_1H3).toMatch(
+    expect(hero1H3).toMatch(
       carouselListProps.heroBannerList[0].textAndCTA.strapline
     )
-    expect(hero_1Cta).toMatch(
+    expect(hero1Cta).toMatch(
       carouselListProps.heroBannerList[0].textAndCTA.callToActionText
     )
   })
