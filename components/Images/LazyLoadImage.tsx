@@ -2,6 +2,7 @@ import React from 'react'
 import { SimpleImg } from 'react-simple-img'
 
 export interface LazyLoadImageProps {
+  altText: string
   animationDuration: number
   applyAspectRatio: boolean
   height: number
@@ -9,12 +10,13 @@ export interface LazyLoadImageProps {
   width: number
 }
 
-function LazyLoadImage({
+function Image({
   animationDuration,
   applyAspectRatio,
   height,
   id,
   width,
+  altText,
 }: LazyLoadImageProps) {
   const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${id}`
   return (
@@ -24,12 +26,18 @@ function LazyLoadImage({
       width={width}
       height={height}
       applyAspectRatio={applyAspectRatio}
+      alt={altText}
     />
   )
 }
 
-LazyLoadImage.defaultProps = {
+Image.defaultProps = {
+  altText: 'Default alt text',
   id: 'homepage-h-d',
+  animationDuration: 0.1,
+  width: 1920,
+  height: 650,
+  applyAspectRatio: true,
 }
 
-export default LazyLoadImage
+export default Image

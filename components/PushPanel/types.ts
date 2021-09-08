@@ -1,4 +1,6 @@
 export interface PushPanelProps {
+  height: number
+  width: number
   _meta: {
     name: string
     schema: string

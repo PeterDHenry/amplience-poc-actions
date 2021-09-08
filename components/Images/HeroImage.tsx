@@ -1,15 +1,16 @@
 import React from 'react'
-import { SimpleImg } from 'react-simple-img'
+import LazyLoadImage from '../Images/LazyLoadImage'
 
 interface HeroImageProps {
+  altText: string
   id: string
 }
 
-function HeroImage({ id }: HeroImageProps) {
-  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${id}`
+function HeroImage({ id, altText }: HeroImageProps) {
   return (
-    <SimpleImg
-      src={imageUrl}
+    <LazyLoadImage
+      altText={altText}
+      id={id}
       animationDuration={0.1}
       width={1920}
       height={650}
@@ -19,6 +20,7 @@ function HeroImage({ id }: HeroImageProps) {
 }
 
 HeroImage.defaultProps = {
+  altText: 'Default hero alt text',
   id: 'homepage-h-d',
 }
 

@@ -1,14 +1,15 @@
 import { render } from '@testing-library/react'
 import LazyLoadImage, { LazyLoadImageProps } from './LazyLoadImage'
 
-describe('LazyLoadImage component', () => {
+describe('Image component', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<LazyLoadImage {...lazyLoadImageProps} />, {})
+    const { asFragment } = render(<LazyLoadImage {...ImageProps} />, {})
     expect(asFragment()).toMatchSnapshot()
   })
 })
 
-const lazyLoadImageProps: LazyLoadImageProps = {
+const ImageProps: LazyLoadImageProps = {
+  altText: 'Default alt text',
   id: 'homepage-h-d',
   animationDuration: 0.1,
   width: 1920,

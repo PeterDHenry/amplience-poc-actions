@@ -30,6 +30,7 @@ exports[`Carousel component Matches snapshot 1`] = `
             >
               <noscript />
               <img
+                alt="Default hero alt text"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
@@ -79,6 +80,7 @@ exports[`Carousel component Matches snapshot 1`] = `
             >
               <noscript />
               <img
+                alt="Default hero alt text"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
@@ -128,6 +130,7 @@ exports[`Carousel component Matches snapshot 1`] = `
             >
               <noscript />
               <img
+                alt="Default hero alt text"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
