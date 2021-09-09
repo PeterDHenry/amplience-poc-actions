@@ -21,7 +21,7 @@ export default function PushPanelRow({
       break
     }
     case 4: {
-      cssClass = 'col-xs-6 col-sm-3 ' + cssClass
+      cssClass = 'col-xs-6 col-md-6 col-lg-3 ' + cssClass
       break
     }
   }

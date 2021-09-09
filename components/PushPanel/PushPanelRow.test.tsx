@@ -36,6 +36,52 @@ describe('PushPaneLRow component', () => {
       document.getElementsByClassName('push-panel-item').length
     expect(carouselItems).toEqual(2)
   })
+
+  test('Check if props are assigned correctly', () => {
+    const { container } = render(
+      <PushPanelRow {...fourPushPanelListProps} />,
+      {}
+    )
+
+    const pushPanelImg = container.querySelector(
+      '.push-panel-item:nth-child(1) img'
+    )
+    const pushPanelImgImgAlt = pushPanelImg?.getAttribute('alt')
+    const pushPanelImgImgSrc = pushPanelImg?.getAttribute('data-src')
+
+    expect(pushPanelImgImgAlt).toMatch(
+      fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline
+    )
+
+    expect(pushPanelImgImgSrc).toMatch(
+      'https://cdn.media.amplience.net/i/wigglecrcnonprd/' +
+        fourPushPanelListProps.pushPanelList[0].mainImg.name
+    )
+
+    const pushPanelH2 = container.querySelector(
+      '.push-panel-item:nth-child(1) h2'
+    )?.textContent
+
+    const pushPanelH3 = container.querySelector(
+      '.push-panel-item:nth-child(1) h3'
+    )?.textContent
+
+    const pushPanelButton = container.querySelector(
+      '.push-panel-item:nth-child(1) button'
+    )?.textContent
+
+    expect(pushPanelH2).toMatch(
+      fourPushPanelListProps.pushPanelList[0].textAndCTA.headline
+    )
+
+    expect(pushPanelH3).toMatch(
+      fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline
+    )
+
+    expect(pushPanelButton).toMatch(
+      fourPushPanelListProps.pushPanelList[0].textAndCTA.callToActionText
+    )
+  })
 })
 
 const fourPushPanelListProps: PushPanelListProps = {
@@ -47,15 +93,15 @@ const fourPushPanelListProps: PushPanelListProps = {
         deliveryId: '328756873',
       },
       height: 1,
-      width: 1,
+      width: 13,
       mainImg: {
         name: 'homepageb3d2',
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline',
-        strapline: 'Default Strapline',
-        callToActionText: 'Default call to action',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,
@@ -73,9 +119,9 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline',
-        strapline: 'Default Strapline',
-        callToActionText: 'Default call to action',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,
@@ -93,9 +139,9 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline',
-        strapline: 'Default Strapline',
-        callToActionText: 'Default call to action',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,
@@ -113,9 +159,9 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline',
-        strapline: 'Default Strapline',
-        callToActionText: 'Default call to action',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,

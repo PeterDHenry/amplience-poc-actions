@@ -9,7 +9,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
       class="row"
     >
       <div
-        class="push-panel-item col-xs-6 col-sm-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
@@ -23,7 +23,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
             >
               <noscript />
               <img
-                alt="Default Strapline"
+                alt="Test Strapline"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
@@ -38,24 +38,24 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <h2
                 style="color: black; font-weight: 100;"
               >
-                Default headline
+                Test headline
               </h2>
               <h3
                 style="color: black;"
               >
-                Default Strapline
+                Test Strapline
               </h3>
               <button
                 style="color: black;"
               >
-                Default call to action
+                Test call to action
               </button>
             </div>
           </a>
         </div>
       </div>
       <div
-        class="push-panel-item col-xs-6 col-sm-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
@@ -69,7 +69,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
             >
               <noscript />
               <img
-                alt="Default Strapline"
+                alt="Test Strapline"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
@@ -84,24 +84,24 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <h2
                 style="color: black; font-weight: 100;"
               >
-                Default headline
+                Test headline
               </h2>
               <h3
                 style="color: black;"
               >
-                Default Strapline
+                Test Strapline
               </h3>
               <button
                 style="color: black;"
               >
-                Default call to action
+                Test call to action
               </button>
             </div>
           </a>
         </div>
       </div>
       <div
-        class="push-panel-item col-xs-6 col-sm-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
@@ -115,7 +115,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
             >
               <noscript />
               <img
-                alt="Default Strapline"
+                alt="Test Strapline"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
@@ -130,24 +130,24 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <h2
                 style="color: black; font-weight: 100;"
               >
-                Default headline
+                Test headline
               </h2>
               <h3
                 style="color: black;"
               >
-                Default Strapline
+                Test Strapline
               </h3>
               <button
                 style="color: black;"
               >
-                Default call to action
+                Test call to action
               </button>
             </div>
           </a>
         </div>
       </div>
       <div
-        class="push-panel-item col-xs-6 col-sm-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
@@ -161,7 +161,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
             >
               <noscript />
               <img
-                alt="Default Strapline"
+                alt="Test Strapline"
                 data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
@@ -176,17 +176,17 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <h2
                 style="color: black; font-weight: 100;"
               >
-                Default headline
+                Test headline
               </h2>
               <h3
                 style="color: black;"
               >
-                Default Strapline
+                Test Strapline
               </h3>
               <button
                 style="color: black;"
               >
-                Default call to action
+                Test call to action
               </button>
             </div>
           </a>
