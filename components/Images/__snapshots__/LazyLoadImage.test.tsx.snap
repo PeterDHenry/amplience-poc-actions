@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LazyLoadImage component matches snapshot 1`] = `
+exports[`Image component matches snapshot 1`] = `
 <DocumentFragment>
   <div
     style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
   >
     <noscript />
     <img
+      alt="Default alt text"
       data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d"
       src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
       style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"

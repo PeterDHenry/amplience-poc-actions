@@ -1,6 +1,6 @@
 import React from 'react'
 
-import HeroImage from '../LazyLoadImage/HeroImage'
+import HeroImage from '../Images/HeroImage'
 
 export interface HeroProps {
   _meta: {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { PushPanelProps } from './types'
-import PushPanelImage from '../LazyLoadImage/PushPanelImage'
+import LazyLoadImage from '../Images/LazyLoadImage'
 
 const Panel = styled.div`
   width: 100%;
@@ -69,6 +69,8 @@ const PanelText = styled.div`
   }
 `
 const PushPanel = ({
+  height,
+  width,
   mainImg,
   color,
   fontWeight,
@@ -76,7 +78,14 @@ const PushPanel = ({
 }: PushPanelProps) => (
   <Panel>
     <PanelLink href={callToActionURL}>
-      <PushPanelImage id={mainImg.name} />
+      <LazyLoadImage
+        id={mainImg.name}
+        animationDuration={0.1}
+        width={width}
+        height={height}
+        applyAspectRatio={true}
+        altText={strapline}
+      />
       <PanelText>
         <h2 style={{ color: color, fontWeight: fontWeight }}>{headline}</h2>
         {strapline && <h3 style={{ color: color }}>{strapline}</h3>}
@@ -87,6 +96,8 @@ const PushPanel = ({
 )
 
 PushPanel.defaultProps = {
+  height: 1,
+  width: 1,
   mainImg: {
     name: 'homepageb3d2',
   },
