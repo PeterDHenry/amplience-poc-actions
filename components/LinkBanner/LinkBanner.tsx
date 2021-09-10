@@ -60,6 +60,7 @@ const LinkBanner = ({
     href={callToActionURL}
     backgroundColour={backgroundColour}
     fontColour={fontColour}
+    className="link-banner"
   >
     <BannerText>
       <p>{headline.toUpperCase()}</p>
@@ -72,13 +73,13 @@ const LinkBanner = ({
 
 LinkBanner.defaultProps = {
   textAndCTA: {
-    callToActionURL: 'Default URL',
-    callToActionText: 'Default CTA Text',
-    headline: 'Default Headline',
-    strapline: 'Default Strapline',
+    callToActionURL: 'https://www.wiggle.co.uk/',
+    callToActionText: 'Test CTA Text',
+    headline: 'Test Headline',
+    strapline: 'Test Strapline',
   },
   backgroundColour: '#F7F7F7',
-  fontColour: '3C3C3B',
+  fontColour: '#3C3C3B',
 }
 
 export default LinkBanner
