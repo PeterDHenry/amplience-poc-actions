@@ -36,7 +36,7 @@ exports[`Full width banner component Matches snapshot 1`] = `
             <button
               class="FullWidthBanner__Button-sc-zya7j3-6 blPHof"
             >
-               Default cta 
+               Default cta text 
             </button>
           </div>
         </a>
