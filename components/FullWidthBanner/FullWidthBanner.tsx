@@ -71,8 +71,7 @@ export interface FullWidthBannerProps {
 
 export default function FullWidthBanner({
   image,
-  textAndCTA: { callToActionURL, callToActionText, headline, strapline
-  }
+  textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: FullWidthBannerProps) {
   const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${image.name}`
   return (
@@ -107,7 +106,7 @@ const BannerProps = (FullWidthBanner.defaultProps = {
     callToActionText: 'Default cta text',
     headline: 'Default header',
     strapline: 'Default subheader',
-  }
+  },
 })
 
 export { BannerProps }
