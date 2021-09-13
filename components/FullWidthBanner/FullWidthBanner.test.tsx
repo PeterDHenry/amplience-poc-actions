@@ -26,17 +26,3 @@ describe('Full width banner component', () => {
     expect(linkElHref).toBeTruthy()
   })
 })
-
-/* const fullWidthBannerProps: FullWidthBannerProps = {
-  _meta: {
-    name: 'string',
-    schema: 'string',
-    deliveryId: '1543512973',
-  },
-  image: { name: 'homepageh1d' },
-  linkValue: 'https://www.wiggle.co.uk/run-new-season-2021',
-  header: 'Default header',
-  subHeader: 'Default subheader',
-  cta: 'Default cta',
-}
- */
