@@ -61,18 +61,18 @@ export interface FullWidthBannerProps {
     deliveryId: string
   }
   image: { name: string }
-  linkValue: string
-  header: string
-  subHeader: string
-  cta: string
+  textAndCTA: {
+    callToActionURL: string
+    callToActionText: string
+    headline: string
+    strapline: string
+  }
 }
 
 export default function FullWidthBanner({
   image,
-  linkValue,
-  header,
-  subHeader,
-  cta,
+  textAndCTA: { callToActionURL, callToActionText, headline, strapline
+  }
 }: FullWidthBannerProps) {
   const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${image.name}`
   return (
@@ -80,12 +80,12 @@ export default function FullWidthBanner({
       <div className="row">
         <ComponentContainer className="col-xs-12 col-sm-12">
           {
-            <Link href={linkValue}>
+            <Link href={callToActionURL}>
               <Img src={imgUrl} alt="" />
               <ContentContainer>
-                <H2> {header} </H2>
-                <H3> {subHeader} </H3>
-                <Button> {cta} </Button>
+                <H2> {headline} </H2>
+                <H3> {strapline} </H3>
+                <Button> {callToActionText} </Button>
               </ContentContainer>
             </Link>
           }
@@ -102,10 +102,12 @@ const BannerProps = (FullWidthBanner.defaultProps = {
     deliveryId: '1543512973',
   },
   image: { name: 'homepageh1d' },
-  linkValue: 'https://www.wiggle.co.uk/run-new-season-2021',
-  header: 'Default header',
-  subHeader: 'Default subheader',
-  cta: 'Default cta',
+  textAndCTA: {
+    callToActionURL: 'https://www.wiggle.co.uk/run-new-season-2021',
+    callToActionText: 'Default cta text',
+    headline: 'Default header',
+    strapline: 'Default subheader',
+  }
 })
 
 export { BannerProps }
