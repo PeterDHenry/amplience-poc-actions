@@ -87,8 +87,8 @@ const fourPushPanelListProps: PushPanelListProps = {
   pushPanelList: [
     {
       _meta: {
-        name: '815 Risez Boulevard',
-        schema: 'Osahiki',
+        name: 'name',
+        schema: 'schema',
         deliveryId: '328756873',
       },
       height: 1,
@@ -98,17 +98,17 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'cuuqkqedqrlkslripajj',
-        strapline: 'vdkslgvpirilrlwquokr',
-        callToActionText: 'wojlrasrvjueslf',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,
     },
     {
       _meta: {
-        name: 'nspzribxfvmkepcusnps',
-        schema: 'onyvakrgmvntxvbdteeg',
+        name: 'name',
+        schema: 'schema',
         deliveryId: '328776873',
       },
       height: 1,
@@ -118,17 +118,17 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'clelhhsatfwkwkjcpfte',
-        strapline: 'rkfxnrlxkqurizzbglum',
-        callToActionText: 'fuplrgbemhrbudqrtmds',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,
     },
     {
       _meta: {
-        name: 'dkwqwaksjdqtzne',
-        schema: 'nmaaznmlvplvhqq',
+        name: 'name',
+        schema: 'schema',
         deliveryId: '328776874',
       },
       height: 1,
@@ -138,17 +138,17 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'zrvadljgafjlnodfnala',
-        strapline: 'ijiuhidjmeypmbejiukz',
-        callToActionText: 'mcvthcrulijozdnlwktl',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,
     },
     {
       _meta: {
-        name: 'nhkqxkmdwezftvy',
-        schema: 'wodeqwyavguwhqp',
+        name: 'name',
+        schema: 'schema',
         deliveryId: '3223776874',
       },
       height: 1,
@@ -158,9 +158,9 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'gruuptjnahbumuclbhlv',
-        strapline: 'jeuvgcewbneowxahmatv',
-        callToActionText: 'qhmecshnrcbzwugiythq',
+        headline: 'Test headline',
+        strapline: 'Test Strapline',
+        callToActionText: 'Test call to action',
       },
       color: 'black',
       fontWeight: 100,

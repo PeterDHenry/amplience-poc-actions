@@ -51,17 +51,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                   <h2
                     class=""
                   >
-                    Default headline 1
+                    Default headline
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline 1
+                    Default Strapline
                   </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
-                    Default call to action 1
+                    Default call to action
                   </div>
                 </div>
               </div>
@@ -101,17 +101,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                   <h2
                     class=""
                   >
-                    Default headline 2
+                    Default headline
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline 2
+                    Default Strapline
                   </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
-                    Default call to action 2
+                    Default call to action
                   </div>
                 </div>
               </div>
@@ -151,17 +151,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                   <h2
                     class=""
                   >
-                    Default headline 3
+                    Default headline
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline 3
+                    Default Strapline
                   </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
-                    Default call to action 3
+                    Default call to action
                   </div>
                 </div>
               </div>

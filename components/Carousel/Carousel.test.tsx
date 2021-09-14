@@ -73,8 +73,8 @@ const carouselListProps: CarouselListProps = {
   heroBannerList: [
     {
       _meta: {
-        name: 'string1',
-        schema: 'string1',
+        name: 'string',
+        schema: 'string',
         deliveryId: '1543512973',
       },
       cssClass: '',
@@ -83,15 +83,15 @@ const carouselListProps: CarouselListProps = {
       contrastColor: 'dark',
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline 1',
-        strapline: 'Default Strapline 1',
-        callToActionText: 'Default call to action 1',
+        headline: 'Default headline',
+        strapline: 'Default Strapline',
+        callToActionText: 'Default call to action',
       },
     },
     {
       _meta: {
-        name: 'string2',
-        schema: 'string2',
+        name: 'string',
+        schema: 'string',
         deliveryId: '1237612',
       },
       cssClass: '',
@@ -100,15 +100,15 @@ const carouselListProps: CarouselListProps = {
       contrastColor: 'dark',
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline 2',
-        strapline: 'Default Strapline 2',
-        callToActionText: 'Default call to action 2',
+        headline: 'Default headline',
+        strapline: 'Default Strapline',
+        callToActionText: 'Default call to action',
       },
     },
     {
       _meta: {
-        name: 'string3',
-        schema: 'string3',
+        name: 'string',
+        schema: 'string',
         deliveryId: '983492387',
       },
       cssClass: '',
@@ -117,9 +117,9 @@ const carouselListProps: CarouselListProps = {
       contrastColor: 'dark',
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Default headline 3',
-        strapline: 'Default Strapline 3',
-        callToActionText: 'Default call to action 3',
+        headline: 'Default headline',
+        strapline: 'Default Strapline',
+        callToActionText: 'Default call to action',
       },
     },
   ],
