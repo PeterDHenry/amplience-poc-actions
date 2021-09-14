@@ -1,4 +1,3 @@
-//TODO best way to test with different counts hint this isn't it
 import { render } from '@testing-library/react'
 import PushPanelRow from './PushPanelRow'
 import { PushPanelListProps } from './types'

@@ -1,5 +1,3 @@
-// import React, { memo } from 'react'
-// import { t } from '../../utils/getTheme'
 import React from 'react'
 import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -13,9 +11,7 @@ interface Props {
   title?: string
 }
 
-//export default memo(function Header({ title }: Props) {
 export default function Header() {
-  //return <StyledHeader>{title ? title : 'Test'}</StyledHeader>
   return (
     <header className="container-fluid bg-dark">
       <div className="container text-center">
