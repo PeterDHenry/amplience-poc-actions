@@ -87,8 +87,8 @@ const fourPushPanelListProps: PushPanelListProps = {
   pushPanelList: [
     {
       _meta: {
-        name: 'name',
-        schema: 'schema',
+        name: 'name 1',
+        schema: 'schema 2',
         deliveryId: '328756873',
       },
       height: 1,
@@ -98,17 +98,17 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
+        headline: 'Test headline 1',
+        strapline: 'Test Strapline 2',
+        callToActionText: 'Test call to action 2',
       },
       color: 'black',
       fontWeight: 100,
     },
     {
       _meta: {
-        name: 'name',
-        schema: 'schema',
+        name: 'name 2',
+        schema: 'schema 2',
         deliveryId: '328776873',
       },
       height: 1,
@@ -118,17 +118,17 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
+        headline: 'Test headline 2',
+        strapline: 'Test Strapline 2',
+        callToActionText: 'Test call to action 2',
       },
       color: 'black',
       fontWeight: 100,
     },
     {
       _meta: {
-        name: 'name',
-        schema: 'schema',
+        name: 'name 3',
+        schema: 'schema 3',
         deliveryId: '328776874',
       },
       height: 1,
@@ -138,17 +138,17 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
+        headline: 'Test headline 3',
+        strapline: 'Test Strapline 3',
+        callToActionText: 'Test call to action 3',
       },
       color: 'black',
       fontWeight: 100,
     },
     {
       _meta: {
-        name: 'name',
-        schema: 'schema',
+        name: 'name 4',
+        schema: 'schema 4',
         deliveryId: '3223776874',
       },
       height: 1,
@@ -158,9 +158,9 @@ const fourPushPanelListProps: PushPanelListProps = {
       },
       textAndCTA: {
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
+        headline: 'Test headline 4',
+        strapline: 'Test Strapline 4',
+        callToActionText: 'Test call to action 4',
       },
       color: 'black',
       fontWeight: 100,
