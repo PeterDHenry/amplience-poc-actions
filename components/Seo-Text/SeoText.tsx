@@ -22,14 +22,14 @@ const MainTextArea = styled.div`
 const SeoText = ({ mainText }: SeoTextProps) => {
   const html = parse(mainText)
   return (
-    <MainTextWrapper>
-      <MainTextArea>{html}</MainTextArea>
+    <MainTextWrapper className="seo-text-wrapper">
+      <MainTextArea className="seo-text">{html}</MainTextArea>
     </MainTextWrapper>
   )
 }
 
 SeoText.defaultProps = {
-  mainText: 'Default Text',
+  mainText: '<p>Default Text</p>',
 }
 
 export default SeoText
