@@ -51,17 +51,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                   <h2
                     class=""
                   >
-                    Default headline
+                    Default headline 1
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline
+                    Default Strapline 1
                   </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
-                    Default call to action
+                    Default call to action 1
                   </div>
                 </div>
               </div>
@@ -101,17 +101,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                   <h2
                     class=""
                   >
-                    Default headline
+                    Default headline 2
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline
+                    Default Strapline 2
                   </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
-                    Default call to action
+                    Default call to action 2
                   </div>
                 </div>
               </div>
@@ -151,17 +151,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                   <h2
                     class=""
                   >
-                    Default headline
+                    Default headline 3
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline
+                    Default Strapline 3
                   </h3>
                   <div
                     class="btn border-white bg-white-hover text-white"
                   >
-                    Default call to action
+                    Default call to action 3
                   </div>
                 </div>
               </div>
