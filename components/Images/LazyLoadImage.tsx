@@ -18,7 +18,7 @@ function Image({
   width,
   altText,
 }: LazyLoadImageProps) {
-  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${id}`
+  const imageUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${id}?w=${width}&h=${height}&sm=C`
   return (
     <SimpleImg
       src={imageUrl}
