@@ -70,10 +70,10 @@ export interface FullWidthBannerProps {
 }
 
 export default function FullWidthBanner({
-  image,
+  image: { name },
   textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: FullWidthBannerProps) {
-  const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${image.name}`
+  const imgUrl = `https://cdn.media.amplience.net/i/wigglecrcnonprd/${name}`
   return (
     <div className="container pt-5">
       <div className="row">
