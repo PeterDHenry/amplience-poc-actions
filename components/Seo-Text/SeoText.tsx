@@ -29,7 +29,7 @@ const SeoText = ({ mainText }: SeoTextProps) => {
 }
 
 SeoText.defaultProps = {
-  mainText: '<p>Default Text</p>',
+  mainText: '<h3>Default title</h3><p>Default Text</p>',
 }
 
 export default SeoText

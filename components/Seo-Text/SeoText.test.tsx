@@ -19,5 +19,5 @@ describe('SEO Text component', () => {
 })
 
 const seoTextProps: SeoTextProps = {
-  mainText: '<p>Default Text</p>',
+  mainText: '<h3>Default title</h3><p>Default Text</p>',
 }

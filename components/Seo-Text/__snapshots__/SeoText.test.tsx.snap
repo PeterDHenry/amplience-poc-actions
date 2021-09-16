@@ -8,6 +8,9 @@ exports[`SEO Text component Matches snapshot 1`] = `
     <div
       class="SeoText__MainTextArea-sc-us8wk8-1 idWIsq seo-text"
     >
+      <h3>
+        Default title
+      </h3>
       <p>
         Default Text
       </p>
