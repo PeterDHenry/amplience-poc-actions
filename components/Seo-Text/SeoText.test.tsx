@@ -15,6 +15,7 @@ describe('SEO Text component', () => {
     expect(container.querySelector('.seo-text-wrapper h1')).not.toBeTruthy()
     expect(container.querySelector('.seo-text-wrapper script')).not.toBeTruthy()
     expect(container.querySelector('.seo-text-wrapper link')).not.toBeTruthy()
+    expect(container.querySelector('.seo-text-wrapper style')).not.toBeTruthy()
   })
 })
 
