@@ -19,22 +19,17 @@ const MainTextArea = styled.div`
   }
 `
 
-const checkPropIsValid = (mainText: string) => {
-  if (
-    mainText.indexOf('<h3') > -1 ||
+export const checkPropIsValid = (mainText: string) => {
+  return mainText.indexOf('<h1') > -1 ||
     mainText.indexOf('<script') > -1 ||
     mainText.indexOf('<link') > -1 ||
     mainText.indexOf('<style') > -1
-  ) {
-    return false
-  } else {
-    return true
-  }
+    ? false
+    : true
 }
 
 const SeoText = ({ mainText }: SeoTextProps) => {
   const html = parse(mainText)
-
   const isValid = checkPropIsValid(mainText)
 
   return (

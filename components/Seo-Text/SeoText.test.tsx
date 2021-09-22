@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import SeoText from './SeoText'
+import SeoText, { checkPropIsValid } from './SeoText'
 import { SeoTextProps } from './types'
 import '@testing-library/jest-dom'
 
@@ -9,13 +9,27 @@ describe('SEO Text component', () => {
     expect(asFragment()).toMatchSnapshot()
   })
 
-  test('HTML does not contain forbidden tags', () => {
-    const { container } = render(<SeoText {...seoTextProps} />, {})
+  test('Check HTML for forbidden tags and bad props', () => {
+    const badProp = `<h1>H1 tags</h1><script src='script.js'></script>`
+    render(<SeoText mainText={badProp} />, {})
 
-    expect(container.querySelector('.seo-text-wrapper h1')).not.toBeTruthy()
-    expect(container.querySelector('.seo-text-wrapper script')).not.toBeTruthy()
-    expect(container.querySelector('.seo-text-wrapper link')).not.toBeTruthy()
-    expect(container.querySelector('.seo-text-wrapper style')).not.toBeTruthy()
+    expect(checkPropIsValid('<h1>Testing h1 Tag</h1>')).toBeFalsy()
+    expect(checkPropIsValid('<script src="test.js"></script>')).toBeFalsy()
+    expect(checkPropIsValid('<link href="stylesheet.css"')).toBeFalsy()
+    expect(
+      checkPropIsValid('<style>h1 {text-align: center}</style>')
+    ).toBeFalsy()
+  })
+
+  test('Check HTML for valid tags', () => {
+    render(<SeoText {...seoTextProps} />, {})
+
+    expect(checkPropIsValid('<h3>This is a h3 tag</h3>')).toBeTruthy()
+    expect(
+      checkPropIsValid(
+        '<p>This is a p tag</p><ul><li>List 1</li><li>List 2</li></ul>'
+      )
+    ).toBeTruthy()
   })
 })
 
