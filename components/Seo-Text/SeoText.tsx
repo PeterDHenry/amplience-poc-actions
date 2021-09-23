@@ -38,9 +38,7 @@ const SeoText = ({ mainText }: SeoTextProps) => {
         <MainTextWrapper className="seo-text-wrapper">
           <MainTextArea className="seo-text">{html}</MainTextArea>
         </MainTextWrapper>
-      ) : (
-        ''
-      )}
+      ) : null}
     </>
   )
 }
