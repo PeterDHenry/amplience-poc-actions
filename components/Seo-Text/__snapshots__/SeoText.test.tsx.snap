@@ -1,14 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SEO Text component matches snapshot 1`] = `
+exports[`SEO Text component Matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="SeoText__MainTextWrapper-sc-us8wk8-0 ciwyVE"
+    class="SeoText__MainTextWrapper-sc-us8wk8-0 ciwyVE seo-text-wrapper"
   >
     <div
-      class="SeoText__MainTextArea-sc-us8wk8-1 idWIsq"
+      class="SeoText__MainTextArea-sc-us8wk8-1 idWIsq seo-text"
     >
-      Default Text
+      <h3>
+        Default title
+      </h3>
+      <p>
+        Default Text
+      </p>
     </div>
   </div>
 </DocumentFragment>

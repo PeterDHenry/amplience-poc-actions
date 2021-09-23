@@ -19,17 +19,32 @@ const MainTextArea = styled.div`
   }
 `
 
+export const checkPropIsValid = (mainText: string) => {
+  return mainText.indexOf('<h1') > -1 ||
+    mainText.indexOf('<script') > -1 ||
+    mainText.indexOf('<link') > -1 ||
+    mainText.indexOf('<style') > -1
+    ? false
+    : true
+}
+
 const SeoText = ({ mainText }: SeoTextProps) => {
   const html = parse(mainText)
+  const isValid = checkPropIsValid(mainText)
+
   return (
-    <MainTextWrapper>
-      <MainTextArea>{html}</MainTextArea>
-    </MainTextWrapper>
+    <>
+      {isValid ? (
+        <MainTextWrapper className="seo-text-wrapper">
+          <MainTextArea className="seo-text">{html}</MainTextArea>
+        </MainTextWrapper>
+      ) : null}
+    </>
   )
 }
 
 SeoText.defaultProps = {
-  mainText: 'Default Text',
+  mainText: '<h3>Default title</h3><p>Default Text</p>',
 }
 
 export default SeoText

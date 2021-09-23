@@ -1,23 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Link Banner component matches snapshot 1`] = `
+exports[`Link Banner component Matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="LinkBanner__Banner-sc-1rg8ysw-0 febZyl"
-    href="Default URL"
+    class="LinkBanner__Banner-sc-1rg8ysw-0 cpXOje link-banner"
+    href="https://www.wiggle.co.uk/"
   >
     <div
       class="LinkBanner__BannerText-sc-1rg8ysw-1 bQArJM"
     >
       <p>
-        DEFAULT HEADLINE
+        TEST HEADLINE
       </p>
     </div>
     <button
       class="LinkBanner__BannerCTA-sc-1rg8ysw-2 hRGaUq cta-btn"
     >
       <p>
-        DEFAULT CTA TEXT
+        TEST CTA TEXT
       </p>
     </button>
   </a>
