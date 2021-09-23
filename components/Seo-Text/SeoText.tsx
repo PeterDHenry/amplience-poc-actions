@@ -24,17 +24,16 @@ export const checkPropIsValid = (mainText: string) => {
     mainText.indexOf('<script') > -1 ||
     mainText.indexOf('<link') > -1 ||
     mainText.indexOf('<style') > -1
-    ? false
-    : true
+    ? null
+    : parse(mainText)
 }
 
 const SeoText = ({ mainText }: SeoTextProps) => {
-  const html = parse(mainText)
-  const isValid = checkPropIsValid(mainText)
+  const html = checkPropIsValid(mainText)
 
   return (
     <>
-      {isValid ? (
+      {html ? (
         <MainTextWrapper className="seo-text-wrapper">
           <MainTextArea className="seo-text">{html}</MainTextArea>
         </MainTextWrapper>
