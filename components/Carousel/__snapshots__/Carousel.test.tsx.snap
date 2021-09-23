@@ -4,7 +4,7 @@ exports[`Carousel component Matches snapshot 1`] = `
 <DocumentFragment>
   <div>
     <div
-      class="Carousel__StyledCarouselWithIndicators-sc-1y7w2xj-1 lomlWv carousel slide"
+      class="Carousel__StyledCarouselWithIndicators-sc-1y7w2xj-1 cIDaTQ carousel slide"
     >
       <ol
         class="carousel-indicators"
