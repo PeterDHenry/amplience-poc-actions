@@ -1,11 +1,11 @@
 import Head from 'next/head'
-import { NextPageContext } from 'next'
+import { GetServerSidePropsContext, NextPageContext } from 'next'
 
-import { fetchContent } from '../utils/fetchContent'
+import { fetchContent } from '../../utils/fetchContent'
 
 import DynamicPageComponentSelector, {
   DynamicPageComponentSelectorProps,
-} from '../components/DynamicPageComponentSelector/DynamicPageComponentSelector'
+} from '../../components/DynamicPageComponentSelector/DynamicPageComponentSelector'
 
 export const Home = ({
   slot,
@@ -21,10 +21,19 @@ export const Home = ({
   )
 }
 
-export const getServerSideProps = async (context: NextPageContext) => {
-  const brandSlot: string = context.query['b'] as string
+export const getServerSideProps = async (
+  propsContext: GetServerSidePropsContext,
+  context: NextPageContext
+) => {
+  const brandSlot: string = propsContext.query['name'] as string
   const homeSlot = fetchContent(brandSlot, context)
   const slot = await homeSlot
+
+  if (!slot) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {
