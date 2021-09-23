@@ -24,7 +24,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <noscript />
               <img
                 alt="Test Strapline"
-                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2?w=500&h=500&sm=C"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
               />
@@ -70,7 +70,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <noscript />
               <img
                 alt="Test Strapline"
-                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2?w=500&h=500&sm=C"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
               />
@@ -116,7 +116,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <noscript />
               <img
                 alt="Test Strapline"
-                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2?w=500&h=500&sm=C"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
               />
@@ -162,7 +162,7 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
               <noscript />
               <img
                 alt="Test Strapline"
-                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2?w=500&h=500&sm=C"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
               />

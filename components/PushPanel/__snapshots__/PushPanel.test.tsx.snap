@@ -15,7 +15,7 @@ exports[`PushPanel component matches snapshot 1`] = `
         <noscript />
         <img
           alt="Default Strapline"
-          data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2"
+          data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2?w=1&h=1&sm=C"
           src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
           style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
         />
