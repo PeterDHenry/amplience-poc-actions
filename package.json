@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "test": "jest --coverage",
-    "test-all": "yarn lint && yarn type-check && yarn test && yarn storybook",
+    "test-all": "yarn lint && yarn type-check && yarn test && yarn build-storybook",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "commit": "git-cz",
