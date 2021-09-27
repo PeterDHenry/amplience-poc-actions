@@ -1,6 +1,6 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
-import Image from './Images'
 import HeroImage from './HeroImage'
+import LazyLoadImage from './LazyLoadImage'
 import PushPanelImage from './PushPanelImage'
 
 <Meta title="Base Components/Images" component={Image} />
@@ -10,11 +10,8 @@ import PushPanelImage from './PushPanelImage'
 The website header
 
 <Canvas>
-  <Story name="Default">
-    <Image id={'homepage-h-d'} />
-  </Story>
-  <Story name="PushPanelImage">
-    <PushPanelImage id={'homepage-h-d'} />
+  <Story name="LazyLoadImage">
+    <LazyLoadImage id={'homepage-h-d'} />
   </Story>
   <Story name="HeroImage">
     <HeroImage id={'homepageh1d'} />

@@ -10,8 +10,8 @@ describe('PushPanel component', () => {
 })
 
 const pushPanelProps: PushPanelProps = {
-  height: 1,
-  width: 1,
+  height: 500,
+  width: 500,
   _meta: {
     name: 'name',
     schema: 'schema',

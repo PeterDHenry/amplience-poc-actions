@@ -96,16 +96,24 @@ const PushPanel = ({
 )
 
 PushPanel.defaultProps = {
-  height: 1,
-  width: 1,
-  mainImg: {
-    name: 'homepageb3d2',
+  _meta: {
+    name: 'name',
+    schema: 'schema',
+    deliveryId: '328756873',
   },
-  headerText: 'Default header text',
-  subText: '',
-  calltoactiontext: 'Default CTA',
-  linkURL: 'https://www.wiggle.co.uk/triathlon-2021?range=ne',
+  height: 500,
+  width: 500,
+  mainImg: {
+    name: 'homepageb4d',
+  },
+  textAndCTA: {
+    callToActionURL: 'https://www.wiggle.co.uk/discover-different',
+    headline: 'Test headline',
+    strapline: 'Test Strapline',
+    callToActionText: 'Test call to action',
+  },
   color: 'black',
+  fontWeight: 100,
 }
 
 export default PushPanel
