@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
-import PushPanelRow from './PushPanelRow'
-import { PushPanelListProps } from './types'
+import { PushPanelRow } from './PushPanelRow'
+import { PushPanelRowProps, defaultPanelRowProps } from './types'
 
 describe('PushPaneLRow component', () => {
   test('Matches snapshot', () => {
@@ -83,87 +83,4 @@ describe('PushPaneLRow component', () => {
   })
 })
 
-const fourPushPanelListProps: PushPanelListProps = {
-  pushPanelList: [
-    {
-      _meta: {
-        name: 'name',
-        schema: 'schema',
-        deliveryId: '328756873',
-      },
-      height: 1,
-      width: 13,
-      mainImg: {
-        name: 'homepageb3d2',
-      },
-      textAndCTA: {
-        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
-      },
-      color: 'black',
-      fontWeight: 100,
-    },
-    {
-      _meta: {
-        name: 'name',
-        schema: 'schema',
-        deliveryId: '328776873',
-      },
-      height: 1,
-      width: 1,
-      mainImg: {
-        name: 'homepageb3d2',
-      },
-      textAndCTA: {
-        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
-      },
-      color: 'black',
-      fontWeight: 100,
-    },
-    {
-      _meta: {
-        name: 'name',
-        schema: 'schema',
-        deliveryId: '328776874',
-      },
-      height: 1,
-      width: 1,
-      mainImg: {
-        name: 'homepageb3d2',
-      },
-      textAndCTA: {
-        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
-      },
-      color: 'black',
-      fontWeight: 100,
-    },
-    {
-      _meta: {
-        name: 'name',
-        schema: 'schema',
-        deliveryId: '3223776874',
-      },
-      height: 1,
-      width: 1,
-      mainImg: {
-        name: 'homepageb3d2',
-      },
-      textAndCTA: {
-        callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-        headline: 'Test headline',
-        strapline: 'Test Strapline',
-        callToActionText: 'Test call to action',
-      },
-      color: 'black',
-      fontWeight: 100,
-    },
-  ],
-}
+const fourPushPanelListProps: PushPanelRowProps = defaultPanelRowProps
