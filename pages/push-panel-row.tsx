@@ -1,11 +1,11 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import PushPanelRow from '../components/PushPanel/PushPanelRow'
-import { PushPanelListProps } from '../components/PushPanel/types'
+import { PushPanelRow } from '../components/PushPanel/PushPanelRow'
+import { PushPanelRowProps } from '../components/PushPanel/types'
 
-const PushPanelRowPage: NextPage<PushPanelListProps> = ({
+const PushPanelRowPage: NextPage<PushPanelRowProps> = ({
   pushPanelList,
-}: PushPanelListProps) => {
+}: PushPanelRowProps) => {
   return (
     <>
       <Head>

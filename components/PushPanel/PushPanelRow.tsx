@@ -1,11 +1,11 @@
 import React from 'react'
-import PushPanel from './PushPanel'
-import { PushPanelProps, PushPanelListProps } from './types'
+import { PushPanel } from './PushPanel'
+import { PushPanelProps, PushPanelRowProps, defaultPanelProps } from './types'
 
-export default function PushPanelRow({
+export const PushPanelRow = ({
   pushPanelList,
   stackMobileLayout,
-}: PushPanelListProps) {
+}: PushPanelRowProps) => {
   let cssClass = `w-pr-4 w-pl-2 w-pl-sm-4 stack-${stackMobileLayout}`
   let height = 500
   let width = 500
@@ -40,3 +40,5 @@ export default function PushPanelRow({
     </div>
   )
 }
+
+PushPanelRow.defaultProps = defaultPanelProps

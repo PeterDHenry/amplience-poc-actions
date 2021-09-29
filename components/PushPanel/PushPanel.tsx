@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { PushPanelProps } from './types'
+import { PushPanelProps, defaultPanelProps } from './types'
 import LazyLoadImage from '../Images/LazyLoadImage'
 
 const Panel = styled.div`
@@ -55,20 +55,20 @@ const PanelText = styled.div`
 
     button {
       position: absolute;
-      top: -50%;
+      top: 50px;
       z-index: 10000000;
-      left: 40%;
+      left: 100px;
       opacity: 0;
       background-color: rgba(0, 0, 0, 0);
-      font-size: 20px;
-      border-color: white;
+      font-size: 30px;
+      border-color: black;
       border: 5px solid;
-      color: white !important;
+      color: black !important;
       font-weight: 900;
     }
   }
 `
-const PushPanel = ({
+export const PushPanel = ({
   height,
   width,
   mainImg,
@@ -95,25 +95,4 @@ const PushPanel = ({
   </Panel>
 )
 
-PushPanel.defaultProps = {
-  _meta: {
-    name: 'name',
-    schema: 'schema',
-    deliveryId: '328756873',
-  },
-  height: 500,
-  width: 500,
-  mainImg: {
-    name: 'homepageb4d',
-  },
-  textAndCTA: {
-    callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-    headline: 'Test headline',
-    strapline: 'Test Strapline',
-    callToActionText: 'Test call to action',
-  },
-  color: 'black',
-  fontWeight: 100,
-}
-
-export default PushPanel
+PushPanel.defaultProps = defaultPanelProps

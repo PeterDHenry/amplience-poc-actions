@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import PushPanel from './PushPanel'
+import { PushPanel } from './PushPanel'
 import { PushPanelProps } from './types'
 
 describe('PushPanel component', () => {
@@ -28,4 +28,6 @@ const pushPanelProps: PushPanelProps = {
   },
   color: 'black',
   fontWeight: 100,
+  mobileStack: true,
+  cssClass: 'col-lg-6',
 }
