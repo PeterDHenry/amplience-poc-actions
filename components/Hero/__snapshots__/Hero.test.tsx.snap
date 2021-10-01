@@ -3,7 +3,7 @@
 exports[`Hero component matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="d-block position-relative"
+    class="d-block position-relative undefined"
     href="https://www.wiggle.co.uk/pro-riding-for-summer"
   >
     <div
