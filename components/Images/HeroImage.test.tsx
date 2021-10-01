@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import HeroImage from './HeroImage'
+import { HeroImage } from './HeroImage'
 
 describe('HeroImage component', () => {
   it('matches snapshot', () => {

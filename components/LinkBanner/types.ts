@@ -1,4 +1,4 @@
-export interface LinkBannerProps {
+export type LinkBannerProps = {
   textAndCTA: {
     callToActionURL: string
     callToActionText: string

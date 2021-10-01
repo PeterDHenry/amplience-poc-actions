@@ -1,12 +1,8 @@
 import React from 'react'
-import LazyLoadImage from '../Images/LazyLoadImage'
+import { LazyLoadImage } from '../Images/LazyLoadImage'
+import { defaultHeroImageProps, HeroImageProps } from './types'
 
-interface HeroImageProps {
-  altText: string
-  id: string
-}
-
-function HeroImage({ id, altText }: HeroImageProps) {
+export const HeroImage = ({ id, altText }: HeroImageProps) => {
   return (
     <LazyLoadImage
       altText={altText}
@@ -19,9 +15,4 @@ function HeroImage({ id, altText }: HeroImageProps) {
   )
 }
 
-HeroImage.defaultProps = {
-  altText: 'Default hero alt text',
-  id: 'homepage-h-d',
-}
-
-export default HeroImage
+HeroImage.defaultProps = defaultHeroImageProps

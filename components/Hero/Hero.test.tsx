@@ -1,15 +1,17 @@
 import { render, screen } from '@testing-library/react'
-import Hero, { HeroProps } from './Hero'
+import { Hero } from './Hero'
+import { defaultProps } from './types'
+
 import '@testing-library/jest-dom'
 
 describe('Hero component', () => {
   it('matches snapshot', () => {
-    const { asFragment } = render(<Hero {...heroProps} />, {})
+    const { asFragment } = render(<Hero {...defaultProps} />, {})
     expect(asFragment()).toMatchSnapshot()
   })
 
   test('Check if image link is provided and an end point url', () => {
-    render(<Hero {...heroProps} />, {})
+    render(<Hero {...defaultProps} />, {})
     const heroLink = screen.getByRole('link')
     const heroLinkHref = heroLink.getAttribute('href')
     const heroImg = document.querySelector('img')
@@ -21,21 +23,3 @@ describe('Hero component', () => {
     expect(heroImgSrc).toBeTruthy()
   })
 })
-
-const heroProps: HeroProps = {
-  _meta: {
-    name: 'string',
-    schema: 'string',
-    deliveryId: '1543512973',
-  },
-  cssClass: '',
-  background: { name: 'homepage-h-d' },
-  color: 'white',
-  contrastColor: 'dark',
-  textAndCTA: {
-    callToActionURL: 'https://www.wiggle.co.uk/discover-different',
-    headline: 'Default headline',
-    strapline: 'Default Strapline',
-    callToActionText: 'Default call to action',
-  },
-}

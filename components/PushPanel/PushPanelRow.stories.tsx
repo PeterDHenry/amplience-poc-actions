@@ -3,7 +3,7 @@ import { PushPanelRow as Component } from './PushPanelRow'
 import { defaultPanelRowProps, PushPanelRowProps } from './types'
 
 const meta: Meta = {
-  title: 'CMS Content/PushPanelRow',
+  title: 'CMS Content/PushPanels',
   component: Component,
   argTypes: {
     color: {

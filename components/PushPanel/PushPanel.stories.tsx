@@ -3,7 +3,7 @@ import { PushPanel as Component } from './PushPanel'
 import { defaultPanelProps, PushPanelProps } from '../PushPanel/types'
 
 const meta: Meta = {
-  title: 'CMS Content/PushPanel',
+  title: 'CMS Content/PushPanels',
   component: Component,
   argTypes: {
     color: {
@@ -32,7 +32,8 @@ type StoryProps = PushPanelProps
 export const PushPanel: Story<StoryProps> = (props) => (
   <div className="container">
     <div className="row">
-      <div className={`stack-${props.mobileStack} ${props.cssClass}`}>
+      {/* <div className={`stack-${props.mobileStack} ${props.cssClass}`}> */}
+      <div>
         <Component {...props} />
       </div>
     </div>

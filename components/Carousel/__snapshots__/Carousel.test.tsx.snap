@@ -22,8 +22,8 @@ exports[`Carousel component Matches snapshot 1`] = `
           class="Carousel__StyledCarouselItem-sc-1y7w2xj-0 jYiBRo active carousel-item"
         >
           <a
-            class="d-block position-relative carousel item"
-            href="https://www.wiggle.co.uk/discover-different"
+            class="d-block position-relative"
+            href="https://www.wiggle.co.uk/pro-riding-for-summer"
           >
             <div
               style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
@@ -31,7 +31,7 @@ exports[`Carousel component Matches snapshot 1`] = `
               <noscript />
               <img
                 alt="Default hero alt text"
-                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d?w=1920&h=650&sm=C"
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/CCC-11-5-a?w=1920&h=650&sm=C"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
               />
@@ -46,22 +46,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                 class="position-relative"
               >
                 <div
-                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase text-white"
+                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase"
                 >
                   <h2
                     class=""
                   >
-                    Default headline
+                    Default ride like a pro
                   </h2>
-                  <h3
-                    class=""
-                  >
-                    Default Strapline
-                  </h3>
                   <div
-                    class="btn border-white bg-white-hover text-white"
+                    class="btn"
                   >
-                    Default call to action
+                    Default shop now
                   </div>
                 </div>
               </div>
@@ -72,8 +67,8 @@ exports[`Carousel component Matches snapshot 1`] = `
           class="Carousel__StyledCarouselItem-sc-1y7w2xj-0 jYiBRo carousel-item"
         >
           <a
-            class="d-block position-relative carousel item"
-            href="https://www.wiggle.co.uk/discover-different"
+            class="d-block position-relative"
+            href="https://www.wiggle.co.uk/womens-collection"
           >
             <div
               style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
@@ -81,7 +76,7 @@ exports[`Carousel component Matches snapshot 1`] = `
               <noscript />
               <img
                 alt="Default hero alt text"
-                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepage-h-d?w=1920&h=650&sm=C"
+                data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageh1d?w=1920&h=650&sm=C"
                 src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
                 style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
               />
@@ -96,22 +91,22 @@ exports[`Carousel component Matches snapshot 1`] = `
                 class="position-relative"
               >
                 <div
-                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase text-white"
+                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase"
                 >
                   <h2
                     class=""
                   >
-                    Default headline
+                    Default Tailored for women
                   </h2>
                   <h3
                     class=""
                   >
-                    Default Strapline
+                    Your best-ever sports collection
                   </h3>
                   <div
-                    class="btn border-white bg-white-hover text-white"
+                    class="btn"
                   >
-                    Default call to action
+                    Default Shop now
                   </div>
                 </div>
               </div>
@@ -122,7 +117,7 @@ exports[`Carousel component Matches snapshot 1`] = `
           class="Carousel__StyledCarouselItem-sc-1y7w2xj-0 jYiBRo carousel-item"
         >
           <a
-            class="d-block position-relative carousel item"
+            class="d-block position-relative"
             href="https://www.wiggle.co.uk/discover-different"
           >
             <div
@@ -146,22 +141,17 @@ exports[`Carousel component Matches snapshot 1`] = `
                 class="position-relative"
               >
                 <div
-                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase text-white"
+                  class="position-absolute bottom-0 pb-5 mb-5 text-uppercase"
                 >
                   <h2
                     class=""
                   >
-                    Default headline
+                    Default Discover different
                   </h2>
-                  <h3
-                    class=""
-                  >
-                    Default Strapline
-                  </h3>
                   <div
-                    class="btn border-white bg-white-hover text-white"
+                    class="btn"
                   >
-                    Default call to action
+                    Default Find out more
                   </div>
                 </div>
               </div>

@@ -1,10 +1,11 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks'
-import Hero from '../Hero/Hero'
+import { Meta, Story } from '@storybook/react'
+import { Hero as Component } from './Hero'
+import { HeroProps, defaultProps } from './types'
 
-<Meta
-  title="CMS Content/Hero"
-  component={Hero}
-  argTypes={{
+const meta: Meta = {
+  title: 'CMS Content/Banners',
+  component: Component,
+  argTypes: {
     color: {
       options: [
         'black',
@@ -27,15 +28,12 @@ import Hero from '../Hero/Hero'
       ],
       control: { type: 'select' },
     },
-  }}
-  args={{
-    color: 'white',
-    contrastColor: 'black',
-  }}
-/>
+  },
+}
 
-export const Template = (args) => <Hero {...args} />
+export default meta
 
-<Canvas>
-  <Story name="Default">{Template.bind({})}</Story>
-</Canvas>
+type StoryProps = HeroProps
+
+export const Hero: Story<StoryProps> = (props) => <Component {...props} />
+Hero.args = defaultProps

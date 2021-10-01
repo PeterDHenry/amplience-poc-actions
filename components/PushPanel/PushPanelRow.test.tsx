@@ -47,10 +47,21 @@ describe('PushPaneLRow component', () => {
     )
     const pushPanelImgImgAlt = pushPanelImg?.getAttribute('alt')
     const pushPanelImgImgSrc = pushPanelImg?.getAttribute('data-src')
+    const pushPanelH3 = container.querySelector(
+      '.push-panel-item:nth-child(1) h3'
+    )?.textContent
 
-    expect(pushPanelImgImgAlt).toMatch(
-      fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline
-    )
+    if (fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline) {
+      expect(pushPanelH3).toMatch(
+        fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline
+      )
+      expect(pushPanelImgImgAlt).toMatch(
+        fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline
+      )
+    } else {
+      expect(pushPanelH3).toBeUndefined
+      expect(pushPanelImgImgAlt).toBeUndefined
+    }
 
     expect(pushPanelImgImgSrc).toMatch(
       'https://cdn.media.amplience.net/i/wigglecrcnonprd/' +
@@ -61,20 +72,12 @@ describe('PushPaneLRow component', () => {
       '.push-panel-item:nth-child(1) h2'
     )?.textContent
 
-    const pushPanelH3 = container.querySelector(
-      '.push-panel-item:nth-child(1) h3'
-    )?.textContent
-
     const pushPanelButton = container.querySelector(
       '.push-panel-item:nth-child(1) button'
     )?.textContent
 
     expect(pushPanelH2).toMatch(
       fourPushPanelListProps.pushPanelList[0].textAndCTA.headline
-    )
-
-    expect(pushPanelH3).toMatch(
-      fourPushPanelListProps.pushPanelList[0].textAndCTA.strapline
     )
 
     expect(pushPanelButton).toMatch(

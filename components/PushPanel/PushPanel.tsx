@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { PushPanelProps, defaultPanelProps } from './types'
-import LazyLoadImage from '../Images/LazyLoadImage'
+import { LazyLoadImage } from '../Images/LazyLoadImage'
 
 const Panel = styled.div`
   width: 100%;
@@ -69,11 +69,11 @@ const PanelText = styled.div`
   }
 `
 export const PushPanel = ({
-  height,
-  width,
+  // height,
+  //width,
   mainImg,
-  color,
-  fontWeight,
+  //color,
+  //fontWeight,
   textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: PushPanelProps) => (
   <Panel>
@@ -81,15 +81,18 @@ export const PushPanel = ({
       <LazyLoadImage
         id={mainImg.name}
         animationDuration={0.1}
-        width={width}
-        height={height}
+        //width={width}
+        //height={height}
         applyAspectRatio={true}
         altText={strapline}
       />
       <PanelText>
-        <h2 style={{ color: color, fontWeight: fontWeight }}>{headline}</h2>
-        {strapline && <h3 style={{ color: color }}>{strapline}</h3>}
-        <button style={{ color: color }}>{callToActionText}</button>
+        {/* <h2 style={{ color: color, fontWeight: fontWeight }}>{headline}</h2> */}
+        <h2>{headline}</h2>
+        {/* {strapline && <h3 style={{ color: color }}>{strapline}</h3>} */}
+        {strapline && <h3>{strapline}</h3>}
+        {/* <button style={{ color: color }}>{callToActionText}</button> */}
+        <button>{callToActionText}</button>
       </PanelText>
     </PanelLink>
   </Panel>

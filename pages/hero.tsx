@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import Hero, { HeroProps } from '../components/Hero/Hero'
+import { Hero } from '../components/Hero/Hero'
+import { HeroProps } from '../components/Hero/types'
 
 interface HeroPropsWrapper {
   hero: HeroProps
@@ -15,7 +16,8 @@ const HeroPage: NextPage<HeroPropsWrapper> = ({ hero }: HeroPropsWrapper) => {
         </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero {...hero} cssClass="carousel item" />
+      {/* <Hero {...hero} cssClass="carousel item" /> */}
+      <Hero {...hero} />
     </>
   )
 }
