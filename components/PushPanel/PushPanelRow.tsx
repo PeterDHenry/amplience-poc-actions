@@ -7,13 +7,13 @@ export const PushPanelRow = ({
   stackMobileLayout,
 }: PushPanelRowProps) => {
   let cssClass = `w-pr-4 w-pl-2 w-pl-sm-4 stack-${stackMobileLayout}`
-  let height = 500
-  let width = 500
+  //let height = 500
+  //let width = 500
   switch (pushPanelList.length) {
     case 2: {
       cssClass = 'col-xs-12 col-sm-6 ' + cssClass
-      height = 570
-      width = 795
+      //height = 570
+      //width = 795
       break
     }
     case 3: {
@@ -33,7 +33,8 @@ export const PushPanelRow = ({
             key={panel._meta.deliveryId}
             className={`push-panel-item ${cssClass}`}
           >
-            <PushPanel {...panel} height={height} width={width} />
+            {/* <PushPanel {...panel} height={height} width={width} /> */}
+            <PushPanel {...panel} />
           </div>
         ))}
       </div>

@@ -7,15 +7,15 @@ exports[`PushPanel component matches snapshot 1`] = `
   >
     <a
       class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
-      href="https://www.wiggle.co.uk/discover-different"
+      href="https://www.wiggle.co.uk"
     >
       <div
-        style="position: relative; display: block; padding-bottom: 100%;"
+        style="position: relative; display: block; padding-bottom: 33.85416666666667%;"
       >
         <noscript />
         <img
-          alt="Default Strapline"
-          data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageb3d2?w=500&h=500&sm=C"
+          alt="Our latest deals"
+          data-src="https://cdn.media.amplience.net/i/wigglecrcnonprd/CCC-11-5-a?w=1920&h=650&sm=C"
           src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
           style="height: 100%; width: 100%; visibility: hidden; position: absolute; top: 0px; left: 0px;"
         />
@@ -26,20 +26,14 @@ exports[`PushPanel component matches snapshot 1`] = `
       <div
         class="PushPanel__PanelText-sc-1magf3k-2 hjiAeS"
       >
-        <h2
-          style="color: black; font-weight: 100;"
-        >
-          Default headline
+        <h2>
+          Training tech
         </h2>
-        <h3
-          style="color: black;"
-        >
-          Default Strapline
+        <h3>
+          Our latest deals
         </h3>
-        <button
-          style="color: black;"
-        >
-          Default call to action
+        <button>
+          View range
         </button>
       </div>
     </a>

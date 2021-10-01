@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components'
-import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
+import { Header } from '../components/Header/Header'
+import { Footer } from '../components/Footer/Footer'
 import theme from '../themes/light'
 import { AppProps } from 'next/app'
 

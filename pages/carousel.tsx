@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import Carousel, { CarouselListProps } from '../components/Carousel/Carousel'
+import { Carousel } from '../components/Carousel/Carousel'
+import { CarouselProps } from '../components/Carousel/types'
 
-const CarouselPage: NextPage<CarouselListProps> = ({
+const CarouselPage: NextPage<CarouselProps> = ({
   heroBannerList,
-}: CarouselListProps) => {
+}: CarouselProps) => {
   return (
     <>
       <Head>
