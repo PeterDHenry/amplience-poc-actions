@@ -1,15 +1,39 @@
 import React from 'react'
+import styled from 'styled-components'
 import { HeroImage } from '../Images/HeroImage'
 import { HeroProps, defaultProps } from './types'
 
+const OuterLink = styled.a<any>`
+  color: ${(props) => props.textColour};
+
+  .btn {
+    border-color: ${(props) => props.textColour};
+    color: ${(props) => props.textColour};
+  }
+
+  &:hover {
+    color: ${(props) => props.contrastColour};
+  }
+
+  &:hover .btn {
+    color: ${(props) => props.contrastColour};
+    border-color: ${(props) => props.contrastColour};
+  }
+`
+
 export const Hero = ({
-  //background,
-  //color,
+  textColour,
+  contrastColour,
   cssClass,
   background,
   textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: HeroProps) => (
-  <a className={`d-block position-relative ${cssClass}`} href={callToActionURL}>
+  <OuterLink
+    textColour={textColour}
+    contrastColour={contrastColour}
+    className={`d-block position-relative ${cssClass}`}
+    href={callToActionURL}
+  >
     <HeroImage id={background.name} />
     <div className="container">
       <div className="position-relative">
@@ -28,7 +52,7 @@ export const Hero = ({
         </div>
       </div>
     </div>
-  </a>
+  </OuterLink>
 )
 
 Hero.defaultProps = defaultProps

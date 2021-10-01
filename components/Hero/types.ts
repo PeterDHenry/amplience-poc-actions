@@ -14,8 +14,8 @@ export type HeroProps = {
     endpoint: string
     defaultHost: string
   }
-  //color: string
-  //contrastColor: string
+  textColour: string
+  contrastColour: string
   textAndCTA: {
     callToActionURL: string
     callToActionText: string
@@ -26,7 +26,7 @@ export type HeroProps = {
 
 export const defaultProps: HeroProps = {
   _meta: {
-    name: 'Ride like a pro banner',
+    name: 'Default Ride like a pro banner',
     schema: 'https://wiggle.com/hero-banner',
     deliveryId: '18a7eee8-6c7a-4a92-8a76-29eb936679a8',
   },
@@ -40,8 +40,10 @@ export const defaultProps: HeroProps = {
     defaultHost: 'cdn.media.amplience.net',
   },
   textAndCTA: {
-    headline: 'Ride like a pro',
+    headline: 'Default  Ride like a pro',
     callToActionURL: 'https://www.wiggle.co.uk/pro-riding-for-summer',
-    callToActionText: 'Shop now',
+    callToActionText: 'Default Shop now',
   },
+  textColour: 'rgb(152, 152, 152)',
+  contrastColour: 'rgb(251, 255, 0)',
 }

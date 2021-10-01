@@ -3,7 +3,7 @@
 exports[`Hero component matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="d-block position-relative undefined"
+    class="Hero__OuterLink-sc-1h6z6u8-0 iXvDVI d-block position-relative undefined"
     href="https://www.wiggle.co.uk/pro-riding-for-summer"
   >
     <div
@@ -32,12 +32,12 @@ exports[`Hero component matches snapshot 1`] = `
           <h2
             class=""
           >
-            Ride like a pro
+            Default  Ride like a pro
           </h2>
           <div
             class="btn"
           >
-            Shop now
+            Default Shop now
           </div>
         </div>
       </div>

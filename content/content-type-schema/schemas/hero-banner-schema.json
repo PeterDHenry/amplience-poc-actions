@@ -29,6 +29,18 @@
 					"$ref": "https://wiggle.com/text-content-and-cta#/definitions/cta"
 				}
 			]
-		}
+		},
+        "textColour": {
+            "title": "Text colour",
+            "description": "The colour for the banner's text",
+            "format": "color",
+            "type": "string"
+        },
+        "contrastColour": {
+            "title": "Contrast colour",
+            "description": "The contrast colour for hover on the banner's text",
+            "format": "color",
+            "type": "string"
+        }
     }
 }

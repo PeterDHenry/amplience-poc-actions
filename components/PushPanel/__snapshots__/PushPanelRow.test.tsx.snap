@@ -9,13 +9,13 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
       class="row"
     >
       <div
-        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-false"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
         >
           <a
-            class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
+            class="PushPanel__PanelLink-sc-1magf3k-1 aoXCr"
             href="http://localhost:3000/brand?b=nike"
           >
             <div
@@ -49,13 +49,13 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-false"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
         >
           <a
-            class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
+            class="PushPanel__PanelLink-sc-1magf3k-1 aoXCr"
             href="http://localhost:3000/brand?b=nike"
           >
             <div
@@ -89,13 +89,13 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-false"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
         >
           <a
-            class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
+            class="PushPanel__PanelLink-sc-1magf3k-1 aoXCr"
             href="http://localhost:3000/brand?b=nike"
           >
             <div
@@ -129,13 +129,13 @@ exports[`PushPaneLRow component Matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-undefined"
+        class="push-panel-item col-xs-6 col-md-6 col-lg-3 w-pr-4 w-pl-2 w-pl-sm-4 stack-false"
       >
         <div
           class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
         >
           <a
-            class="PushPanel__PanelLink-sc-1magf3k-1 nQoaE"
+            class="PushPanel__PanelLink-sc-1magf3k-1 aoXCr"
             href="http://localhost:3000/brand?b=nike"
           >
             <div
