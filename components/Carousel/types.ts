@@ -8,7 +8,7 @@ export const defaultProps: CarouselProps = {
   heroBannerList: [
     {
       _meta: {
-        name: 'Default ride like a pro banner',
+        name: 'Default Ride like a pro banner',
         schema: 'https://wiggle.com/hero-banner',
         deliveryId: '18a7eee8-6c7a-4a92-8a76-29eb936679a8',
       },
@@ -23,10 +23,12 @@ export const defaultProps: CarouselProps = {
         defaultHost: 'cdn.media.amplience.net',
       },
       textAndCTA: {
-        headline: 'Default ride like a pro',
+        headline: 'Default Ride like a pro',
         callToActionURL: 'https://www.wiggle.co.uk/pro-riding-for-summer',
-        callToActionText: 'Default shop now',
+        callToActionText: 'Default Shop now',
       },
+      textColour: 'rgb(152, 152, 152)',
+      contrastColour: 'rgb(251, 255, 0)',
     },
     {
       _meta: {
@@ -46,10 +48,12 @@ export const defaultProps: CarouselProps = {
       },
       textAndCTA: {
         headline: 'Default Tailored for women',
-        strapline: 'Your best-ever sports collection',
+        strapline: 'Default Your best-ever sports collection',
         callToActionText: 'Default Shop now',
         callToActionURL: 'https://www.wiggle.co.uk/womens-collection',
       },
+      textColour: 'rgb(152, 152, 152)',
+      contrastColour: 'rgb(221, 255, 0)',
     },
     {
       _meta: {
@@ -72,6 +76,8 @@ export const defaultProps: CarouselProps = {
         callToActionText: 'Default Find out more',
         callToActionURL: 'https://www.wiggle.co.uk/discover-different',
       },
+      textColour: 'rgb(255, 252, 0)',
+      contrastColour: 'rgb(0, 11, 255)',
     },
   ],
 }

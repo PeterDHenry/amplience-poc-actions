@@ -67,6 +67,7 @@ export const defaultPanelProps: PushPanelProps = {
 }
 
 export const defaultPanelRowProps: PushPanelRowProps = {
+  stackMobileLayout: false,
   pushPanelList: [
     {
       _meta: {

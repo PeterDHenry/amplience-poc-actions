@@ -6,27 +6,11 @@ const meta: Meta = {
   title: 'CMS Content/Banners',
   component: Component,
   argTypes: {
-    color: {
-      options: [
-        'black',
-        'white',
-        'red-500',
-        'green-500',
-        'yellow-500',
-        'blue-500',
-      ],
-      control: { type: 'select' },
+    textColour: {
+      control: 'color',
     },
-    contrastColor: {
-      options: [
-        'black',
-        'white',
-        'red-500',
-        'green-500',
-        'yellow-500',
-        'blue-500',
-      ],
-      control: { type: 'select' },
+    contrastColour: {
+      control: 'color',
     },
   },
 }
@@ -37,3 +21,5 @@ type StoryProps = HeroProps
 
 export const Hero: Story<StoryProps> = (props) => <Component {...props} />
 Hero.args = defaultProps
+
+//TODO add pallete

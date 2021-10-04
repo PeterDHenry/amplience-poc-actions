@@ -9,6 +9,7 @@ const Panel = styled.div`
 
 const PanelLink = styled.a`
   text-decoration: none;
+  color: #000;
 
   .stack-true & {
     position: relative;
