@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import LinkBanner from '../components/LinkBanner/LinkBanner'
+import { LinkBanner } from '../components/LinkBanner/LinkBanner'
 import { LinkBannerProps } from '../components/LinkBanner/types'
 
 interface LinkBannerWrapper {
