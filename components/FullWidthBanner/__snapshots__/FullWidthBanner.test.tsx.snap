@@ -9,32 +9,32 @@ exports[`Full width banner component Matches snapshot 1`] = `
       class="row"
     >
       <div
-        class="FullWidthBanner__ComponentContainer-sc-zya7j3-0 iJSsXv col-xs-12 col-sm-12"
+        class="FullWidthBanner__ComponentContainer-sc-zya7j3-0 dvlunK col-xs-12 col-sm-12"
       >
         <a
-          class="FullWidthBanner__Link-sc-zya7j3-1 uZkuL"
+          class="FullWidthBanner__Link-sc-zya7j3-1 ffeCnq"
           href="https://www.wiggle.co.uk/run-new-season-2021"
         >
           <img
             alt=""
-            class="FullWidthBanner__Img-sc-zya7j3-2 gShsRm"
+            class="FullWidthBanner__Img-sc-zya7j3-2 hcNdEH"
             src="https://cdn.media.amplience.net/i/wigglecrcnonprd/homepageh1d"
           />
           <div
-            class="FullWidthBanner__ContentContainer-sc-zya7j3-3 fnuvgV"
+            class="FullWidthBanner__ContentContainer-sc-zya7j3-3 djfYCM"
           >
             <h2
-              class="FullWidthBanner__H2-sc-zya7j3-4 fxiFMJ"
+              class="FullWidthBanner__H2-sc-zya7j3-4 iYgKlo"
             >
                Default header 
             </h2>
             <h3
-              class="FullWidthBanner__H3-sc-zya7j3-5 bCEvHA"
+              class="FullWidthBanner__H3-sc-zya7j3-5 jSdkrl"
             >
                Default subheader 
             </h3>
             <button
-              class="FullWidthBanner__Button-sc-zya7j3-6 blPHof"
+              class="FullWidthBanner__Button-sc-zya7j3-6 eGNlge"
             >
                Default cta text 
             </button>
