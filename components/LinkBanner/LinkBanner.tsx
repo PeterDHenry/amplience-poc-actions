@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { LinkBannerProps } from './types'
+import { defaultLinkBannerProps, LinkBannerProps } from './types'
 
 const Banner = styled.a<any>`
   padding: 10px 5px;
@@ -51,7 +51,7 @@ const BannerCTA = styled.button<any>`
   -o-transition: 0.4s;
 `
 
-const LinkBanner = ({
+export const LinkBanner = ({
   textAndCTA: { callToActionURL, callToActionText, headline },
   backgroundColour,
   fontColour,
@@ -71,15 +71,4 @@ const LinkBanner = ({
   </Banner>
 )
 
-LinkBanner.defaultProps = {
-  textAndCTA: {
-    callToActionURL: 'https://www.wiggle.co.uk/',
-    callToActionText: 'Test CTA Text',
-    headline: 'Test Headline',
-    strapline: 'Test Strapline',
-  },
-  backgroundColour: '#F7F7F7',
-  fontColour: '#3C3C3B',
-}
-
-export default LinkBanner
+LinkBanner.defaultProps = defaultLinkBannerProps

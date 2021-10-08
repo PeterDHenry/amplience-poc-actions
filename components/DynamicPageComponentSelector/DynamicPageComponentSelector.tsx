@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Carousel } from '../Carousel/Carousel'
 import { PushPanelRow } from '../PushPanel/PushPanelRow'
-import LinkBanner from '../LinkBanner/LinkBanner'
+import { LinkBanner } from '../LinkBanner/LinkBanner'
 import FullWidthBanner from '../FullWidthBanner/FullWidthBanner'
-import SeoText from '../Seo-Text/SeoText'
+import { SeoText } from '../Seo-Text/SeoText'
 
 export interface DynamicPageComponentSelectorProps {
   slot: { slotContent: any[] }

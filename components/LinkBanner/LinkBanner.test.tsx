@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
-import LinkBanner from './LinkBanner'
-import { LinkBannerProps } from './types'
+import { LinkBanner } from './LinkBanner'
+import { defaultLinkBannerProps, LinkBannerProps } from './types'
 import '@testing-library/jest-dom'
 
 describe('Link Banner component', () => {
@@ -31,13 +31,4 @@ describe('Link Banner component', () => {
   })
 })
 
-const linkBannerProps: LinkBannerProps = {
-  textAndCTA: {
-    callToActionURL: 'https://www.wiggle.co.uk/',
-    callToActionText: 'Test CTA Text',
-    headline: 'Test Headline',
-    strapline: 'Test Strapline',
-  },
-  backgroundColour: '#F7F7F7',
-  fontColour: '#3C3C3B',
-}
+const linkBannerProps: LinkBannerProps = defaultLinkBannerProps

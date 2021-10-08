@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
-import SeoText, { checkPropIsValid } from './SeoText'
-import { SeoTextProps } from './types'
+import { SeoText, checkPropIsValid } from './SeoText'
+import { defaultSeoTextProps, SeoTextProps } from './types'
 import '@testing-library/jest-dom'
 
 describe('SEO Text component', () => {
@@ -33,6 +33,4 @@ describe('SEO Text component', () => {
   })
 })
 
-const seoTextProps: SeoTextProps = {
-  mainText: '<h3>Default title</h3><p>Default Text</p>',
-}
+const seoTextProps: SeoTextProps = defaultSeoTextProps

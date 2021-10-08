@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import parse from 'html-react-parser'
-import { SeoTextProps } from './types'
+import { SeoTextProps, defaultSeoTextProps } from './types'
 
 const MainTextWrapper = styled.div`
   max-width: 1170px;
@@ -28,7 +28,7 @@ export const checkPropIsValid = (mainText: string) => {
     : parse(mainText)
 }
 
-const SeoText = ({ mainText }: SeoTextProps) => {
+export const SeoText = ({ mainText }: SeoTextProps) => {
   const html = checkPropIsValid(mainText)
 
   return (
@@ -42,8 +42,4 @@ const SeoText = ({ mainText }: SeoTextProps) => {
   )
 }
 
-SeoText.defaultProps = {
-  mainText: '<h3>Default title</h3><p>Default Text</p>',
-}
-
-export default SeoText
+SeoText.defaultProps = defaultSeoTextProps

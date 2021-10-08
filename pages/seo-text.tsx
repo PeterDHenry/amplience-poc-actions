@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { NextPage } from 'next'
-import SeoText from '../components/Seo-Text/SeoText'
+import { SeoText } from '../components/Seo-Text/SeoText'
 import { SeoTextProps } from '../components/Seo-Text/types'
 
 interface SeoTextWrapper {
