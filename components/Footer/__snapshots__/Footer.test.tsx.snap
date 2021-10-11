@@ -3,7 +3,7 @@
 exports[`Footer component matches snapshot 1`] = `
 <DocumentFragment>
   <footer
-    class="Footer__Foot-sc-105w7nn-0 jspJSd text-center p-5"
+    class="Footer__Foot-sc-105w7nn-0 hiLuSs text-center p-5"
     data-page-area="Footer"
   >
     <p

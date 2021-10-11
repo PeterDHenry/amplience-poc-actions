@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FullWidthBannerProps, defaultProps } from './types'
 
 const ComponentContainer = styled.div`
   position: relative;
@@ -54,21 +55,6 @@ const Button = styled.button`
   }
 `
 
-export interface FullWidthBannerProps {
-  _meta: {
-    name: string
-    schema: string
-    deliveryId: string
-  }
-  image: { name: string }
-  textAndCTA: {
-    callToActionURL: string
-    callToActionText: string
-    headline: string
-    strapline: string
-  }
-}
-
 export default function FullWidthBanner({
   image: { name },
   textAndCTA: { callToActionURL, callToActionText, headline, strapline },
@@ -94,19 +80,4 @@ export default function FullWidthBanner({
   )
 }
 
-const BannerProps = (FullWidthBanner.defaultProps = {
-  _meta: {
-    name: 'string',
-    schema: 'string',
-    deliveryId: '1543512973',
-  },
-  image: { name: 'homepageh1d' },
-  textAndCTA: {
-    callToActionURL: 'https://www.wiggle.co.uk/run-new-season-2021',
-    callToActionText: 'Default cta text',
-    headline: 'Default header',
-    strapline: 'Default subheader',
-  },
-})
-
-export { BannerProps }
+FullWidthBanner.defaultProps = defaultProps

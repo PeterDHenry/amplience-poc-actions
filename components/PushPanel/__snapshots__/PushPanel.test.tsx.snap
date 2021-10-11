@@ -3,10 +3,10 @@
 exports[`PushPanel component matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="PushPanel__Panel-sc-1magf3k-0 kDGwnJ"
+    class="PushPanel__Panel-sc-1magf3k-0 bTJEyg"
   >
     <a
-      class="PushPanel__PanelLink-sc-1magf3k-1 aoXCr"
+      class="PushPanel__PanelLink-sc-1magf3k-1 gtiIsO"
       href="https://www.wiggle.co.uk/triathlon-2021?range=ne"
     >
       <div
@@ -24,7 +24,7 @@ exports[`PushPanel component matches snapshot 1`] = `
         />
       </div>
       <div
-        class="PushPanel__PanelText-sc-1magf3k-2 hjiAeS"
+        class="PushPanel__PanelText-sc-1magf3k-2 gUZeSn"
       >
         <h2>
           Latest triathlon kit
