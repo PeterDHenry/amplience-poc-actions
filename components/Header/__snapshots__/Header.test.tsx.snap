@@ -17,7 +17,7 @@ exports[`Header component matches snapshot 1`] = `
           itemprop="url"
         >
           <img
-            class="Header__Logo-sc-11c03b2-0 gPxSc"
+            class="Header__Logo-sc-11c03b2-0 tmHxh"
             itemprop="logo"
             src="//www.wigglestatic.com/images/ui/wiggle-logo/desktop-wiggle_master_rgb_logo.svg"
           />

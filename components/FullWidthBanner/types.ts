@@ -14,16 +14,16 @@ export type FullWidthBannerProps = {
 }
 
 export const defaultProps: FullWidthBannerProps = {
-_meta: {
-	name: 'string',
-	schema: 'string',
-	deliveryId: '1543512973',
-},
-image: { name: 'homepageh1d' },
-textAndCTA: {
-	callToActionURL: 'https://www.wiggle.co.uk/run-new-season-2021',
-	callToActionText: 'Default cta text',
-	headline: 'Default header',
-	strapline: 'Default subheader',
-}
+  _meta: {
+    name: 'string',
+    schema: 'string',
+    deliveryId: '1543512973',
+  },
+  image: { name: 'homepageh1d' },
+  textAndCTA: {
+    callToActionURL: 'https://www.wiggle.co.uk/run-new-season-2021',
+    callToActionText: 'Default cta text',
+    headline: 'Default header',
+    strapline: 'Default subheader',
+  },
 }

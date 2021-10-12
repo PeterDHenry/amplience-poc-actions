@@ -3,7 +3,7 @@ import { LinkBanner as Component } from './LinkBanner'
 import { defaultLinkBannerProps, LinkBannerProps } from './types'
 
 const meta: Meta = {
-  title: 'CMS Content/LinkBanner',
+  title: 'CMS Content/Banners',
   component: Component,
   argTypes: {
     backgroundColour: {

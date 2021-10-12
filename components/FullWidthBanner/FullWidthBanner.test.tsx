@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react'
-import FullWidthBanner from './FullWidthBanner'
-import {defaultProps as BannerProps} from './types'
+import { FullWidthBanner } from './FullWidthBanner'
+import { defaultProps as BannerProps } from './types'
 import '@testing-library/jest-dom'
 
 describe('Full width banner component', () => {

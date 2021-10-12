@@ -3,7 +3,8 @@ import { GetServerSidePropsContext, NextPageContext } from 'next'
 
 import { fetchContent } from '../../utils/fetchContent'
 
-import DynamicPageComponentSelector, {
+import {
+  DynamicPageComponentSelector,
   DynamicPageComponentSelectorProps,
 } from '../../components/DynamicPageComponentSelector/DynamicPageComponentSelector'
 

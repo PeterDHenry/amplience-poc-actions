@@ -3,18 +3,18 @@
 exports[`Link Banner component Matches snapshot 1`] = `
 <DocumentFragment>
   <a
-    class="LinkBanner__Banner-sc-1rg8ysw-0 ggAmLv link-banner"
+    class="LinkBanner__Banner-sc-1rg8ysw-0 cpXOje link-banner"
     href="https://www.wiggle.co.uk/sc/wiggle-plus"
   >
     <div
-      class="LinkBanner__BannerText-sc-1rg8ysw-1 bWdTzp"
+      class="LinkBanner__BannerText-sc-1rg8ysw-1 bQArJM"
     >
       <p>
         WIGGLE+ UNLIMITED NEXT DAY DELIVERY & FREE RETURNS FOR A YEAR - ONLY £9.99
       </p>
     </div>
     <button
-      class="LinkBanner__BannerCTA-sc-1rg8ysw-2 cpsssb cta-btn"
+      class="LinkBanner__BannerCTA-sc-1rg8ysw-2 hRGaUq cta-btn"
     >
       <p>
         FIND OUT MORE
