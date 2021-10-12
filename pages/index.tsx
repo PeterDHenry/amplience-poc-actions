@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { NextPageContext } from 'next'
-
 import { fetchContent } from '../utils/fetchContent'
 
 import {
