@@ -3,10 +3,10 @@
 exports[`SEO Text component Matches snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="SeoText__MainTextWrapper-sc-us8wk8-0 ciwyVE seo-text-wrapper"
+    class="SeoText__MainTextWrapper-sc-us8wk8-0 klxTAZ seo-text-wrapper"
   >
     <div
-      class="SeoText__MainTextArea-sc-us8wk8-1 idWIsq seo-text"
+      class="SeoText__MainTextArea-sc-us8wk8-1 BNFhD seo-text"
     >
       <h3
         style="text-align: center;"
