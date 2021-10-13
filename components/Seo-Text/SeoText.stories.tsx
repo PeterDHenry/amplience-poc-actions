@@ -3,7 +3,7 @@ import { SeoText as Component } from './SeoText'
 import { defaultSeoTextProps, SeoTextProps } from './types'
 
 const meta: Meta = {
-  title: 'CMS Content/SeoText',
+  title: 'CMS Content/Banners',
   component: Component,
   argTypes: {
     mainText: {

@@ -55,7 +55,7 @@ const Button = styled.button`
   }
 `
 
-export default function FullWidthBanner({
+export function FullWidthBanner({
   image: { name },
   textAndCTA: { callToActionURL, callToActionText, headline, strapline },
 }: FullWidthBannerProps) {
